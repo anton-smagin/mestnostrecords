@@ -2,7 +2,7 @@
   <div class="vvedenskaya-attempts w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="/vvvedenskaya.jpg" width="80%" />
+        <img src="~/static/vvvedenskaya.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -29,7 +29,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="/vvvedenskaya_face.jpg"
+          src="~/static/vvvedenskaya_face.jpg"
           alt="vvvedenskaya"
           width="70%"
           height="auto"
@@ -89,7 +89,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="static/vvvedenskaya_cassette_1.jpg"
+          src="~/static/vvvedenskaya_cassette_1.jpg"
           alt="vvedenskaya"
           width="90%"
           height="auto"
@@ -97,7 +97,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="/vvvedenskaya_cassette_2.jpg"
+          src="~/static/vvvedenskaya_cassette_2.jpg"
           alt="vvedenskaya"
           width="90%"
           height="auto"
@@ -105,7 +105,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="/vvvedenskaya_cassette_3.jpg"
+          src="~/static/vvvedenskaya_cassette_3.jpg"
           alt="vvedenskaya"
           width="90%"
           height="auto"

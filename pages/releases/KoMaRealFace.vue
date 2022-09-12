@@ -2,7 +2,7 @@
   <div class="koma-real-face w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <nuxt-img src="/koma.jpg" width="80%" />
+        <img src="~/static/koma.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -30,7 +30,12 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <nuxt-img src="/koma1.jpeg" alt="anderdog" width="70%" height="auto" />
+        <img
+          src="~/static/koma1.jpeg"
+          alt="anderdog"
+          width="70%"
+          height="auto"
+        />
       </div>
     </div>
     <div class="row mb-5 mt-5">
@@ -62,7 +67,12 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <nuxt-img src="/koma2.jpeg" alt="anderdog" width="70%" height="auto" />
+        <img
+          src="~/static/koma2.jpeg"
+          alt="anderdog"
+          width="70%"
+          height="auto"
+        />
       </div>
     </div>
   </div>

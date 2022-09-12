@@ -2,7 +2,7 @@
   <div class="anderdog-andrey-leto w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="/anderdogandreyleto.jpg" width="80%" />
+        <img src="~/static/anderdogandreyleto.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -28,8 +28,8 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <nuxt-img
-          src="/anderdogandreyleto_face.jpg"
+        <img
+          src="~/static/anderdogandreyleto_face.jpg"
           alt="anderdog and andrey leto"
           width="70%"
           height="auto"
@@ -88,24 +88,24 @@
     </div>
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
-        <nuxt-img
-          src="/anderdog_leto_cassette_1.jpg"
+        <img
+          src="~/static/anderdog_leto_cassette_1.jpg"
           alt="anderdog leto cassette 1"
           width="90%"
           height="auto"
         />
       </div>
       <div class="col-md-4 mt-5">
-        <nuxt-img
-          src="/anderdog_leto_cassette_2.jpg"
+        <img
+          src="~/static/anderdog_leto_cassette_2.jpg"
           alt="anderdog leto cassette 2"
           width="90%"
           height="auto"
         />
       </div>
       <div class="col-md-4 mt-5">
-        <nuxt-img
-          src="/anderdog_leto_cassette_3.jpg"
+        <img
+          src="~/static/anderdog_leto_cassette_3.jpg"
           alt="anderdog leto cassette 3"
           width="90%"
           height="auto"

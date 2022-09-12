@@ -2,7 +2,7 @@
   <div class="microdog-east-side w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <nuxt-img src="/microdog.jpg" width="80%" />
+        <img src="~/static/microdog.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -28,8 +28,8 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <nuxt-img
-          src="/microdog_face.jpg"
+        <img
+          src="~/static/microdog_face.jpg"
           alt="microdog"
           width="70%"
           height="auto"
@@ -90,24 +90,24 @@
     </div>
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
-        <nuxt-img
-          src="/microdog_cassette_1.jpeg"
+        <img
+          src="~/static/microdog_cassette_1.jpeg"
           alt="microdog cassette 1"
           width="80%"
           height="auto"
         />
       </div>
       <div class="col-md-4 mt-5">
-        <nuxt-img
-          src="/microdog_cassette_2.jpeg"
+        <img
+          src="~/static/microdog_cassette_2.jpeg"
           alt="microdog cassette 2"
           width="80%"
           height="auto"
         />
       </div>
       <div class="col-md-4 mt-5">
-        <nuxt-img
-          src="/microdog_cassette_3.jpeg"
+        <img
+          src="~/static/microdog_cassette_3.jpeg"
           alt="microdog cassette 3"
           width="80%"
           height="auto"
