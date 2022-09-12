@@ -2,8 +2,10 @@
   <div class="releases">
     <div class="container-fluid">
       <div class="row p-5">
-        <div v-for="release in releases" :key="`${release.name}.sketch`">
+        <template>
           <div
+            v-for="release in releases"
+            :key="`${release.name}.sketch`"
             class="col-md-4 col-sm-6 col-xs-12 sketch align-items-center"
             @click="openReleasePage(release.name)"
           >
@@ -18,7 +20,7 @@
               </div>
             </NuxtLink>
           </div>
-        </div>
+        </template>
       </div>
     </div>
   </div>
