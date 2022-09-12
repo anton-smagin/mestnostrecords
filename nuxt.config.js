@@ -1,8 +1,12 @@
 export default {
   target: 'static',
+  ssr: false,
+  router: {
+    base: '/',
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'mestnost-2',
+    title: 'Mestnost Records',
     htmlAttrs: {
       lang: 'en',
     },
@@ -30,7 +34,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~/plugins/font_awesome_icons.js', mode: 'client' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -52,15 +56,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    postcss: {
-      plugins: {
-        'postcss-import': true,
-      },
-    },
-  },
-  fontawesome: {
-    icons: {
-      brands: true,
+    babel: {
+      compact: true,
     },
   },
 }

@@ -2,7 +2,7 @@
   <div class="kokkei-mimoza w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="/kokokei.jpg" width="80%" />
+        <nuxt-img src="/kokokei.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -28,7 +28,12 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <img src="/kokokei_face.jpg" alt="kokokei" width="70%" height="auto" />
+        <nuxt-img
+          src="/kokokei_face.jpg"
+          alt="kokokei"
+          width="70%"
+          height="auto"
+        />
       </div>
     </div>
     <div class="row mb-5 mt-5">
@@ -85,7 +90,7 @@
     </div>
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
-        <img
+        <nuxt-img
           src="/mimoza_cassette_1.jpg"
           alt="mimoza cassette 1"
           width="90%"
@@ -93,7 +98,7 @@
         />
       </div>
       <div class="col-md-4 mt-5">
-        <img
+        <nuxt-img
           src="/mimoza_cassette_2.jpg"
           alt="mimoza cassette 2"
           width="90%"
@@ -101,7 +106,7 @@
         />
       </div>
       <div class="col-md-4 mt-5">
-        <img
+        <nuxt-img
           src="/mimoza_cassette_3.jpg"
           alt="mimoza cassette 3"
           width="90%"

@@ -2,7 +2,7 @@
   <div class="w-100">
     <div id="nav" class="row justify-content-end">
       <div class="d-flex w-100 justify-content-end">
-        <img
+        <nuxt-img
           class="hamburger d-block d-sm-none"
           src="/white-hamburger.png"
           width="30px"

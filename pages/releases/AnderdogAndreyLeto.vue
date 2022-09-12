@@ -28,7 +28,7 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <img
+        <nuxt-img
           src="/anderdogandreyleto_face.jpg"
           alt="anderdog and andrey leto"
           width="70%"
@@ -88,7 +88,7 @@
     </div>
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
-        <img
+        <nuxt-img
           src="/anderdog_leto_cassette_1.jpg"
           alt="anderdog leto cassette 1"
           width="90%"
@@ -96,7 +96,7 @@
         />
       </div>
       <div class="col-md-4 mt-5">
-        <img
+        <nuxt-img
           src="/anderdog_leto_cassette_2.jpg"
           alt="anderdog leto cassette 2"
           width="90%"
@@ -104,7 +104,7 @@
         />
       </div>
       <div class="col-md-4 mt-5">
-        <img
+        <nuxt-img
           src="/anderdog_leto_cassette_3.jpg"
           alt="anderdog leto cassette 3"
           width="90%"

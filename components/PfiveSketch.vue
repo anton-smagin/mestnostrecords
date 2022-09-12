@@ -53,7 +53,7 @@ export default {
     side() {
       const width = window.innerWidth
       const height = window.innerHeight
-      return Math.min(width, height) * 0.35
+      return Math.min(width, height) * 0.3
     },
   },
   methods: {

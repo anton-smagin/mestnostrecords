@@ -2,7 +2,7 @@
   <div class="ambidextrous-errorism w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="/ambidextrous_cassette_1.jpg" width="80%" />
+        <nuxt-img src="/ambidextrous_cassette_1.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -28,7 +28,7 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <img
+        <nuxt-img
           src="/ambidextrous_face.jpg"
           alt="ambidextrous"
           width="70%"
@@ -83,7 +83,7 @@
     </div>
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
-        <img
+        <nuxt-img
           src="/ambidextrous_cassette_1.jpg"
           alt="ambidextrous"
           width="80%"
@@ -91,7 +91,7 @@
         />
       </div>
       <div class="col-md-4 mt-5">
-        <img
+        <nuxt-img
           src="/ambidextrous_cassette_2.jpg"
           alt="ambidextrous"
           width="80%"
@@ -99,7 +99,7 @@
         />
       </div>
       <div class="col-md-4 mt-5">
-        <img
+        <nuxt-img
           src="/ambidextrous_cassette_3.jpg"
           alt="ambidextrous"
           width="80%"

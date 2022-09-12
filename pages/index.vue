@@ -72,7 +72,10 @@ body {
   color: #f5fafa;
   font-size: 1em;
   font-weight: lighter;
-  @media only screen and (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  #nav a {
     letter-spacing: 0.1em;
   }
 }
@@ -117,8 +120,10 @@ html {
   font-weight: normal;
   letter-spacing: 0.5em;
   margin-bottom: 10%;
+}
 
-  @media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  .logo {
     font-size: 2em;
     letter-spacing: 0.1em;
   }
@@ -134,7 +139,11 @@ footer {
 
 footer a.btn {
   font-size: 1em;
-  @media only screen and (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  footer a.btn {
+    font-size: 0.8em;
     letter-spacing: 0.1em;
   }
 }
