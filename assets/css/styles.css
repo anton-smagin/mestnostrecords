@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Cocomat';
+  src: url('~@/assets/fonts/Cocomat.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cocomat';
+  src: url('~@/assets/fonts/Cocomat-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Acrom';
+  src: url('~@/assets/fonts/Acrom-Medium.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Acrom';
+  src: url('~@/assets/fonts/Acrom-Regular.otf');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: black !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#app {
+  font-family: Cocomat;
+  font-weight: normal;
+  letter-spacing: 0.3em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  min-height: 100vh;
+}
+
+#nav {
+  padding: 30px;
+  min-height: 10vh;
+}
+
+#nav a {
+  color: #f5fafa;
+  font-size: 1em;
+  font-weight: lighter;
+  @media only screen and (max-width: 768px) {
+    letter-spacing: 0.1em;
+  }
+}
+
+#nav a.router-link-exact-active {
+  color: #91a79d;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.h80 {
+  min-height: 80vh;
+}
+
+.button {
+  margin: 8px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
