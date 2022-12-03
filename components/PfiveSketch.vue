@@ -51,9 +51,9 @@ export default {
       return ((this.msSinceStart * 0.0001) % Math.PI) * 2
     },
     side() {
-      const width = window.innerWidth
-      const height = window.innerHeight
-      return Math.min(width, height) * 0.3
+      const width = this.$el.clientWidth
+      const height = this.$el.clientHeight
+      return Math.min(width, height) * 2
     },
   },
   methods: {

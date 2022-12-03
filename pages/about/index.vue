@@ -53,12 +53,12 @@ h1 {
 }
 
 .description {
-  margin: 8% 25%;
+  margin: 8% 10%;
   letter-spacing: 0.2em;
   line-height: 2em;
   font-family: Acrom, sans-serif;
   @media only screen and (max-width: 768px) {
-    margin: 4% 12%;
+    margin: 4% 10%;
     font-size: 1em;
     letter-spacing: 0.1em;
   }
