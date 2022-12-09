@@ -35,6 +35,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/AnderdogKelgoma',
+          artistName: 'Anderdog',
+          releaseName: 'Kelgoma',
+          image: 'anderdog_kelgoma',
+        },
+        {
           name: 'releases/KokokeiMimoza',
           artistName: 'Kokokei',
           releaseName: 'Mimoza',
