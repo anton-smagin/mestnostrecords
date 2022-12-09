@@ -38,6 +38,13 @@
         />
       </div>
     </div>
+    <div class="row mb-5">
+      <div class="col-md-6 offset-md-2">
+        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2287507512/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
+          <a href="https://mestnost.bandcamp.com/album/kelgoma">Kelgoma by Anderdog</a>
+        </iframe>
+      </div>
+    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
@@ -54,14 +61,17 @@
             обретая свою уникальную идентичность и размешивая ее в серебрящихся и хрустящих как весенние льдинки треках – от почти драматичного Ineved c водопадами фортепианных семплов до интимно робкого Od Tol и финальных и очень кинематографичных Buka и Lixtaema. «Этот релиз – дань уважения маленькому мокшанскому этносу и его культуре, к которым я отношусь»,
             – не стесняясь признает автор, выпуская свежий и по-настоящему местный релиз.
           </p>
+          <p class="mt-5">
+            Moksha goes IDM dancing
+          </p>
+          <p>
+            Anderdog, the author of the 2021 Sleep Paralysis album and the person behind the recent release of Romantic Selection in collaboration with Andrey Leto, has recorded a brand new album titled Kelgoma.
+            The names of the tracks have been chosen with utmost care: the mysterious and cryptic Ineved, Moksha, Kelgoma, and Kemama are all words of the Moksha language that was spoken by the Moksha people, who historically took up residence to the east of the capital and in the Nizhny Novgorod lands.
+          </p>
+          <p>
+            So, why Mokshas? Because, ontologically speaking, that is who the author identifies himself with, acquiring his very own unique traits along the way and then using them to create music. His one-of-a-kind identity is imprinted on all of his tracks that conjure up images of glistening silver and crisp spring icicles - from the slightly dramatic Ineved with waterfalls of piano samples to the intimately shy Od Tol to the final and very cinematic Buka and Lixtaema. Releasing such an invigorating and truly local album, the author doesn’t hold back when admitting that “this release is a tribute to the small Moksha ethnic group and its culture, to which he belongs.”
+          </p>
         </div>
-      </div>
-    </div>
-    <div class="row mb-5">
-      <div class="col-md-6 offset-md-2">
-        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2287507512/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
-          <a href="https://mestnost.bandcamp.com/album/kelgoma">Kelgoma by Anderdog</a>
-        </iframe>
       </div>
     </div>
   </div>
