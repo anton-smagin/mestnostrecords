@@ -1484,6 +1484,11 @@
     consola "^2.15.3"
     stylelint-webpack-plugin "^2.3.1"
 
+"@nuxtjs/yandex-metrika@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/yandex-metrika/-/yandex-metrika-1.4.0.tgz#045dcfd6d8a43f4f869ecdae0b1062bf9d19fb83"
+  integrity sha512-6c5w3oV86575G0/GGJPnaREDCDYKPg5e7P7BiEk4UlSQce56Pqnaolaa8D8A6Ds/KJafZDGcAkc0z65F1anA5A==
+
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/@nuxtjs/youch/-/youch-4.2.3.tgz#36f8b22df5a0efaa81373109851e1d857aca6bed"

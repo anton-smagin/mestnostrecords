@@ -52,7 +52,11 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    '@nuxtjs/yandex-metrika',
   ],
+  yandexMetrika: {
+    id: '73630327',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
