@@ -74,6 +74,32 @@
         </div>
       </div>
     </div>
+    <div class="row mb-5">
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/kelgoma_cassette_1.jpeg"
+          alt="anderdog kelgoma cassette 1"
+          width="90%"
+          height="auto"
+        />
+      </div>
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/kelgoma_cassette_2.jpeg"
+          alt="anderdog kelgoma cassette 2"
+          width="90%"
+          height="auto"
+        />
+      </div>
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/kelgoma_cassette_3.jpeg"
+          alt="anderdog kelgoma cassette 3"
+          width="90%"
+          height="auto"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
