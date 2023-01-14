@@ -79,7 +79,7 @@ export default {
         {
           name: 'releases/KoMaRealFace',
           artistName: 'Ko+Ma',
-          releaseName: '-',
+          releaseName: 'По-настоящему счастливое лицо стремится стать кругом',
           image: 'koma',
         },
         {

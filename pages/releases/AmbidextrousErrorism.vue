@@ -38,6 +38,16 @@
     </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
+        <div class="col-md-6 offset-md-2">
+          <iframe
+            style="border: 0; width: 100%; height: 120px"
+            src="https://bandcamp.com/EmbeddedPlayer/album=2299107141/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
+            seamless
+            ><a href="https://mestnost.bandcamp.com/album/errorism"
+              >Errorism by Ambidextrous</a
+            >
+          </iframe>
+        </div>
         <div class="description text-white mb-5">
           <p>
             Errorism – второй альбом музыканта Ника Завриева aka Ambidextrous,
@@ -69,15 +79,33 @@
             сцену.
           </p>
         </div>
-        <div class="col-md-6 offset-md-2">
-          <iframe
-            style="border: 0; width: 100%; height: 120px"
-            src="https://bandcamp.com/EmbeddedPlayer/album=2299107141/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
-            seamless
-            ><a href="https://mestnost.bandcamp.com/album/errorism"
-              >Errorism by Ambidextrous</a
+        <div class="description text-white mb-5">
+          <p>
+            Errorism by Ambidextrous is Nick Zavriev’s second album released as a CD on Shaped Harmonics in 2001.
+            European IDM fans compared it to Bola’s Soup (1998) because Errorism was quite melodic for the dry experimental electronica of the 2000s.
+            As Igloo Magazin
+            <a
+              href="https://igloomag.com/reviews/ambidextrous-errorism-shaped-harmonics-cd"
+              target="_blank"
             >
-          </iframe>
+              wrote
+            </a>
+            in 2001:
+            “Ambidextrous identity Nick Zavriev proves his worth, offering an intriguing album of mellow electronica and savory rhythmic idm.
+            ... At the 12-minute mark, you may find yourself reaching for a repeat.”
+          </p>
+          <p>
+            Twenty years later, Errorism is released on Mestnost label as a cassette tape.
+            Lo-fi will give a new meaning to the work created on the rise of digital culture.
+            The CD re-issue of the original album was remastered for the anniversary edition.
+            The cassette tape features three previously unreleased bonus tracks that were recorded during the work on the album.
+            In addition, the vinyl re-issues have been presented on Sealt, the Russian label based in Moscow.
+          </p>
+          <p>
+            Errorism released on cassette tape is the opening of re-issue series named “Mestnost. Istochniki” – the music library with the most iconic tracks
+            that affected the productivity of a particular local scene.
+            N.B. Nick is not only a veteran of Russian IDM electronic music but also the author of Planetronica – one of the most informative music podcasts.
+          </p>
         </div>
       </div>
     </div>

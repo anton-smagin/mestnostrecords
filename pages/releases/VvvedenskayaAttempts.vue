@@ -38,6 +38,17 @@
     </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
+        <div class="col-md-6 offset-md-2">
+          <iframe
+            style="border: 0; width: 100%; height: 120px"
+            src="https://bandcamp.com/EmbeddedPlayer/album=1330787950/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
+            seamless
+          >
+            <a href="https://mestnost.bandcamp.com/album/attempts"
+              >Attempts by Vvvedenskaya</a
+            >
+          </iframe>
+        </div>
         <div class="description text-white mb-5">
           <p>
             Название attempts означает попытки по созданию музыкальных форм.
@@ -73,16 +84,40 @@
             </p>
           </div>
         </div>
-        <div class="col-md-6 offset-md-2">
-          <iframe
-            style="border: 0; width: 100%; height: 120px"
-            src="https://bandcamp.com/EmbeddedPlayer/album=1330787950/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
-            seamless
-          >
-            <a href="https://mestnost.bandcamp.com/album/attempts"
-              >Attempts by Vvvedenskaya</a
-            >
-          </iframe>
+        <div class="description text-white mb-5">
+          <p>
+            The name Attempts symbolizes the effort to create musical forms. On second thought,
+            I think the word struggle fits better since I truly gave my all to this release.
+            It was hard won, because I was constantly plagued with doubts and had many misgiving about each track
+            with questions like: does it even deserve to be called a track?
+            The release stirs up powerful and almost palpable feelings of overcoming difficulties,
+            exerting effort and dealing with doubts, which is why I like it so much. It comes across as unflinching and uncompromising.
+          </p>
+          <p>
+            I came up with the Kabul track after the news broke out that the Taliban took over Afghanistan.
+            On the news, I saw people running after the last plane leaving Kabul.
+            They wanted to escape the country, but since they weren’t allowed to board, they literally clung to the wings of the plane.
+            It was so very terrifying, like a nightmare come to life.
+            I wanted to express solidarity with these people the only way I knew how, and that was how this track was born.
+          </p>
+          <p>
+            All things considered, the album is mostly ambient and it has a lot of hard beats.
+            With the discomfort that you feel listening to it also comes empathy.
+            The album is not something that you can easily put aside or turn on as a background noise.
+            This is the kind of experience that you need to hear and experience for yourself.
+          </p>
+          <p><i>Vvvedenskaya</i></p>
+          <div class="shadowed">
+            <p><i>all tracks by Vvvedenskaya</i></p>
+            <p>
+              <i>
+                mixed & mastered by
+                <a href="https://infrasurge.bandcamp.com" target="_blank"
+                  >INFRASURGE</a
+                >
+              </i>
+            </p>
+          </div>
         </div>
       </div>
     </div>

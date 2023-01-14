@@ -40,6 +40,17 @@
     </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
+        <div class="col-md-6 offset-md-2">
+          <iframe
+            style="border: 0; width: 100%; height: 120px"
+            src="https://bandcamp.com/EmbeddedPlayer/album=2190151488/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
+            seamless
+          >
+            <a href="https://mestnost.bandcamp.com/album/-"
+              >По-настоящему счастливое лицо стремится стать кругом by Ko+Ma</a
+            >
+          </iframe>
+        </div>
         <div class="description text-white mb-5">
           <p>
             Беляево – место, неразрывно связанное с эстетикой Московского
@@ -51,17 +62,6 @@
             электронные конструкты в одном альбоме. Для жителей Беляево – это
             нормально, открывать красоту в паттернах спальных районов.
           </p>
-        </div>
-        <div class="col-md-6 offset-md-2">
-          <iframe
-            style="border: 0; width: 100%; height: 120px"
-            src="https://bandcamp.com/EmbeddedPlayer/album=2190151488/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
-            seamless
-          >
-            <a href="https://mestnost.bandcamp.com/album/-"
-              >По-настоящему счастливое лицо стремится стать кругом by Ko+Ma</a
-            >
-          </iframe>
         </div>
       </div>
     </div>

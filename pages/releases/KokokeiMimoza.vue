@@ -28,7 +28,7 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <nuxt-img
+        <img
           src="~/static/kokokei_face.jpg"
           alt="kokokei"
           width="70%"
@@ -36,6 +36,18 @@
         />
       </div>
     </div>
+    <div class="row mb-5 mt-5">
+        <div class="col-md-6 offset-md-2">
+          <iframe
+            style="border: 0; width: 100%; height: 120px"
+            src="https://bandcamp.com/EmbeddedPlayer/album=2532475065/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
+            seamless
+            ><a href="https://mestnost.bandcamp.com/album/mimoza"
+              >Mimoza by Kokokei</a
+            ></iframe
+          >
+        </div>
+      </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
@@ -76,15 +88,34 @@
             деревенского домика.
           </p>
         </div>
-        <div class="col-md-6 offset-md-2">
-          <iframe
-            style="border: 0; width: 100%; height: 120px"
-            src="https://bandcamp.com/EmbeddedPlayer/album=2532475065/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
-            seamless
-            ><a href="https://mestnost.bandcamp.com/album/mimoza"
-              >Mimoza by Kokokei</a
-            ></iframe
-          >
+        <div class="description text-white mb-5">
+          <p>
+            The author of the Mimoza release Kostya Kokokei is also a co-founder of the Mestnost label, a one-of-a-kind publishing company.
+            Mestnost passes the musicians and their work through a sieve of local culture, in which they grew up.
+            For him, the context is as much a part of the idea of any music peace as the author's vision or a set of samples and synthesizers used during the recording process.
+          </p>
+          <p>
+            The release was recorded in a remote southern village. The undisturbed and unspoiled scenery reenergized Kostya,
+            who left the Belyaevo district of Moscow with its conceptualist history and opted to spend some time in the country’s
+            southern region among its beautiful pristine hills. Kostya went from one trip to another in an attempt to find himself.
+            It was a process of diving deep into spirituality, leaving all the worldly stuff behind and attempting to part with
+            his ego in order to see the world, things, the reality itself in a different light and lose himself in this real vision of life.
+          </p>
+          <p>
+            “I tried to record music in such a way that it would not resemble someone else’s music.
+            I tried to let go of the desire to please as many people as possible, although, I have to say, it was hard,”
+            admitted the author. The five tracks of the Mimosa release will be the first part of a trilogy dedicated to being fully
+            aware and present in the here and now and an attempt to experience beauty without the pressure of our personal identities.
+            The work has strong lo-fi house vibes. The other two parts were made in keeping with the spirit of IDM and ambient.
+            When recording tracks, Kostya used the sounds he collected “in the fields”, the sounds of local life and nature,
+            which later underwent an acid-conversion on a Roland TB-03 bass synthesizer.
+          </p>
+          <p>
+            “Mimosa” is not just a soundtrack to complement the world’s scenery pieces.
+            It not only changes the way you look at them, but also allows you to live through and experience the simple,
+            unpretentious and savage beauty not yet marred by humans, which can be felt somewhere between the broken beats,
+            “Roland” reverberations and a ray of sunshine breaking through between the shutters of a village house.
+          </p>
         </div>
       </div>
     </div>
@@ -128,7 +159,11 @@ export default {
           icon: 'bandcamp',
           link: 'https://mestnost.bandcamp.com/album/mimoza',
         },
-        // { name: 'Apple Music', icon: 'apple', link: 'https://music.apple.com/album/attempts-ep/1620433720' },
+        {
+          name: 'Apple Music',
+          icon: 'apple',
+          link: 'https://music.apple.com/album/mimoza-ep/1654761666'
+        },
         {
           name: 'Spotify',
           icon: 'spotify',

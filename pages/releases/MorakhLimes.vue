@@ -38,6 +38,17 @@
     </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
+        <div class="col-md-6 offset-md-2">
+          <iframe
+            style="border: 0; width: 100%; height: 120px"
+            src="https://bandcamp.com/EmbeddedPlayer/album=144619080/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
+            seamless
+          >
+            <a href="https://mestnost.bandcamp.com/album/limes"
+              >Limes by Morakh</a
+            >
+          </iframe>
+        </div>
         <div class="description text-white mb-5">
           <p>
             На «Местности» возникла новая геолокация – город Подольск и его
@@ -86,16 +97,38 @@
             Anderdog.
           </p>
         </div>
-        <div class="col-md-6 offset-md-2">
-          <iframe
-            style="border: 0; width: 100%; height: 120px"
-            src="https://bandcamp.com/EmbeddedPlayer/album=144619080/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
-            seamless
-          >
-            <a href="https://mestnost.bandcamp.com/album/limes"
-              >Limes by Morakh</a
-            >
-          </iframe>
+        <div class="description text-white mb-5">
+          <p>
+            A new object - the entire city of Podolsk and specifically one of its residents Valera Morakh – just showed up on the radar at our “Mestnost”
+            [the name of the record label “Mestmost” literally means location in Russian].
+            The author brings the sheet music of his songs to life with a hypnotic beat and the hustle and bustle
+            of post-industrial echoes that resonate through the history of his city.
+          </p>
+          <p>
+            According to Morakh, the genre that best describes his tracks is Urban Techno. He manages to both perfectly capture the chtonic
+            realia of the Russian cities, which can be scary and absurd, but undeniably idiosyncratic,
+            and convey the shamanic, primitive harmony of the celestial spheres that we’ve been missing since before the postmodernity period.
+          </p>
+          <p>
+            The enthralling and all-consuming repetitive sequences in “Way” are reminiscent of the legendary Deep Forest and Enigma,
+            and the track “Limes” using the hum and bouncy syncopation of a drum machine evokes memories of the best productions
+            of the Meyerhold Center, where illegal migrant workers dance to their own tune of techno concrete mixers in the middle of the construction site.
+          </p>
+          <p>
+            In the “RDMZ”, the cadence of machine tools at the Podolsk Car Factory clashes with the shouts of factory workers creating
+            the perfect polyphony, or maybe it’s the sounds of primitive tribal women crying out in their sleep while dreaming about capitalism.
+            “Shaman” transports you to the African wilderness, where crickets chirp and Ugandan shamans commune with the spirits.
+            There, in the land of rhinos and women wearing brightly colored dresses, the ER-2 electric train whisks passengers through the savannah,
+            while exhausted Podolsk factory workers doze off on uncomfortable wooden benches near the windows. Lulled to sleep by the rumble of wheels, they dream of warm sand.
+          </p>
+          <p>
+            Morakh’s music will take you on a journey through the faraway and mystical worlds. In his songs,
+            the sacred sadness of Peter Gabriel meets the Ordzhonikidze Car Factory and malnourished sparrows from the Talalikhin Park.
+          </p>
+          <p>
+            The release includes remixes from Kokokei, Ne tvoy drug, Glupyshka and Anderdog.
+            The release also will be available on limited edition cassettes 30 copies
+          </p>
         </div>
       </div>
     </div>
