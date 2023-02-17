@@ -104,26 +104,26 @@ export default {
           icon: 'bandcamp',
           link: 'https://mestnost.bandcamp.com/album/cherta-nova',
         },
-        // {
-        //   name: 'Apple Music',
-        //   icon: 'apple',
-        //   link: '',
-        // },
-        // {
-        //   name: 'Spotify',
-        //   icon: 'spotify',
-        //   link: ''
-        // },
-        // {
-        //   name: 'Yandex',
-        //   icon: 'yandex',
-        //   link: ''
-        // },
-        // {
-        //   name: 'Vk',
-        //   icon: 'vk',
-        //   link: ''
-        // },
+        {
+          name: 'Apple Music',
+          icon: 'apple',
+          link: 'https://music.apple.com/album/cherta-nova/1668490930',
+        },
+        {
+          name: 'Spotify',
+          icon: 'spotify',
+          link: 'https://open.spotify.com/album/3r8cQyACl6tZdgVt1WKyh9?si=j9zKpBzDSciYp3A9wNITfw'
+        },
+        {
+          name: 'Yandex',
+          icon: 'yandex',
+          link: 'https://music.yandex.ru/album/24918948'
+        },
+        {
+          name: 'Vk',
+          icon: 'vk',
+          link: 'https://vk.com/music/album/-2000347337_17347337_07c10ed3b80d043ea5'
+        },
       ],
     }
   },
