@@ -35,6 +35,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/DorogaVNebo',
+          artistName: 'Ko+Ma',
+          releaseName: 'Дорога в небо',
+          image: 'doroga_v_nebo',
+        },
+        {
           name: 'releases/ChertaNova',
           artistName: 'Andrey Rasputin',
           releaseName: 'Cherta-nova',

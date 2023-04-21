@@ -70,8 +70,8 @@ export default {
       const len = this.image.pixels.length
       // this.speedX = sketch.map(sketch.mouseX, 0, sketch.width, -15, 15);
       // this.speedY = sketch.map(sketch.mouseY, 0, sketch.width, -15, 15);
-      for (let i = 0; i < sketch.width; i += 6) {
-        for (let j = 0; j < sketch.height; j += 6) {
+      for (let i = 0; i < sketch.width; i += 4) {
+        for (let j = 0; j < sketch.height; j += 4) {
           const m = i + j * this.image.width
           let offset = this.warp(
             i,
