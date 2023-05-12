@@ -34,6 +34,12 @@ export default {
   data() {
     return {
       releases: [
+      {
+          name: 'releases/Xazy',
+          artistName: 'Ne Tvoy Drug',
+          releaseName: 'Xazy',
+          image: 'xazy',
+        },
         {
           name: 'releases/DorogaVNebo',
           artistName: 'Ko+Ma',

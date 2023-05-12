@@ -32,7 +32,7 @@
       <div class="col-md-12 mb-5">
         <img
           src="~/static/koma_face_2.jpg"
-          alt="rasputin"
+          alt="Koma"
           width="70%"
           height="auto"
         />
@@ -88,6 +88,32 @@
             from Anderdog, Morakh, Ne Tvoy Drug and Kisser.
           </p>
         </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/koma_doroga_v_nebo_cassette_1.jpg"
+          alt="koma doroga v nebo cassette 1"
+          width="90%"
+          height="auto"
+        />
+      </div>
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/koma_doroga_v_nebo_cassette_2.jpg"
+          alt="koma doroga v nebo cassette 2"
+          width="90%"
+          height="auto"
+        />
+      </div>
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/koma_doroga_v_nebo_cassette_3.jpg"
+          alt="koma doroga v nebo cassette 3"
+          width="90%"
+          height="auto"
+        />
       </div>
     </div>
   </div>
