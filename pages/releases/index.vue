@@ -34,7 +34,13 @@ export default {
   data() {
     return {
       releases: [
-      {
+        {
+          name: 'releases/GroundedRectangle',
+          artistName: 'Ambidextrous',
+          releaseName: 'Grounded Rectangle',
+          image: 'grounded_rectangle',
+        },
+        {
           name: 'releases/Xazy',
           artistName: 'Ne Tvoy Drug',
           releaseName: 'Xazy',

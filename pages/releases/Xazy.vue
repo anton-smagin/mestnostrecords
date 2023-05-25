@@ -83,7 +83,7 @@
 
 <script>
 export default {
-  name: 'RasputinChertaNova',
+  name: 'NeTvoyDrugXazy',
   data() {
     return {
       links: [
@@ -114,7 +114,7 @@ export default {
 </script>
 
 <style scoped>
-.koma-doroga-v-nebo {
+.ne-tvoy-drug-xazy {
   background-color: black;
   background-image: none;
 }
