@@ -130,21 +130,27 @@ export default {
           icon: 'bandcamp',
           link: 'https://mestnost.bandcamp.com/album/grounded-rectangle',
         },
-        // {
-        //   name: 'Spotify',
-        //   icon: 'spotify',
-        //   link: 'https://open.spotify.com/album/4fCK1iv4ayuFa9zxYpyN3x?si=PB5bddifQkG_RwklXyFQbg'
-        // },
-        // {
-        //   name: 'Yandex',
-        //   icon: 'yandex',
-        //   link: 'https://music.yandex.ru/album/25649512'
-        // },
-        // {
-        //   name: 'Vk',
-        //   icon: 'vk',
-        //   link: 'https://vk.com/music/album/-2000871493_17871493_03158b00f9c6ebe8d9'
-        // },
+        //
+        {
+          name: 'Spotify',
+          icon: 'spotify',
+          link: 'https://open.spotify.com/album/1hWTjBU22lb451Sh04tbH5?si=_i0ghAWUTHyO0teRbxfMBA'
+        },
+        {
+          name: 'Apple Music',
+          icon: 'apple',
+          link: 'https://music.apple.com/album/grounded-rectangle/1686636381',
+        },
+        {
+          name: 'Yandex',
+          icon: 'yandex',
+          link: 'https://music.yandex.ru/album/25740573'
+        },
+        {
+          name: 'Vk',
+          icon: 'vk',
+          link: 'https://vk.com/music/album/-2000933813_17933813_0ddee2e9b4bee423b5'
+        },
       ],
     }
   },
