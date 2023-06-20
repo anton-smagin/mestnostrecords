@@ -35,6 +35,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/SunInsteadOfHead',
+          artistName: 'Max Ananyev',
+          releaseName: 'Sun Instead Of Head',
+          image: 'sun_instead_of_head',
+        },
+        {
           name: 'releases/GroundedRectangle',
           artistName: 'Ambidextrous',
           releaseName: 'Grounded Rectangle',
