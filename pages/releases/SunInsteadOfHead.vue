@@ -79,26 +79,26 @@ export default {
           icon: 'bandcamp',
           link: 'https://mestnost.bandcamp.com/album/sun-instead-of-head',
         },
-        // {
-        //   name: 'Spotify',
-        //   icon: 'spotify',
-        //   link: 'https://open.spotify.com/album/1hWTjBU22lb451Sh04tbH5?si=_i0ghAWUTHyO0teRbxfMBA'
-        // },
-        // {
-        //   name: 'Apple Music',
-        //   icon: 'apple',
-        //   link: 'https://music.apple.com/album/grounded-rectangle/1686636381',
-        // },
-        // {
-        //   name: 'Yandex',
-        //   icon: 'yandex',
-        //   link: 'https://music.yandex.ru/album/25740573'
-        // },
-        // {
-        //   name: 'Vk',
-        //   icon: 'vk',
-        //   link: 'https://vk.com/music/album/-2000933813_17933813_0ddee2e9b4bee423b5'
-        // },
+        {
+          name: 'Spotify',
+          icon: 'spotify',
+          link: 'https://open.spotify.com/album/2F7RfHwZXKllHWVAoWvdUK?si=lzjAlk4IQKGHAayo5FupVA'
+        },
+        {
+          name: 'Apple Music',
+          icon: 'apple',
+          link: 'https://music.apple.com/album/sun-instead-of-head/1691230333',
+        },
+        {
+          name: 'Yandex',
+          icon: 'yandex',
+          link: 'https://music.yandex.ru/album/26047455'
+        },
+        {
+          name: 'Vk',
+          icon: 'vk',
+          link: 'https://vk.com/music/album/-2000136762_18136762_640f29a678d42b0206?act=album'
+        },
       ],
     }
   },
