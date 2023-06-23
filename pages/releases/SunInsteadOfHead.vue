@@ -60,8 +60,48 @@
             Мне хотелось, чтобы музыка создавала необычные художественные образы, пробуждала фантазию и дополняла привычную реальность».
           </p>
         </div>
+        <div class="description text-white mb-5">
+          <p>
+            The Sun Instead of Head album is a personal dedication of the author.
+            He is paying homage to the summer season and so it is quite fitting that the album gets released on the summer solstice.
+            “Summer is part of the natural cycle, the time when all living things become active, as the sun generously distributes its energy.
+            For me personally (and I think the same is true for many people out there), summer is the time of exploration.
+            We move around a lot, travel, experience and discover new things. I wanted to use music to convey this state of passionate search, this zest for life.
+            Perhaps that is why some songs sound a bit naive, a bit childish. Growing up, the passage of time is perceived differently.
+            The days seem longer because they are filled with all sorts of wonderful discoveries.
+            Some of the songs from the album were originally written as a score for the film installation titled “The Path of My Artist” directed by Natalia Poluyanova.
+            In this work, Natalia illustrates and explores the phenomenon of the inner child in the body of an adventurer.
+            I wanted the music to bring about intriguing and exciting artistic images, awaken imagination and enhance the familiar reality.”
+          </p>
+        </div>
         <div class="col-md-12">
-          <iframe src="https://player.vimeo.com/video/734328735?h=d8d77aa050" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://player.vimeo.com/video/734328735?h=d8d77aa050" width="100%" height="540" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-4 mt-5">
+            <img
+              src="~/static/max_ananyev_cassette_1.jpg"
+              alt="max ananyev sun instead of head cassette 1"
+              width="90%"
+              height="auto"
+            />
+          </div>
+          <div class="col-md-4 mt-5">
+            <img
+              src="~/static/max_ananyev_cassette_2.jpg"
+              alt="max ananyev sun instead of head cassette 2"
+              width="90%"
+              height="auto"
+            />
+          </div>
+          <div class="col-md-4 mt-5">
+            <img
+              src="~/static/max_ananyev_cassette_3.jpg"
+              alt="max ananyev sun instead of head cassette 3"
+              width="90%"
+              height="auto"
+            />
+          </div>
         </div>
       </div>
     </div>
