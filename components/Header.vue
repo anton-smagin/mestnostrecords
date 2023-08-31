@@ -23,6 +23,9 @@
             <NuxtLink class="btn text-nowrap" to="/releases">Релизы</NuxtLink>
           </div>
           <div class="col-sm-12" @click="menuShow = false">
+            <NuxtLink class="btn text-nowrap" to="/artists"></NuxtLink>
+          </div>
+          <div class="col-sm-12" @click="menuShow = false">
             <NuxtLink class="btn text-nowrap" to="/contacts">Контакты</NuxtLink>
           </div>
         </div>

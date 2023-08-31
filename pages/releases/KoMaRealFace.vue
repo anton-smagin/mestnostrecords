@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/koma1.jpeg"
+          src="~/static/koma_face.jpg"
           alt="anderdog"
           width="70%"
           height="auto"

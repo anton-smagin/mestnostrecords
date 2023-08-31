@@ -32,7 +32,7 @@
       <div class="col-md-12 mb-5">
         <img
           src="~/static/max_ananyev_face.jpg"
-          alt="Ambidextrous"
+          alt="Max Ananyev"
           width="70%"
           height="auto"
         />

@@ -34,6 +34,12 @@ export default {
   data() {
     return {
       releases: [
+      {
+          name: 'releases/FieldsOfDomodevskaya',
+          artistName: 'Kisser',
+          releaseName: 'Fileds of Domodevskaya',
+          image: 'fields_of_domodevskaya',
+        },
         {
           name: 'releases/SunInsteadOfHead',
           artistName: 'Max Ananyev',
