@@ -82,7 +82,27 @@ export default {
         {
           name: 'Bandcamp',
           icon: 'bandcamp',
-          link: 'https://mestnost.bandcamp.com/album/fields-of-domodevskaya',
+          link: 'https://mestnost.bandcamp.com/album/fields-of-domodedovskaya',
+        },
+        {
+          name: 'Apple Music',
+          icon: 'apple',
+          link: 'https://music.apple.com/ge/album/fields-of-domodedovskaya/1701201651'
+        },
+        {
+          name: 'Spotify',
+          icon: 'spotify',
+          link: 'https://open.spotify.com/album/6GlGxhSTyfObV3YBI2Y5r3?si=dtHYHH8sQu2t4u-fw1Mpmw'
+        },
+        {
+          name: 'Yandex',
+          icon: 'yandex',
+          link: 'https://music.yandex.com/album/26857323'
+        },
+        {
+          name: 'Vk',
+          icon: 'vk',
+          link: 'https://vk.com/music/album/-2000577762_18577762'
         },
       ],
     }
