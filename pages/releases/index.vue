@@ -34,10 +34,16 @@ export default {
   data() {
     return {
       releases: [
-      {
+        {
+          name: 'releases/KokokeiMandarin',
+          artistName: 'Kokokei',
+          releaseName: 'Mandarin',
+          image: 'mandarin',
+        },
+        {
           name: 'releases/FieldsOfDomodevskaya',
           artistName: 'Kisser',
-          releaseName: 'Fileds of Domodevskaya',
+          releaseName: 'Fields of Domodevskaya',
           image: 'fields_of_domodevskaya',
         },
         {

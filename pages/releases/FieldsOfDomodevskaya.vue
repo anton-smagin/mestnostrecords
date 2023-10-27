@@ -70,6 +70,32 @@
         </div>
       </div>
     </div>
+    <div class="row mb-5">
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/fields_of_domodedovskaya_cassette_1.jpg"
+          alt="fields of domodedovskaya cassette 1"
+          width="90%"
+          height="auto"
+        />
+      </div>
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/fields_of_domodedovskaya_cassette_2.jpg"
+          alt="fields of domodedovskaya cassette 2"
+          width="90%"
+          height="auto"
+        />
+      </div>
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/fields_of_domodedovskaya_cassette_3.jpg"
+          alt="fields of domodedovskaya cassette 3"
+          width="90%"
+          height="auto"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
