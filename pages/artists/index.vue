@@ -5,14 +5,16 @@
         <div
           v-for="artist in artists"
           :key="`${artist.name}`"
-          class="col-md-4 col-sm-6 col-xs-12"
+          class="col-md-4 col-sm-6 col-xs-12 align-items-center"
         >
-          <div class="mb-1 align-middle ">
-            <img :src="require(`~/static/${artist.photo}_face.jpg`)" class="crop" />
-          </div>
-          <div class="text-white">
-            <p class="description">{{ artist.name }}</p>
-          </div>
+          <NuxtLink class="btn" :to="`/${artist.link}`">
+            <div class="mb-1 align-middle ">
+              <img :src="require(`~/static/${artist.photo}_face.jpg`)" class="crop" />
+            </div>
+            <div class="text-white">
+              <p class="description">{{ artist.name }}</p>
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -29,60 +31,64 @@ export default {
         {
           name: 'Kisser',
           photo: 'kisser',
+          link: 'releases/FieldsOfDomodevskaya'
         },
         {
           name: 'Max Ananyev',
           photo: 'max_ananyev',
-        },
-        {
-          name: 'Ambidextrous',
-          photo: 'ambidextrous',
+          link: 'releases/SunInsteadOfHead'
         },
         {
           name: 'Ne Tvoy Drug',
           photo: 'ne_tvoy_drug',
+          link: 'releases/Xazy'
         },
         {
           name: 'Ko+Ma',
           photo: 'koma',
+          link: 'releases/DorogaVNebo'
         },
         {
           name: 'Andrey Rasputin',
           photo: 'rasputin',
+          link: 'releases/ChertaNova'
         },
         {
           name: 'Kokokei',
           photo: 'kokokei',
+          link: 'releases/KokokeiMandarin'
         },
         {
           name: 'Anderdog and Andrey Leto',
           photo: 'anderdogandreyleto',
+          link: 'releases/AnderdogAndreyLeto'
         },
         {
           name: 'Morakh',
           photo: 'morakh',
+          link: 'releases/MorakhLimes'
         },
         {
           name: 'Vvvedenskaya',
           photo: 'vvvedenskaya',
+          link: 'releases/VvvedenskayaAttempts'
         },
         {
           name: 'Microdog',
           photo: 'microdog',
+          link: 'releases/MicrodogEastSide'
         },
         {
           name: 'Ambidextrous',
           photo: 'ambidextrous',
-        },
-        {
-          name: 'Ko+Ma',
-          photo: 'koma',
+          link: 'releases/GroundedRectangle'
         },
         {
           name: 'Anderdog',
           photo: 'anderdog',
+          link: 'releases/AnderdogKelgoma'
         },
-      ],
+      ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
   },
   methods: {},
@@ -107,5 +113,11 @@ export default {
 
 .artist {
   padding: 16px;
+}
+
+.crop {
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
 }
 </style>

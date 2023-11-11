@@ -74,7 +74,7 @@ export default {
         {
           name: 'Bandcamp',
           icon: 'bandcamp',
-          link: 'https://mestnost.bandcamp.com/album/mimoza',
+          link: 'https://mestnost.bandcamp.com/album/mandarin',
         },
         {
           name: 'Apple Music',

@@ -6,7 +6,6 @@
           v-for="release in releases"
           :key="`${release.name}.sketch`"
           class="col-md-4 col-sm-6 col-xs-12 sketch align-items-center"
-          @click="openReleasePage(release.name)"
         >
           <NuxtLink class="btn" :to="`/${release.name}`">
             <PfiveSketch :image-title="`${release.image}`" class="p5-sketch" />
@@ -134,13 +133,7 @@ export default {
       releasePage: null,
       showReleasePage: false,
     }
-  },
-  methods: {
-    openReleasePage(releaseName) {
-      this.releasePage = releaseName
-      this.showReleasePage = true
-    },
-  },
+  }
 }
 </script>
 
