@@ -12,7 +12,7 @@
             <div
               v-for="link in links"
               :key="link.name"
-              class="store-link col-md-4 mt-5 text-nowrap"
+              class="store-link col-lg-4 col-md-6 mt-5 text-nowrap"
             >
               <font-awesome-icon
                 :icon="['fab', link.icon]"
@@ -60,6 +60,32 @@
           <p>The final vision of the album was achieved in the Soundartist studio in the autumn of 2022. Kostya worked on the mixing and mastering together with Fedor Vetkalov  — a popularizer of modular synthesizers, a teacher, and a musician who assembled setups for Zurkas Tepla, Mujuice, Electric Dog, and other artists and also collaborated as a consultant with Martin Gore and Trent Reznor.</p>
           <p>The release will be available in limited edition. Each cassette will contain a mandarin leaf — a message from the past and a physical imprint of that very mountain village.</p>
         </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/mandarin_cassette_1.jpg"
+          alt="mandarin cassette 1"
+          width="90%"
+          height="auto"
+        />
+      </div>
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/mandarin_cassette_2.jpg"
+          alt="mandarin cassette 2"
+          width="90%"
+          height="auto"
+        />
+      </div>
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/mandarin_cassette_3.jpg"
+          alt="mandarin cassette 3"
+          width="90%"
+          height="auto"
+        />
       </div>
     </div>
   </div>

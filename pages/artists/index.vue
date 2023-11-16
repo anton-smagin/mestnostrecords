@@ -86,7 +86,7 @@ export default {
         {
           name: 'Anderdog',
           photo: 'anderdog',
-          link: 'releases/AnderdogKelgoma'
+          link: 'releases/DogEatDog'
         },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
@@ -117,7 +117,14 @@ export default {
 
 .crop {
   object-fit: cover;
-  width: 230px;
-  height: 230px;
+  width: 280px;
+  height: 280px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .crop {
+    width: 210px;
+    height: 210px;
+  }
 }
 </style>
