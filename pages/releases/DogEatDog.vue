@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/anderdog_face_dog_eat_dog.jpeg"
+          src="~/static/anderdog_face_dog_eat.jpeg"
           alt="anderdog"
           width="50%"
           height="auto"
