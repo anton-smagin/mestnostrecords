@@ -34,6 +34,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/YaBilSputnicomSolnca',
+          artistName: 'Yella Gin',
+          releaseName: 'Я Был Спутником Солнца',
+          image: 'yella_gin_ya_bil_sputnicom_solnca',
+        },
+        {
           name: 'releases/DogEatDog',
           artistName: 'Anderdog',
           releaseName: 'Dog Eat Dog',

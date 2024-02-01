@@ -88,6 +88,11 @@ export default {
           photo: 'anderdog',
           link: 'releases/DogEatDog'
         },
+        {
+          name: 'Yella Gin',
+          photo: 'yella_gin',
+          link: 'releases/YaBilSputnicomSolnca'
+        },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
   },
