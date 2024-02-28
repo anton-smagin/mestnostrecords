@@ -93,6 +93,11 @@ export default {
           photo: 'yella_gin',
           link: 'releases/YaBilSputnicomSolnca'
         },
+        {
+          name: 'Raveny x Morphtables',
+          photo: 'raveny_morphtables',
+          link: 'releases/BosporusAcident'
+        },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
   },

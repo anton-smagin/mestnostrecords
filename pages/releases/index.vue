@@ -34,6 +34,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/BosporusAcident',
+          artistName: 'Raveny x Morphtables',
+          releaseName: 'Bosporus Acident',
+          image: 'bosporus_accident',
+        },
+        {
           name: 'releases/YaBilSputnicomSolnca',
           artistName: 'Yella Gin',
           releaseName: 'Я Был Спутником Солнца',
