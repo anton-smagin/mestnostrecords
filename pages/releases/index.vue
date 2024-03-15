@@ -34,6 +34,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/DogRemixDog',
+          artistName: 'Anderdog',
+          releaseName: 'Dog Remix Dog',
+          image: 'dog_remix_dog',
+        },
+        {
           name: 'releases/BosporusAcident',
           artistName: 'Raveny x Morphtables',
           releaseName: 'Bosporus Acident',
