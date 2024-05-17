@@ -34,6 +34,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/Helix',
+          artistName: 'Morakh',
+          releaseName: 'Helix',
+          image: 'helix',
+        },
+        {
           name: 'releases/DogRemixDog',
           artistName: 'Anderdog',
           releaseName: 'Dog Remix Dog',
