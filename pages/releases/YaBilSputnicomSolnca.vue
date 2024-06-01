@@ -85,6 +85,65 @@
             <i>Press release: Sonya Shpilberg</i><br>
           </p>
         </div>
+        <div class="row mb-5 mt-5">
+          <div class="col-md-12">
+            <div class="description text-white mb-5">
+              <p>
+                Ты становишься старше, краски тускнеют, трезвость кладет на лопатки мечты, и эйфория юности конвертируется в тихую мудрость.
+                Это время, когда пора смаковать жизнь как хорошее вино, растворяя в сердце воспоминания.
+              </p>
+              <p>
+                Свежий релиз «Местности» от Ne Tvoy Drug под названием Xazy – то самое «шато марго», под пробкой которого хранятся сокровенные переживания,
+                по прошествии лет ставшие только еще более изысканными. «Я свел и записал этот альбом в 2021 году, с тех пор он стал звучать более размыто и отстраненно,
+                для меня это попытка зафиксировать эмоции и забытые воспоминания, а название Xazy отсылает к наивности и чистоте прошлых переживаний», - рассказывает автор альбома Антон Смагин,
+                сооснователь Местности, он же Ne Tvoy Drug.
+              </p>
+              <p>
+                Главной музыкальной идеей Xazy стала попытка совместить живые инструменты и электронную музыку.
+                Поэтому в треках много гитар, педалей, синтезаторов, перкуссий и отдаленных речитативов, слушая которые хочется надеть футболку с культовым принтом Joy Division и отправиться на концерт любимой построковой группы юности.
+                Все это делает альбом очень атмосферным и болезненно искренним. Впрочем, так и должно быть, музыка – самый загадочный проводник к тому, что существует вопреки рациональному.
+              </p>
+              <p class="mt-5">
+                As you get older, the colors start to fade, sobriety snuffs out your dreams, and the
+                euphoria of youth slowly transitions into quiet wisdom. This is the time to
+                start savoring life like fine wine, setting the memories in your heart free. The
+                latest release of the Mestnost label by Ne Tvoy Drug called Xazy is the quintessential
+                “Chateau Margaux”, hiding behind its cork the innermost thoughts and feelings
+                that over the years have only become more refined. “I mixed and recorded this
+                album in 2021. Ever since then, it has begun to sound more obscure and distant.
+                For me, it was an attempt to capture emotions and forgotten memories, and the
+                name Xazy refers to the naivete and innocence of past experiences,” shares the
+                author of the album Anton Smagin, Mestnost co-founder, aka Ne Tvoy Drug.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-4 mt-5">
+            <img
+              src="~/static/yella_gin_cassette_1.jpg"
+              alt="yella_gin_cassette_1"
+              width="90%"
+              height="auto"
+            />
+          </div>
+          <div class="col-md-4 mt-5">
+            <img
+              src="~/static/yella_gin_cassette_2.jpg"
+              alt="yella_gin_cassette_2"
+              width="90%"
+              height="auto"
+            />
+          </div>
+          <div class="col-md-4 mt-5">
+            <img
+              src="~/static/yella_gin_cassette_3.jpg"
+              alt="yella_gin_cassette_3"
+              width="90%"
+              height="auto"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>

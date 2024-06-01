@@ -6,6 +6,7 @@ import {
   faBandcamp,
   faSpotify,
   faVk,
+  faFacebook
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -14,4 +15,5 @@ library.add(faYandex)
 library.add(faBandcamp)
 library.add(faSpotify)
 library.add(faVk)
+library.add(faFacebook)
 Vue.component('FontAwesomeIcon', FontAwesomeIcon)

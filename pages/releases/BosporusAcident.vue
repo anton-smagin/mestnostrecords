@@ -87,6 +87,32 @@
         </div>
       </div>
     </div>
+    <div class="row mb-5">
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/bosporus_accident_cassette_1.jpg"
+          alt="bosporus_accident_cassette_1"
+          width="90%"
+          height="auto"
+        />
+      </div>
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/bosporus_accident_cassette_2.jpg"
+          alt="bosporus_accident_cassette_1"
+          width="90%"
+          height="auto"
+        />
+      </div>
+      <div class="col-md-4 mt-5">
+        <img
+          src="~/static/bosporus_accident_cassette_3.jpg"
+          alt="bosporus_accident_cassette_3"
+          width="90%"
+          height="auto"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
