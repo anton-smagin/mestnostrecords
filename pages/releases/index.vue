@@ -34,6 +34,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/ShinraBanshou',
+          artistName: 'HAJIME KOJIRO',
+          releaseName: 'SHINRA BANSHOU',
+          image: 'shinra_banshou',
+        },
+        {
           name: 'releases/Helix',
           artistName: 'Morakh',
           releaseName: 'Helix',

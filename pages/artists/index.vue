@@ -98,6 +98,11 @@ export default {
           photo: 'raveny_morphtables',
           link: 'releases/BosporusAcident'
         },
+        {
+          name: 'HAJIME KOJIRO',
+          photo: 'hajime_kojiro',
+          link: 'releases/ShinraBanshou'
+        },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
   },
