@@ -1,5 +1,5 @@
 <template>
-  <div class="fields-of-domodevskaya w-100">
+  <div class="munk-21-06-24 w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
         <img src="~/static/21-06-24-munk.jpg" width="80%" />
@@ -56,7 +56,7 @@
 
 <script>
 export default {
-  name: 'FieldsOfDomodevskaya',
+  name: 'MunkBar210624',
   data() {
     return {
       links: [
@@ -83,7 +83,7 @@ export default {
 </script>
 
 <style scoped>
-.fields-of-domodevskaya {
+.munk-21-06-24 {
   background-color: black;
   background-image: none;
 }

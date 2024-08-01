@@ -28,11 +28,16 @@ export default {
   data() {
     return {
       events: [
+      {
+          name: 'Munk 24-08-24',
+          photo: '24-08-24-munk',
+          link: 'events/24-08-24-Munk'
+        },
         {
           name: 'Munk 21-06-24',
           photo: '21-06-24-munk',
           link: 'events/21-06-24-Munk'
-        },
+        }
       ]
     }
   },
@@ -61,7 +66,7 @@ export default {
 }
 
 .crop {
-  object-fit: cover;
+  object-fit: contain;
   width: 280px;
   height: 280px;
 }
