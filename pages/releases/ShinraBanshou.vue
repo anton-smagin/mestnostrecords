@@ -158,6 +158,11 @@ export default {
           icon: 'yandex',
           link: 'https://music.yandex.ru/album/31469612',
         },
+        {
+          name: 'Vk',
+          icon: 'vk',
+          link: 'https://vk.com/music/album/-2000989014_20989014_e53aa0f44646eca520?act=album',
+        },
       ],
     }
   },

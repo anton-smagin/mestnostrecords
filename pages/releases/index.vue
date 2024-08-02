@@ -33,6 +33,12 @@ export default {
   data() {
     return {
       releases: [
+      {
+          name: 'releases/NewLife',
+          artistName: 'DJ HeadSick',
+          releaseName: 'New Life',
+          image: 'new_life',
+        },
         {
           name: 'releases/ShinraBanshou',
           artistName: 'HAJIME KOJIRO',

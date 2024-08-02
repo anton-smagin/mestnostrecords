@@ -103,6 +103,11 @@ export default {
           photo: 'hajime_kojiro',
           link: 'releases/ShinraBanshou'
         },
+        {
+          name: 'DJ HeadSick',
+          photo: 'dj_headsick',
+          link: 'releases/NewLife'
+        },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
   },
