@@ -33,7 +33,13 @@ export default {
   data() {
     return {
       releases: [
-      {
+        {
+          name: 'releases/Quietud',
+          artistName: 'Ilya Orange',
+          releaseName: 'Quietud',
+          image: 'quietud',
+        },
+        {
           name: 'releases/NewLife',
           artistName: 'DJ HeadSick',
           releaseName: 'New Life',

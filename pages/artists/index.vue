@@ -108,6 +108,11 @@ export default {
           photo: 'dj_headsick',
           link: 'releases/NewLife'
         },
+        {
+          name: 'Ilya Orange',
+          photo: 'ilya_orange',
+          link: 'releases/Quietud'
+        },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
   },

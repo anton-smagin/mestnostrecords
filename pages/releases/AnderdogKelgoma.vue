@@ -137,6 +137,22 @@ export default {
       ],
     }
   },
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: '~/static/anderdog_kelgoma.jpg'
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Anderdog - Kelgoma'
+        }
+      ]
+    }
+  }
 }
 </script>
 
