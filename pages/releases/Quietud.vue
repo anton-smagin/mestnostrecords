@@ -79,6 +79,26 @@ export default {
           icon: 'bandcamp',
           link: 'https://mestnost.bandcamp.com/album/quietud',
         },
+        {
+          name: 'Apple Music',
+          icon: 'apple',
+          link: 'https://music.apple.com/us/album/quietud/1773163407',
+        },
+        {
+          name: 'Spotify',
+          icon: 'spotify',
+          link: 'https://open.spotify.com/album/5VW2Q6W9S1vf87Vobigdhn',
+        },
+        {
+          name: 'Yandex',
+          icon: 'yandex',
+          link: 'https://music.yandex.ru/album/33612841',
+        },
+        {
+          name: 'Vk',
+          icon: 'vk',
+          link: 'https://vk.com/music/album/-2000168199_22168199_564e9bb5e8adf9c10f',
+        },
       ],
     }
   },
