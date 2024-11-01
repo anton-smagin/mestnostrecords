@@ -34,6 +34,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/KoMaKokokeiDorogaVNebo',
+          artistName: 'Ko+Ma',
+          releaseName: 'Дорога в небо (Kokokei Edit)',
+          image: 'doroga_v_nebo_kokokei_edit',
+        },
+        {
           name: 'releases/Quietud',
           artistName: 'Ilya Orange',
           releaseName: 'Quietud',

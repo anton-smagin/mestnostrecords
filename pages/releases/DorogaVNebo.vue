@@ -122,7 +122,7 @@
 
 <script>
 export default {
-  name: 'RasputinChertaNova',
+  name: 'DorogaVNebo',
   data() {
     return {
       links: [
