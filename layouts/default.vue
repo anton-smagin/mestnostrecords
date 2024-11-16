@@ -77,7 +77,7 @@ html {
 }
 
 .home {
-  background: url('/background.jpg') no-repeat center center fixed;
+  background: url('/background.jpg') no-repeat center center fixed !important;
   background-size: cover;
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 mt-3">
         <h1>МЕСТНОСТЬ</h1>
       </div>
       <div class="col-md-12">
@@ -44,7 +44,7 @@ export default {
 
 <style scoped>
 .about {
-  background: url('/background.jpg') no-repeat center center fixed;
+  background: url('/background.jpg') no-repeat center center fixed !important;
   background-size: cover;
 }
 
@@ -53,7 +53,7 @@ h1 {
 }
 
 .description {
-  margin: 8% 10%;
+  margin: 3% 10%;
   letter-spacing: 0.2em;
   line-height: 2em;
   font-family: Acrom, sans-serif;
