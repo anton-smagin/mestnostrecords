@@ -124,6 +124,11 @@ export default {
           link: 'https://open.spotify.com/album/4fCK1iv4ayuFa9zxYpyN3x?si=PB5bddifQkG_RwklXyFQbg'
         },
         {
+          name: 'Apple',
+          icon: 'apple',
+          link: 'https://music.apple.com/ge/album/xazy-ep/1695709748'
+        },
+        {
           name: 'Yandex',
           icon: 'yandex',
           link: 'https://music.yandex.ru/album/25649512'

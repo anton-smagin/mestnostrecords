@@ -34,6 +34,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/Veter',
+          artistName: 'Ne Tvoy Drug',
+          releaseName: 'Veter',
+          image: 'veter',
+        },
+        {
           name: 'releases/KoMaKokokeiDorogaVNebo',
           artistName: 'Ko+Ma',
           releaseName: 'Дорога в небо (Kokokei Edit)',

@@ -35,7 +35,7 @@ export default {
     noisePositionX: [0, 0, 0],
     noisePositionY: [0, 0, 0],
     noiseProgress: [0.001, 0.002, 0.003],
-    noiseScale: 0.002,
+    noiseScale: 0.008,
     simplexNoise: createNoise2D(),
     speedX: 1,
     speedY: 1,
