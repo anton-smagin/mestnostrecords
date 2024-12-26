@@ -53,9 +53,13 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     '@nuxtjs/yandex-metrika',
+    '@nuxtjs/sitemap',
   ],
   yandexMetrika: {
     id: '73630327',
+  },
+  sitemap: {
+    hostname: 'https://mestnostrecords.com',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
