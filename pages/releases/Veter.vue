@@ -101,6 +101,32 @@
             geography proved to be a plentiful source of inspiration.
           </p>
         </div>
+        <div class="row mb-5">
+          <div class="col-md-4 mt-5">
+            <img
+              src="~/static/veter_cassette_1.jpg"
+              alt="veter cassette 1"
+              width="90%"
+              height="auto"
+            />
+          </div>
+          <div class="col-md-4 mt-5">
+            <img
+              src="~/static/veter_cassette_2.jpg"
+              alt="veter cassette 2"
+              width="90%"
+              height="auto"
+            />
+          </div>
+          <div class="col-md-4 mt-5">
+            <img
+              src="~/static/veter_cassette_3.jpg"
+              alt="veter cassette 3"
+              width="90%"
+              height="auto"
+            />
+          </div>
+        </div> 
       </div>
     </div>
   </div>

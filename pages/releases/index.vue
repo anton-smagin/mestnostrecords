@@ -34,6 +34,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/Imagine',
+          artistName: 'Anderdog and Dessin Bizarre',
+          releaseName: 'Imagine',
+          image: 'imagine',
+        },
+        {
           name: 'releases/Veter',
           artistName: 'Ne Tvoy Drug',
           releaseName: 'Veter',

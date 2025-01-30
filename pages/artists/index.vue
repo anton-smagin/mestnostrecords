@@ -113,6 +113,11 @@ export default {
           photo: 'ilya_orange',
           link: 'releases/Quietud'
         },
+        {
+          name: 'Dessin Bizarre',
+          photo: 'dessin_bizarre',
+          link: 'releases/FieldsOfDomodevskaya'
+        },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
   },
