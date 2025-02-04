@@ -90,11 +90,11 @@ export default {
           icon: 'yandex',
           link: 'https://music.yandex.ru/album/35109734'
         },
-        // {
-        //   name: 'Vk',
-        //   icon: 'vk',
-        //   link: 'https://vk.com/music/album/-2000689138_22689138_647bd77ed9c803cae4'
-        // },
+        {
+          name: 'Vk',
+          icon: 'vk',
+          link: 'https://vk.com/music/album/-2000056271_23056271_0586698e14d7f061f0'
+        },
       ],
     }
   },

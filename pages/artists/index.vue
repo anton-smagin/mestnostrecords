@@ -116,7 +116,7 @@ export default {
         {
           name: 'Dessin Bizarre',
           photo: 'dessin_bizarre',
-          link: 'releases/FieldsOfDomodevskaya'
+          link: 'releases/Imagine'
         },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
