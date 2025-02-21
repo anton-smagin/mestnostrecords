@@ -103,7 +103,7 @@
 
 <script>
 export default {
-  name: 'Helix',
+  name: 'HelixMorakh',
   data() {
     return {
       links: [

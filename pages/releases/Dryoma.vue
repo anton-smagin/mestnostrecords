@@ -26,16 +26,16 @@
         </div>
       </div>
     </div>
-    <!-- <div class="row">
+    <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/hajime_kojiro_face.jpg"
+          src="~/static/vseslav_face.jpg"
           alt="hajime kojiro"
-          width="70%"
+          width="30%"
           height="auto"
         />
       </div>
-    </div> -->
+    </div>
     <div class="row mb-5 mt-5">
         <div class="col-md-6 offset-md-2">
           <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=932831690/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
@@ -47,21 +47,22 @@
       <div class="col-md-12">
         <div class="description text-white mb-5">
           <p>
-            Станислав Севостьянихин известен в музыкальном мире как Dissident, автор экспериментальных drum’n’bass треков, 
-            выходивших на легендарном лейбле Renegade Hardware. Всеславь – новый проект музыканта в жанре эмбиента, 
-            где автор исследует музыку как состояние. Вкрадчивые, но наполненные вибрацией треки, 
-            отсылают к лучшим традициям адептов советского синтезатора АНС. «Хоровод светил», «59-й уровень плотности» или 
-            «Хрусталики растворяются» могли быть написаны только тем, кто родился в СССР, с чистыми мечтами о космосе, 
-            теплой ностальгией и изменившим наши ДНК «Солярисом» Тарковского. В альбоме проглядывает тот самый «мамлеевский» Петербург, 
-            где за отреставрированными фасадами таится мистическая, пыльная сепия дворов-колодцев, коммуналок. 
-            «В альбоме я постарался подчеркнуть звуком текстурность подобной атмосферы, ее «сырость», 
-            и именно даб-эмбиент подходит для передачи такого ощущения как никакой другой стиль», - рассказывает автор.
+            Станислав Севостьянихин известен в музыкальном мире как Dissident, автор экспериментальных drum’n’bass треков, выходивших на лейблах Renegade Hardware, Offshore, Hospital, Subtle Audio, KOS.MOS, Hyperboloid, Subvert Central, ~scape, Subtle Audio и многих других. 
+            Стас также известен по проектам Kontext, Dissonance, Битый Сектор, ОСВЕТ и Трэш-шапито КАЧ.
+          </p>
+          <p>
+            ВСЕСЛАВЪ – новый проект музыканта в жанре эмбиента, где автор исследует музыку как состояние. 
+            Вкрадчивые, но наполненные вибрацией треки, отсылают к лучшим традициям адептов советского синтезатора АНС. 
+            «Хоровод светил», «59-й уровень плотности» или «Хрусталики растворяются» могли быть написаны только тем, кто родился в СССР, с чистыми мечтами о космосе, теплой ностальгией и изменившим наши ДНК «Солярисом» Тарковского. 
+            В альбоме проглядывает тот самый «мамлеевский» Петербург, где за отреставрированными фасадами таится мистическая, пыльная сепия дворов-колодцев, коммуналок. 
+            «В альбоме я постарался подчеркнуть звуком текстурность подобной атмосферы, ее «сырость», и именно даб-эмбиент подходит для передачи такого ощущения как никакой другой стиль», - рассказывает автор.
           </p>
           <p>
             На самом деле Стас – представитель того поколения электронных музыкантов, которое в России называют и ветеранами, и пионерами одновременно. 
             Он взрослел в 90-е в Петербурге. 
             Время отчаянной идентификации, уличных драк, клубов и разгула свободы. 
-            На школьный выпускной он не пошел – играл диджей-сет в клубе. Выпускной в Институте кино и телевидения, где учился на звукорежиссера, тоже пропустил – играл диджей-сет в клубе. 
+            На школьный выпускной он не пошел – играл диджей-сет в клубе. 
+            Выпускной в Институте кино и телевидения, где учился на звукорежиссера, тоже пропустил – играл диджей-сет в клубе. 
             На районе ребята, слушавшие на кассетнике Onyx, вопросительно провожали взглядом Стаса, который спешил на очередную вечеринку в привычном образе «рейвера» или «кислотника», как тогда называли «клубных».
           </p>
           <p>
@@ -76,13 +77,9 @@
         </div>
         <div class="description text-white mb-5">
           <p>
-            Stanislav Sevostyanikhin is known in the music world as Dissident, the author of experimental drum’n’bass tracks released on the legendary label Renegade Hardware. 
-            Vseslav is the musician’s new ambient project, where he explores music as a state of being. 
-            Subtle yet vibration-filled tracks evoke the best traditions of the Soviet ANS synthesizer pioneers. 
-            Tracks like “Khorovod Svetil” (“Round Dance of Luminaries”), “59-y Uroven’ Plotnosti” (“59th Level of Density”), 
-            or “Khrustaliki Rastvoryayutsya” (“Crystals Dissolve”) could only have been created by someone born in the USSR, with pure dreams of space, warm nostalgia, and the DNA-altering influence of Tarkovsky’s “Solaris.” The album subtly reflects the “Mamleev-esque” St. 
-            Petersburg, where behind restored facades lies the mystical, dusty sepia of courtyard wells and communal apartments. 
-            “In the album, I tried to emphasize the textural atmosphere, its ‘rawness,’ and dub ambient is the perfect style to convey such a feeling,” the author explains.
+            Stanislav Sevostyanikhin is known in the music world as Dissident, the creator of experimental drum’n’bass tracks released on labels such as Renegade Hardware, 
+            Offshore, Hospital, Subtle Audio, KOS.MOS, Hyperboloid, Subvert Central, ~scape, Subtle Audio, and many others. 
+            Stas is also known for his projects Kontext, Dissonance, Битый Сектор (Broken Sector), ОСВЕТ (OSVET), and Трэш-шапито КАЧ (Trash-Chapito KACH).
           </p>
           <p>
             In fact, Stas is a representative of that generation of electronic musicians in Russia who are called both veterans and pioneers at the same time. 
