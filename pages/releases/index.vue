@@ -34,6 +34,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/Dryoma',
+          artistName: 'ВСЕСЛАВЪ',
+          releaseName: 'Дрёма',
+          image: 'dryoma',
+        },
+        {
           name: 'releases/Imagine',
           artistName: 'Anderdog and Dessin Bizarre',
           releaseName: 'Imagine',
