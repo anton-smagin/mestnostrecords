@@ -118,6 +118,21 @@ export default {
           photo: 'dessin_bizarre',
           link: 'releases/Imagine'
         },
+        {
+          name: 'ВСЕСЛАВЪ',
+          photo: 'vseslav',
+          link: 'releases/Dryoma'
+        },
+        {
+          name: 'H. Ruine',
+          photo: 'h_ruine',
+          link: 'releases/ImaginedAwakenings'
+        },
+        {
+          name: 'Mikhail Kireev',
+          photo: 'mikhail_kireev',
+          link: 'releases/ImaginedAwakenings'
+        },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
   },

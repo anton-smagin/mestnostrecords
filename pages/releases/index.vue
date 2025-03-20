@@ -34,6 +34,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/ImaginedAwakenings',
+          artistName: 'H. Ruine / MIKHAIL KIREEV',
+          releaseName: 'Imagined / Awakenings',
+          image: 'imagined_awakenings',
+        },
+        {
           name: 'releases/Dryoma',
           artistName: 'ВСЕСЛАВЪ',
           releaseName: 'Дрёма',

@@ -61,6 +61,32 @@
         </div>
       </div>
     </div>
+    <div class="row mb-5">
+        <div class="col-md-4 mt-5">
+          <img
+            src="~/static/anderdog_bizarre_cassette_1.jpg"
+            alt="anderdog bizarre cassette 1"
+            width="90%"
+            height="auto"
+          />
+        </div>
+        <div class="col-md-4 mt-5">
+          <img
+            src="~/static/anderdog_bizarre_cassette_2.jpg"
+            alt="anderdog bizarre cassette 2"
+            width="90%"
+            height="auto"
+          />
+        </div>
+        <div class="col-md-4 mt-5">
+          <img
+            src="~/static/anderdog_bizarre_cassette_3.jpg"
+            alt="anderdog bizarre cassette 3"
+            width="90%"
+            height="auto"
+          />
+        </div>
+      </div> 
   </div>
 </template>
 

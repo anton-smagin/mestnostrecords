@@ -30,7 +30,7 @@
       <div class="col-md-12 mb-5">
         <img
           src="~/static/vseslav_face.jpg"
-          alt="hajime kojiro"
+          alt="Vseslav"
           width="30%"
           height="auto"
         />
@@ -99,6 +99,32 @@
             Stas knows how to do things “normally” while always remaining an independent artist.
           </p>
         </div>
+        <div class="row mb-5">
+          <div class="col-md-4 mt-5">
+            <img
+              src="~/static/vseslav_cassette_1.jpg"
+              alt="anderdog bizarre cassette 1"
+              width="90%"
+              height="auto"
+            />
+          </div>
+          <div class="col-md-4 mt-5">
+            <img
+              src="~/static/vseslav_cassette_2.jpg"
+              alt="anderdog bizarre cassette 2"
+              width="90%"
+              height="auto"
+            />
+          </div>
+          <div class="col-md-4 mt-5">
+            <img
+              src="~/static/vseslav_cassette_3.jpg"
+              alt="anderdog bizarre cassette 3"
+              width="90%"
+              height="auto"
+            />
+          </div>
+        </div> 
       </div>
     </div>
   </div>
