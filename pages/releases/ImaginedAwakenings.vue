@@ -158,26 +158,26 @@ export default {
           icon: 'bandcamp',
           link: 'https://mestnost.bandcamp.com/album/imagined-awakenings',
         },
-        // {
-        //   name: 'Apple Music',
-        //   icon: 'apple',
-        //   link: 'https://music.apple.com/ge/album/%D0%B4%D1%80%D1%91%D0%BC%D0%B0/1794819236',
-        // },
-        // {
-        //   name: 'Spotify',
-        //   icon: 'spotify',
-        //   link: 'https://open.spotify.com/album/0oi4aLkKXIaN9Q4IffVP8u?si=Pw4xaAQvSrikYAqsDAXpIQ',
-        // },
-        // {
-        //   name: 'Yandex',
-        //   icon: 'yandex',
-        //   link: 'https://music.yandex.ru/album/35312820'
-        // },
-        // {
-        //   name: 'Vk',
-        //   icon: 'vk',
-        //   link: 'https://vk.com/music/album/-2000214022_23214022_f835632221ede3b9c7'
-        // },
+        {
+          name: 'Apple Music',
+          icon: 'apple',
+          link: 'https://music.apple.com/ge/album/imagined-awakenings/1800304691',
+        },
+        {
+          name: 'Spotify',
+          icon: 'spotify',
+          link: 'https://open.spotify.com/album/0OPUXSrqpqexNwMAn1Lkl2?si=9WKS9oThQMayIXSAjjORBw',
+        },
+        {
+          name: 'Yandex',
+          icon: 'yandex',
+          link: 'https://music.yandex.ru/album/35728897',
+        },
+        {
+          name: 'Vk',
+          icon: 'vk',
+          link: 'https://vk.com/music/album/-2000457673_23457673_bac6a8208acb7be180?act=album',
+        },
       ],
     }
   },
