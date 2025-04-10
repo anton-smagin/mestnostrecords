@@ -34,6 +34,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/LovelyGrinch',
+          artistName: 'KIKOK',
+          releaseName: 'Lovely Grinch',
+          image: 'lovely_grinch'
+        },
+        {
           name: 'releases/ImaginedAwakenings',
           artistName: 'H. Ruine / MIKHAIL KIREEV',
           releaseName: 'Imagined / Awakenings',
