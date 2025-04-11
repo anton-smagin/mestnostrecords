@@ -25,35 +25,48 @@
           </div>
         </div>
       </div>
-      <div class="row mt-5">
-        <div class="col-md-12 mb-5">
+      <div class="row mb-5 mt-5">
+        <div class="col-md-12 mb-5 align-self-center text-center">
           <img
             src="~/static/kikok_face.jpg"
             alt="kikok"
             width="50%"
             height="auto"
+            class="mx-auto d-block"
           />
         </div>
-      </div>
-      <div class="row mb-5 mt-5">
-        <div class="description text-white">
-          <p>Представляем нового артиста нашего лейбла.<br>📍местность: Пермь</p>
-          <p>KIKOK – сольный проект Паши Федосеева (ex-Gnoomes), под этим именем он создает изобретательную и мелодичную электронику, вдохновленную лучшими образцами как IDM-музыки, так и shoegaze и kraut сцен.</p>
-          <p>Был резидентом лейбла Magnetron Music (NL), основателем которого является Fatima Yamaha.</p>
-          <p>Второй альбом ‘SAUNA’, вышедший в начале 2019го был удостоен хорошей критики от профильных изданий UNCUT (UK), The Quietus (UK), XLR8R (US), GROOVE (DE). Был признан альбомом месяца в Dj MAG (UK), заглавный трек Ekta I был замечен в Big Tunes (Mixmag, UK) среди Orbital, Red Axes и Peggy Gou.</p>
-          <p>За его плечами множество концертов, а также небольшой тур и выступления на фестивале Dutch Design Week, TESTFM и Red Light Radio.</p>
-          <p>25 апреля выйдет альбом, а в эту пятницу можно будет услышать первый сингл. 🐬</p>
-        </div>  
-      </div>
-      <div class="row mb-5">
-        <div class="description text-white mb-5">
-          <p>We present a new artist at our label!</p>
-          <p>KIKOK is the solo project of Pasha Fedoseev (ex-Gnoomes). Under this alias, he creates inventive and melodic electronic music inspired by the best of IDM, shoegaze, and kraut scenes.</p>
-          <p>He was a resident artist on the Magnetron Music (NL) label, founded by Fatima Yamaha. His second album, SAUNA, released in early 2019, received critical acclaim from publications like UNCUT (UK), The Quietus (UK), XLR8R (US), and GROOVE (DE). It was named Album of the Month in DJ Mag (UK), and the lead single Ekta I was featured in Big Tunes (Mixmag, UK) alongside artists like Orbital, Red Axes, and Peggy Gou.</p>
-          <p>With numerous live performances under his belt, including a small tour and appearances at Dutch Design Week, TESTFM, and Red Light Radio.</p>
-          <p>KIKOK is set to release a new album on April 25th, with the first single dropping this Friday.</p>
-        </div>  
-      </div>
+        <div class="col-md-12">
+          <div class="col-md-6 offset-md-2">
+            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2730815774/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
+              <a href="https://mestnost.bandcamp.com/album/lovely-grinch">
+                Lovely Grinch by KIKOK
+              </a>
+            </iframe>
+          </div>
+          <div class="description text-white mb-5 mt-5">
+            <p>Представляем нового артиста нашего лейбла.<br>📍местность: Пермь</p>
+            <p>KIKOK – сольный проект Паши Федосеева (ex-Gnoomes), под этим именем он создает изобретательную и мелодичную электронику, вдохновленную лучшими образцами как IDM-музыки, так и shoegaze и kraut сцен.</p>
+            <p>Был резидентом лейбла Magnetron Music (NL), основателем которого является Fatima Yamaha.</p>
+            <p>Второй альбом ‘SAUNA’, вышедший в начале 2019го был удостоен хорошей критики от профильных изданий UNCUT (UK), The Quietus (UK), XLR8R (US), GROOVE (DE). Был признан альбомом месяца в Dj MAG (UK), заглавный трек Ekta I был замечен в Big Tunes (Mixmag, UK) среди Orbital, Red Axes и Peggy Gou.</p>
+            <p>За его плечами множество концертов, а также небольшой тур и выступления на фестивале Dutch Design Week, TESTFM и Red Light Radio.</p>
+            <p>25 апреля выйдет альбом, а в эту пятницу можно будет услышать первый сингл. 🐬</p>
+          </div> 
+          <div class="description text-white mb-5">
+            <p><i>Written and produced by Pavel Fedoseev aka KIKOK</i></p>
+            <p><i>Mixing and mastering by Konstantin Kolychev aka Kokokei</i></p>
+            <p><i>Design and artwork by Vlad Vasenin aka vladh8vas</i></p>
+            <p><i>Photo by Margarita Tentyukova</i></p>
+          </div>
+          <div class="description text-white mb-5">
+            <p>We present a new artist at our label!</p>
+            <p>KIKOK is the solo project of Pasha Fedoseev (ex-Gnoomes). Under this alias, he creates inventive and melodic electronic music inspired by the best of IDM, shoegaze, and kraut scenes.</p>
+            <p>He was a resident artist on the Magnetron Music (NL) label, founded by Fatima Yamaha. His second album, SAUNA, released in early 2019, received critical acclaim from publications like UNCUT (UK), The Quietus (UK), XLR8R (US), and GROOVE (DE). It was named Album of the Month in DJ Mag (UK), and the lead single Ekta I was featured in Big Tunes (Mixmag, UK) alongside artists like Orbital, Red Axes, and Peggy Gou.</p>
+            <p>With numerous live performances under his belt, including a small tour and appearances at Dutch Design Week, TESTFM, and Red Light Radio.</p>
+            <p>KIKOK is set to release a new album on April 25th, with the first single dropping this Friday.</p>
+          </div>
+
+        </div> 
+      </div>  
     </div>  
   </div>
 </template>
