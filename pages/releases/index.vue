@@ -34,6 +34,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/TheWayOfTheDog',
+          artistName: 'Anderdog',
+          releaseName: 'The Way of the Dog',
+          image: 'the_way_of_the_dog'
+        },
+        {
           name: 'releases/LovelyGrinch',
           artistName: 'KIKOK',
           releaseName: 'Lovely Grinch',

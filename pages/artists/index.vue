@@ -133,6 +133,11 @@ export default {
           photo: 'mikhail_kireev',
           link: 'releases/ImaginedAwakenings'
         },
+        {
+          name: 'KIKOK',
+          photo: 'kikok',
+          link: 'releases/LovelyGrinch'
+        },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
   },
