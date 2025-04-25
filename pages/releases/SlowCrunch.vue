@@ -87,6 +87,8 @@
             <p>Written and produced by Pavel Fedoseev aka KIKOK</p>
             <p>Mixing and mastering by Konstantin Kolychev aka Kokokei</p>
             <p>Design and artwork by Vlad Vasenin aka vladh8vas</p>
+            <p>Sleeve photo by Kseniia Zabolotnykh</p>
+            <p>Inner photo by Margarita Tentyukova </p>
             <p>Scanography by Nastya Moskvitina by 444rer9</p>
             <p>Press-release by Sonya Spielberg</p>
           </div>
