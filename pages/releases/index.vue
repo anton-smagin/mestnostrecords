@@ -34,22 +34,16 @@ export default {
     return {
       releases: [
         {
-          name: 'releases/SlowCrunch',
-          artistName: 'KIKOK',
-          releaseName: 'Slow Crunch',
-          image: 'slow_crunch'
-        },
-        {
           name: 'releases/TheWayOfTheDog',
           artistName: 'Anderdog',
           releaseName: 'The Way of the Dog',
           image: 'the_way_of_the_dog'
         },
         {
-          name: 'releases/LovelyGrinch',
+          name: 'releases/SlowCrunch',
           artistName: 'KIKOK',
-          releaseName: 'Lovely Grinch',
-          image: 'lovely_grinch'
+          releaseName: 'Slow Crunch',
+          image: 'slow_crunch'
         },
         {
           name: 'releases/ImaginedAwakenings',
