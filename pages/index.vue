@@ -15,7 +15,7 @@
       </a>
       <a
         class="btn text-white"
-        href="https://www.instagram.com/mestnostishere/"
+        href="https://www.instagram.com/mestnostrecords"
         target="_blank"
       >
         instagram
