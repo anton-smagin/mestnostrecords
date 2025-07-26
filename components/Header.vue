@@ -29,27 +29,30 @@
             <NuxtLink class="btn text-nowrap" to="/events">События</NuxtLink>
           </div>
           <div class="col-sm-12" @click="menuShow = false">
+            <NuxtLink class="btn text-nowrap" to="/merch">Мерч</NuxtLink>
+          </div>
+          <div class="col-sm-12" @click="menuShow = false">
             <NuxtLink class="btn text-nowrap" to="/contacts">Контакты</NuxtLink>
           </div>
         </div>
       </transition>
-      <div class="col-md-2 d-none d-md-block">
+      <div class="col-md-1 d-none d-md-block">
         <NuxtLink class="btn text-nowrap px-2" to="/">Главная</NuxtLink>
       </div>
-      <div class="col-md-2 d-none d-md-block">
+      <div class="col-md-1 d-none d-md-block">
         <NuxtLink class="btn text-nowrap px-2" to="/about">Местность</NuxtLink>
       </div>
-      <div class="col-md-2 d-none d-md-block">
+      <div class="col-md-1 d-none d-md-block">
         <NuxtLink class="btn text-nowrap px-2" to="/releases">Релизы</NuxtLink>
       </div>
-      <div class="col-md-2 d-none d-md-block">
+      <div class="col-md-1 d-none d-md-block">
         <NuxtLink class="btn text-nowrap px-2" to="/artists">Артисты</NuxtLink>
       </div>
-      <div class="col-md-2 d-none d-md-block">
+      <div class="col-md-1 d-none d-md-block">
         <NuxtLink class="btn text-nowrap px-2" to="/events">События</NuxtLink>
       </div>
-      <div class="col-md-2 d-none d-md-block">
-        <NuxtLink class="btn text-nowrap px-2" to="/contacts">Контакты</NuxtLink>
+      <div class="col-md-1 d-none d-md-block">
+        <NuxtLink class="btn text-nowrap px-2" to="/merch">Мерч</NuxtLink>
       </div>
     </div>
   </div>
