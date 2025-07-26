@@ -2,7 +2,7 @@
   <div class="slow-crunch w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/slow_crunch.jpg" width="80%" />
+        <img src="/static/slow_crunch.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -28,7 +28,7 @@
       <div class="row mb-5 mt-5">
         <div class="col-md-12 mb-5 align-self-center text-center">
           <img
-            src="~/static/kikok_face_2.jpg"
+            src="/static/kikok_face_2.jpg"
             alt="kikok"
             width="50%"
             height="auto"
@@ -196,6 +196,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

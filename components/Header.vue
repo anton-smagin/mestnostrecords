@@ -4,7 +4,7 @@
       <div class="d-flex w-100 justify-content-end">
         <img
           class="hamburger d-block d-md-none"
-          src="~/static/white-hamburger.png"
+          src="/static/white-hamburger.png"
           width="30px"
           height="30px"
           alt=""

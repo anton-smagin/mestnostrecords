@@ -2,7 +2,7 @@
   <div class="the-way-of-the-dog w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/the_way_of_the_dog.jpg" width="80%" />
+        <img src="/static/the_way_of_the_dog.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -28,7 +28,7 @@
       <div class="row mb-5 mt-5">
         <div class="col-md-12 mb-5 align-self-center text-center">
           <img
-            src="~/static/the_way_of_the_dog_face.jpg"
+            src="/static/the_way_of_the_dog_face.jpg"
             alt="anderdog"
             width="50%"
             height="auto"
@@ -38,8 +38,7 @@
         <div class="col-md-12">
           <div class="col-md-6 offset-md-2">
             <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=447436924/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
-              <a href="https://mestnost.bandcamp.com/album/the-way-of-the-dog">THE WAY OF THE DOG by Anderdog</a>
-              </iframe>
+            </iframe>
           </div>
           <div class="description text-white mb-5 mt-5">
             <p>Музыкант из Электростали Денис Рыжов aka Аnderdog знаменует 2025 год уже второй работой. Зимой вышел его совместный релиз с Dessin Bizarre, а сейчас готов сольник под названием THE WAY OF THE DOG - это четвертый альбом музыканта на лейбле «Местность» и десять свежайших треков в формате кассеты. Для ценителей аналогового звучания также выйдет релиз на виниле от лейбла <a href="https://sealt.su" target="_blank">SEALT</a>.</p>
@@ -123,6 +122,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

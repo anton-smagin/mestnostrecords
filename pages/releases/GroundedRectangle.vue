@@ -2,7 +2,7 @@
   <div class="ambidextrous-grounded-rectange w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/grounded_rectangle.jpg" width="80%" />
+        <img src="/static/grounded_rectangle.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/ambidextrous_face_2.jpg"
+          src="/static/ambidextrous_face_2.jpg"
           alt="Ambidextrous"
           width="70%"
           height="auto"
@@ -93,7 +93,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/ambidextrous_cassette_rectangle_1.jpg"
+          src="/static/ambidextrous_cassette_rectangle_1.jpg"
           alt="ambidextrous grounded rectangle cassette 1"
           width="90%"
           height="auto"
@@ -101,7 +101,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/ambidextrous_cassette_rectangle_2.jpg"
+          src="/static/ambidextrous_cassette_rectangle_2.jpg"
           alt="ambidextrous grounded rectangle cassette 2"
           width="90%"
           height="auto"
@@ -109,7 +109,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/ambidextrous_cassette_rectangle_3.jpg"
+          src="/static/ambidextrous_cassette_rectangle_3.jpg"
           alt="ambidextrous grounded rectangle cassette 3"
           width="90%"
           height="auto"

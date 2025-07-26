@@ -2,7 +2,7 @@
   <div class="rasputin-cherta-nova w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/cherta-nova.jpg" width="80%" />
+        <img src="/static/cherta-nova.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/rasputin_face.jpg"
+          src="/static/rasputin_face.jpg"
           alt="rasputin"
           width="70%"
           height="auto"
@@ -54,6 +54,7 @@
             пруды с зелеными зонами, Битцевский парк с мифическими зайцами, породистыми полевками и легендарным маньяком и много чего еще – у каждого жителя
             найдется свой тайный чертановский алтарь. Все это районное великолепие давно просило озвучки, ведь кино с его фантазийной визуализацией давно уже
             облюбовало чертановские пейзажи – от Рязанова до Бондарчука.
+          </p>
           <p>
             Можно поглубже воткнуть в уши айрподсы, нажать play, и отправиться по местным достопримечательностям.
             Трек Chertona расскажет об одноименной речке, которая является притоком реки Городни – сейчас она превращена в Верхний и Малый Чертановские пруды.
@@ -93,7 +94,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/cherta_nova_cassette_1.jpeg"
+          src="/static/cherta_nova_cassette_1.jpeg"
           alt="rasputin cherta-nova cassette 1"
           width="90%"
           height="auto"
@@ -101,7 +102,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/cherta_nova_cassette_2.jpeg"
+          src="/static/cherta_nova_cassette_2.jpeg"
           alt="rasputin cherta-nova cassette 2"
           width="90%"
           height="auto"
@@ -109,7 +110,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/cherta_nova_cassette_3.jpeg"
+          src="/static/cherta_nova_cassette_3.jpeg"
           alt="rasputin cherta-nova cassette 3"
           width="90%"
           height="auto"
@@ -179,6 +180,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

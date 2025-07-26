@@ -9,7 +9,7 @@
         >
           <NuxtLink class="btn" :to="`/${artist.link}`">
             <div class="mb-1 align-middle ">
-              <img :src="require(`~/static/${artist.photo}_face.jpg`)" class="crop" />
+              <img :src="require(`/static/${artist.photo}_face.jpg`)" class="crop" />
             </div>
             <div class="text-white">
               <p class="description">{{ artist.name }}</p>

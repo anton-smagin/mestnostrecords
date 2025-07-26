@@ -2,7 +2,7 @@
   <div class="koma-doroga-v-nebo w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/doroga_v_nebo_kokokei_edit.jpg" width="80%" />
+        <img src="/static/doroga_v_nebo_kokokei_edit.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -145,6 +145,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

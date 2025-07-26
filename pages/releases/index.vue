@@ -8,7 +8,7 @@
           class="col-md-4 col-sm-6 col-xs-12 sketch align-items-center"
         >
           <NuxtLink class="btn" :to="`/${release.name}`">
-            <img :src="`/${release.image}.jpg`" :alt="`${release.artistName} - ${release.releaseName}`" class="release-image" />
+            <img :src="`/static/${release.image}.jpg`" :alt="`${release.artistName} - ${release.releaseName}`" class="release-image" />
             <div :key="`${release.name}.description`" class="text-white">
               <p class="description">{{ release.artistName }}</p>
               <p class="description">{{ release.releaseName }}</p>
@@ -230,14 +230,6 @@ export default {
 
 .description:hover {
   color: #91a79d;
-}
-
-.p-5 {
-  justify-content: space-around;
-}
-
-.sketch {
-  width: 100%;
 }
 
 .release-image {

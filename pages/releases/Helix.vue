@@ -2,7 +2,7 @@
   <div class="morakh-helix w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/helix.jpg" width="80%" />
+        <img src="/static/helix.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/morakh_face_2.jpg"
+          src="/static/morakh_face_2.jpg"
           alt="Morakh"
           width="70%"
           height="auto"
@@ -41,7 +41,6 @@
     <div class="row mb-5">
       <div class="col-md-6 offset-md-2">
         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3234059979/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
-          <a href="https://mestnost.bandcamp.com/album/helix">Helix by Morakh</a>
         </iframe>
       </div>
     </div>
@@ -75,7 +74,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/helix_cassette_cassette_1.jpg"
+          src="/static/helix_cassette_cassette_1.jpg"
           alt="helix_cassette_1"
           width="90%"
           height="auto"
@@ -83,7 +82,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/helix_cassette_cassette_2.jpg"
+          src="/static/helix_cassette_cassette_2.jpg"
           alt="helix_cassette_2"
           width="90%"
           height="auto"
@@ -91,7 +90,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/helix_cassette_cassette_3.jpg"
+          src="/static/helix_cassette_cassette_3.jpg"
           alt="helix_cassette_3"
           width="90%"
           height="auto"
@@ -161,6 +160,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

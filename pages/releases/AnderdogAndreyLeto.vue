@@ -2,7 +2,7 @@
   <div class="anderdog-andrey-leto w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/anderdogandreyleto.jpg" width="80%" />
+        <img src="/static/anderdogandreyleto.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -29,7 +29,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/anderdogandreyleto_face.jpg"
+          src="/static/anderdogandreyleto_face.jpg"
           alt="anderdog and andrey leto"
           width="70%"
           height="auto"
@@ -44,9 +44,6 @@
             src="https://bandcamp.com/EmbeddedPlayer/album=3582880563/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
             seamless
           >
-            <a href="https://mestnost.bandcamp.com/album/romantic-selection"
-              >Romantic Selection by Anderdog, Andrey Leto</a
-            >
           </iframe>
         </div>
         <div class="description text-white mb-5">
@@ -115,7 +112,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/anderdog_leto_cassette_1.jpg"
+          src="/static/anderdog_leto_cassette_1.jpg"
           alt="anderdog leto cassette 1"
           width="90%"
           height="auto"
@@ -123,7 +120,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/anderdog_leto_cassette_2.jpg"
+          src="/static/anderdog_leto_cassette_2.jpg"
           alt="anderdog leto cassette 2"
           width="90%"
           height="auto"
@@ -131,7 +128,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/anderdog_leto_cassette_3.jpg"
+          src="/static/anderdog_leto_cassette_3.jpg"
           alt="anderdog leto cassette 3"
           width="90%"
           height="auto"
@@ -196,6 +193,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

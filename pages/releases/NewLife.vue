@@ -2,7 +2,7 @@
   <div class="dj-headsick-new-life w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/new_life.jpg" width="80%" />
+        <img src="/static/new_life.jpg" width="80%" />
       </div>
       <div class="col-xs-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -38,7 +38,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/dj_headsick_face.jpg"
+          src="/static/dj_headsick_face.jpg"
           alt="dj headsick"
           width="70%"
           height="auto"
@@ -146,6 +146,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

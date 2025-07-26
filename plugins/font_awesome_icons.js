@@ -1,4 +1,3 @@
-import Vue from 'vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faApple,
@@ -16,4 +15,7 @@ library.add(faBandcamp)
 library.add(faSpotify)
 library.add(faVk)
 library.add(faFacebook)
-Vue.component('FontAwesomeIcon', FontAwesomeIcon)
+
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.component('FontAwesomeIcon', FontAwesomeIcon)
+})

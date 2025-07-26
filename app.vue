@@ -1,15 +1,9 @@
 <template>
   <div id="app">
     <Header />
-    <Nuxt />
+    <NuxtPage />
   </div>
 </template>
-
-<script>
-export default {
-  name: 'DefaultLayout',
-}
-</script>
 
 <style>
 body {
@@ -114,4 +108,4 @@ footer a.btn {
     letter-spacing: 0.1em;
   }
 }
-</style>
+</style> 
