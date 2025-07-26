@@ -60,11 +60,11 @@ export default {
         },
         {
           id: 4,
-          title: 'Morakh Limes',
+          title: 'Limes',
           artist: 'Morakh',
           cassetteId: 'morakh',
           price: '1500 ₽',
-          orderLink: 'https://mestnost.bandcamp.com/album/morakh-limes',
+          orderLink: 'https://mestnost.bandcamp.com/album/limes',
           albumLink: '/releases/MorakhLimes'
         },
         {
@@ -100,7 +100,7 @@ export default {
           artist: 'Vvvedenskaya',
           cassetteId: 'vvvedenskaya',
           price: '1500 ₽',
-          orderLink: 'https://mestnost.bandcamp.com/album/vvvedenskaya-attempts',
+          orderLink: 'https://mestnost.bandcamp.com/album/attempts',
           albumLink: '/releases/VvvedenskayaAttempts'
         },
         {
@@ -118,16 +118,16 @@ export default {
           artist: 'Anderdog',
           cassetteId: 'anderdog_bizarre',
           price: '1500 ₽',
-          orderLink: 'https://mestnost.bandcamp.com/album/anderdog-bizarre',
+          orderLink: 'https://mestnost.bandcamp.com/album/imagine',
           albumLink: '/releases/Imagine'
         },
         {
           id: 11,
-          title: 'Anderdog & Andrey Leto',
+          title: 'Romantic Selection',
           artist: 'Anderdog & Andrey Leto',
           cassetteId: 'anderdog_leto',
           price: '1500 ₽',
-          orderLink: 'https://mestnost.bandcamp.com/album/anderdog-andrey-leto',
+          orderLink: 'https://mestnost.bandcamp.com/album/romantic-selection',
           albumLink: '/releases/AnderdogAndreyLeto'
         },
         {
@@ -163,7 +163,7 @@ export default {
           artist: 'Ko+Ma & Kokokei',
           cassetteId: 'koma_doroga_v_nebo',
           price: '1500 ₽',
-          orderLink: 'https://mestnost.bandcamp.com/album/koma-kokokei-doroga-v-nebo',
+          orderLink: 'https://mestnost.bandcamp.com/album/doroga-v-nebo/--2',
           albumLink: '/releases/KoMaKokokeiDorogaVNebo'
         },
         {
@@ -208,7 +208,7 @@ export default {
           artist: 'Yella Gin',
           cassetteId: 'yella_gin',
           price: '1500 ₽',
-          orderLink: 'https://mestnost.bandcamp.com/album/ya-bil-sputnicom-solnca',
+          orderLink: 'https://mestnost.bandcamp.com/album/--3',
           albumLink: '/releases/YaBilSputnicomSolnca'
         }
       ]

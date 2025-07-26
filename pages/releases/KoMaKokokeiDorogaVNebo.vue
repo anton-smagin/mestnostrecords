@@ -30,13 +30,13 @@
       </div>
     </div>
     <div class="row mb-5">
-      <div class="col-12 offset-3">
+      <div class="col-12">
         <iframe
           src="https://vk.com/video_ext.php?oid=-205699954&id=456239029&hd=2&autoplay=1"
           allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
           frameborder="0"
-          :height="innerHeightPx"
-          :width="innerWidthPx"
+          :height="iframeHeight"
+          :width="iframeWidth"
           allowfullscreen
         >
         </iframe>
@@ -111,9 +111,51 @@ export default {
       ],
     }
   },
-  computed: {
-    innerHeightPx: () => { return window.innerHeight / 2 + "px"},
-    innerWidthPx: () => { return window.innerWidth / 2 + "px"},
+  data() {
+    return {
+      links: [
+        {
+          name: 'Bandcamp',
+          icon: 'bandcamp',
+          link: 'https://mestnost.bandcamp.com/album/kokokei-edit',
+        },
+        {
+          name: 'Apple Music',
+          icon: 'apple',
+          link: 'https://music.apple.com/us/album/%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%B0-%D0%B2-%D0%BD%D0%B5%D0%B1%D0%BE-kokokei-edit-single/1774766821'
+        },
+        {
+          name: 'Spotify',
+          icon: 'spotify',
+          link: 'https://open.spotify.com/album/2s0TBzjshLplgjV4Qzley1'
+        },
+        {
+          name: 'Yandex',
+          icon: 'yandex',
+          link: 'https://music.yandex.ru/album/33722550'
+        },
+        {
+          name: 'Vk',
+          icon: 'vk',
+          link: 'https://vk.com/music/album/-2000255722_22255722_e6548114ce187136b8'
+        },
+      ],
+      iframeHeight: '400px',
+      iframeWidth: '100%',
+    }
+  },
+  mounted() {
+    this.updateIframeSize();
+    window.addEventListener('resize', this.updateIframeSize);
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.updateIframeSize);
+  },
+  methods: {
+    updateIframeSize() {
+      this.iframeHeight = (window.innerHeight / 2) + 'px';
+      this.iframeWidth = (window.innerWidth / 2) + 'px';
+    },
   },
 }
 </script>
