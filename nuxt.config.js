@@ -19,6 +19,7 @@ export default defineNuxtConfig({
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
+    baseURL: '/', // Set the base URL for the application
   },
 
   // Global CSS: https://nuxt.com/docs/api/configuration/nuxt-config#css
