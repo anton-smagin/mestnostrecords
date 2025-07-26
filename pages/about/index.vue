@@ -32,6 +32,50 @@
           </p>
         </div>
       </div>
+      <div class="col-md-12 mt-3 mb-6">
+        <h1>Контакты</h1>
+      </div>
+      <div class="d-flex justify-content-center">
+      <div class="col-md-3 col-sm-6 col-12">
+        <a
+          class="btn text-white"
+          href="https://t.me/mestnost_label"
+          target="_blank"
+        >
+          telegram
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12">
+        <a
+          class="btn text-white"
+          href="https://www.instagram.com/mestnostrecords"
+          target="_blank"
+        >
+          instagram
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12">
+        <a
+          class="btn text-white"
+          href="https://vk.com/mestnostrecords"
+          target="_blank"
+        >
+          вк
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12">
+        <a
+          class="btn text-white"
+          href="https://mestnost.bandcamp.com"
+          target="_blank"
+        >
+          bandcamp
+        </a>
+      </div>
+    </div>
+    <p class="text-white mt-5 mb-5">
+      для демо и сотрудничества <a href="mailto:mestnostishere@gmail.com">mestnostishere@gmail.com</a>
+    </p>  
     </div>
   </div>
 </template>
@@ -44,7 +88,7 @@ export default {
 
 <style scoped>
 .about {
-  background: url('/background.jpg') no-repeat center center fixed !important;
+  background: url('/static/background.jpg') no-repeat center center fixed !important;
   background-size: cover;
 }
 

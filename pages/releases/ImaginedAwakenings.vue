@@ -1,10 +1,10 @@
 <template>
   <div class="imagined-awakenings w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/imagined_awakenings.jpg" width="80%" />
+      <div class="col-12 col-md-6 align-self-center">
+        <img src="/static/imagined_awakenings.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Imagined / Awakenings</h5>
           <h5 class="text-white"><span>H. Ruine / MIKHAIL KIREEV</span></h5>
@@ -12,7 +12,7 @@
             <div
               v-for="link in links"
               :key="link.name"
-              class="store-link col-lg-4 col-md-6 mt-5 text-nowrap"
+              class="store-link col-12 col-lg-4 col-md-6 mt-5 text-nowrap"
             >
               <font-awesome-icon
                 :icon="['fab', link.icon]"
@@ -29,9 +29,7 @@
     <div class="row mb-5 mt-5">
         <div class="col-md-6 offset-md-2">
           <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1734430025/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
-            <a href="https://mestnost.bandcamp.com/album/imagined-awakenings">
-              Imagined / Awakenings by H. Ruine / MIKHAIL KIREEV</a>
-            </iframe>
+          </iframe>
         </div>
       </div>
     <div class="row mb-5 mt-5">
@@ -53,7 +51,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/h_ruine_face.jpg"
+          src="/static/h_ruine_face.jpg"
           alt="h. ruine"
           width="50%"
           height="auto"
@@ -73,7 +71,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/mikhail_kireev_face.jpg"
+          src="/static/mikhail_kireev_face.jpg"
           alt="mikhail kireev"
           width="50%"
           height="auto"
@@ -128,7 +126,7 @@
       <div class="row mb-5">
           <div class="col-md-6 mt-5">
             <img
-              src="~/static/imagined_awekenings_1.jpg"
+              src="/static/imagined_awekenings_1.jpg"
               alt="veter cassette 1"
               width="90%"
               height="auto"
@@ -136,7 +134,7 @@
           </div>
           <div class="col-md-6 mt-5">
             <img
-              src="~/static/imagined_awekenings_2.jpg"
+              src="/static/imagined_awekenings_2.jpg"
               alt="veter cassette 2"
               width="90%"
               height="auto"
@@ -207,6 +205,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

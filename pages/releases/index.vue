@@ -5,10 +5,10 @@
         <div
           v-for="release in releases"
           :key="`${release.name}.sketch`"
-          class="col-md-4 col-sm-6 col-xs-12 sketch align-items-center"
+          class="col-md-4 col-sm-6 col-12 sketch align-items-center"
         >
           <NuxtLink class="btn" :to="`/${release.name}`">
-            <PfiveSketch :image-title="`${release.image}`" class="p5-sketch" />
+            <img :src="`/static/${release.image}.jpg`" :alt="`${release.artistName} - ${release.releaseName}`" class="release-image" />
             <div :key="`${release.name}.description`" class="text-white">
               <p class="description">{{ release.artistName }}</p>
               <p class="description">{{ release.releaseName }}</p>
@@ -23,13 +23,6 @@
 <script>
 export default {
   name: 'ReleasesPage',
-  components: {
-    PfiveSketch: () => {
-      if (process.client) {
-        return import('@/components/PfiveSketch.vue')
-      }
-    },
-  },
   data() {
     return {
       releases: [
@@ -239,11 +232,11 @@ export default {
   color: #91a79d;
 }
 
-.p-5 {
-  justify-content: space-around;
-}
-
-.sketch {
+.release-image {
   width: 100%;
+  height: auto;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
 }
 </style>

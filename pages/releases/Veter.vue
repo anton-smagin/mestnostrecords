@@ -1,10 +1,10 @@
 <template>
   <div class="ne-tvoy-drug-veter w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/veter.jpg" width="80%" />
+      <div class="col-12 col-md-6 align-self-center">
+        <img src="/static/veter.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Ne Tvoy Drug</h5>
           <h5 class="text-white">
@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/ne_tvoy_drug_face_2.jpg"
+          src="/static/ne_tvoy_drug_face_2.jpg"
           alt="Ne Tvoy Drug"
           width="70%"
           height="auto"
@@ -41,7 +41,6 @@
     <div class="row mb-5">
       <div class="col-md-6 offset-md-2">
         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=4182457386/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
-          <a href="https://mestnost.bandcamp.com/album/veter">Veter by Ne Tvoy Drug</a>
         </iframe>
       </div>
     </div>
@@ -104,7 +103,7 @@
         <div class="row mb-5">
           <div class="col-md-4 mt-5">
             <img
-              src="~/static/veter_cassette_1.jpg"
+              src="/static/veter_cassette_1.jpg"
               alt="veter cassette 1"
               width="90%"
               height="auto"
@@ -112,7 +111,7 @@
           </div>
           <div class="col-md-4 mt-5">
             <img
-              src="~/static/veter_cassette_2.jpg"
+              src="/static/veter_cassette_2.jpg"
               alt="veter cassette 2"
               width="90%"
               height="auto"
@@ -120,7 +119,7 @@
           </div>
           <div class="col-md-4 mt-5">
             <img
-              src="~/static/veter_cassette_3.jpg"
+              src="/static/veter_cassette_3.jpg"
               alt="veter cassette 3"
               width="90%"
               height="auto"
@@ -192,6 +191,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

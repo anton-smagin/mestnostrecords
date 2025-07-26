@@ -1,10 +1,10 @@
 <template>
   <div class="microdog-east-side w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/microdog.jpg" width="80%" />
+      <div class="col-12 col-md-6 align-self-center">
+        <img src="/static/microdog.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Microdog</h5>
           <h5 class="text-white"><span>East Side of the Breaktown</span></h5>
@@ -12,7 +12,7 @@
             <div
               v-for="link in links"
               :key="link.name"
-              class="store-link col-lg-4 col-md-6 mt-5 text-nowrap"
+              class="store-link col-12 col-lg-4 col-md-6 mt-5 text-nowrap"
             >
               <font-awesome-icon
                 :icon="['fab', link.icon]"
@@ -29,7 +29,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/microdog_face.jpg"
+          src="/static/microdog_face.jpg"
           alt="microdog"
           width="70%"
           height="auto"
@@ -43,11 +43,7 @@
             style="border: 0; width: 100%; height: 120px"
             src="https://bandcamp.com/EmbeddedPlayer/album=4259941700/size=large/bgcol=333333/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
             seamless
-          >
-            <a
-              href="https://mestnost.bandcamp.com/album/east-side-of-the-breaktown"
-              >East Side of the Breaktown by Microdog</a
-            ></iframe
+          ></iframe
           >
         </div>
         <div class="description text-white mb-5">
@@ -91,7 +87,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/microdog_cassette_1.jpeg"
+          src="/static/microdog_cassette_1.jpeg"
           alt="microdog cassette 1"
           width="80%"
           height="auto"
@@ -99,7 +95,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/microdog_cassette_2.jpeg"
+          src="/static/microdog_cassette_2.jpeg"
           alt="microdog cassette 2"
           width="80%"
           height="auto"
@@ -107,7 +103,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/microdog_cassette_3.jpeg"
+          src="/static/microdog_cassette_3.jpeg"
           alt="microdog cassette 3"
           width="80%"
           height="auto"
@@ -172,6 +168,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

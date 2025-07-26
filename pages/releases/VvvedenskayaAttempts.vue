@@ -1,10 +1,10 @@
 <template>
   <div class="vvedenskaya-attempts w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/vvvedenskaya.jpg" width="80%" />
+      <div class="col-12 col-md-6 align-self-center">
+        <img src="/static/vvvedenskaya.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Vvvedenskaya</h5>
           <h5 class="text-white"><span>Attempts</span></h5>
@@ -12,7 +12,7 @@
             <div
               v-for="link in links"
               :key="link.name"
-              class="store-link col-lg-4 col-md-6 mt-5 text-nowrap"
+              class="store-link col-12 col-lg-4 col-md-6 mt-5 text-nowrap"
             >
               <font-awesome-icon
                 :icon="['fab', link.icon]"
@@ -29,7 +29,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/vvvedenskaya_face.jpg"
+          src="/static/vvvedenskaya_face.jpg"
           alt="vvvedenskaya"
           width="70%"
           height="auto"
@@ -44,9 +44,6 @@
             src="https://bandcamp.com/EmbeddedPlayer/album=1330787950/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
             seamless
           >
-            <a href="https://mestnost.bandcamp.com/album/attempts"
-              >Attempts by Vvvedenskaya</a
-            >
           </iframe>
         </div>
         <div class="description text-white mb-5">
@@ -124,7 +121,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/vvvedenskaya_cassette_1.jpg"
+          src="/static/vvvedenskaya_cassette_1.jpg"
           alt="vvedenskaya"
           width="90%"
           height="auto"
@@ -132,7 +129,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/vvvedenskaya_cassette_2.jpg"
+          src="/static/vvvedenskaya_cassette_2.jpg"
           alt="vvedenskaya"
           width="90%"
           height="auto"
@@ -140,7 +137,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/vvvedenskaya_cassette_3.jpg"
+          src="/static/vvvedenskaya_cassette_3.jpg"
           alt="vvedenskaya"
           width="90%"
           height="auto"
@@ -205,6 +202,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

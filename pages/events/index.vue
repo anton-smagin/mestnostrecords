@@ -5,11 +5,11 @@
         <div
           v-for="event in events"
           :key="`${event.name}`"
-          class="col-md-4 col-sm-6 col-xs-12 align-items-center"
+          class="col-md-4 col-sm-6 col-12 align-items-center"
         >
           <NuxtLink class="btn" :to="`/${event.link}`">
             <div class="mb-1 align-middle ">
-              <img :src="require(`~/static/${event.photo}.jpg`)" class="crop" />
+              <img :src="getImageUrl(event.photo)" class="crop" />
             </div>
             <div class="text-white">
               <p class="description">{{ event.name }}</p>
@@ -41,7 +41,11 @@ export default {
       ]
     }
   },
-  methods: {},
+  methods: {
+    getImageUrl(photo) {
+      return `/static/${photo}.jpg`
+    }
+  },
 }
 </script>
 

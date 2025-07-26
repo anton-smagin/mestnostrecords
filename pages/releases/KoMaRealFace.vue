@@ -1,10 +1,10 @@
 <template>
   <div class="koma-real-face w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/koma.jpg" width="80%" />
+      <div class="col-12 col-md-6 align-self-center">
+        <img src="/static/koma.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Ko+Ma</h5>
           <h5 class="text-white">
@@ -14,7 +14,7 @@
             <div
               v-for="link in links"
               :key="link.name"
-              class="store-link col-lg-4 col-md-6 mt-5 text-nowrap"
+              class="store-link col-12 col-lg-4 col-md-6 mt-5 text-nowrap"
             >
               <font-awesome-icon
                 :icon="['fab', link.icon]"
@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/koma_face.jpg"
+          src="/static/koma_face.jpg"
           alt="anderdog"
           width="70%"
           height="auto"
@@ -46,9 +46,6 @@
             src="https://bandcamp.com/EmbeddedPlayer/album=2190151488/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
             seamless
           >
-            <a href="https://mestnost.bandcamp.com/album/-"
-              >По-настоящему счастливое лицо стремится стать кругом by Ko+Ma</a
-            >
           </iframe>
         </div>
         <div class="description text-white mb-5">
@@ -68,7 +65,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/koma2.jpeg"
+          src="/static/koma2.jpeg"
           alt="anderdog"
           width="70%"
           height="auto"
@@ -133,6 +130,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

@@ -4,7 +4,7 @@
       <h1>МЕСТНОСТЬ</h1>
     </div>
     <div class="d-flex justify-content-center row">
-      <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="col-md-3 col-sm-6 col-12">
         <a
           class="btn text-white"
           href="https://t.me/mestnost_label"
@@ -13,16 +13,16 @@
           telegram
         </a>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="col-md-3 col-sm-6 col-12">
         <a
           class="btn text-white"
-          href="https://www.instagram.com/mestnostishere/"
+          href="https://www.instagram.com/mestnostrecords"
           target="_blank"
         >
           instagram
         </a>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="col-md-3 col-sm-6 col-12">
         <a
           class="btn text-white"
           href="https://vk.com/mestnostrecords"
@@ -31,7 +31,7 @@
           вк
         </a>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="col-md-3 col-sm-6 col-12">
         <a
           class="btn text-white"
           href="https://mestnost.bandcamp.com"

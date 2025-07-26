@@ -1,10 +1,10 @@
 <template>
   <div class="koma-doroga-v-nebo w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/doroga_v_nebo.jpg" width="80%" />
+      <div class="col-12 col-md-6 align-self-center">
+        <img src="/static/doroga_v_nebo.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Ko+Ma</h5>
           <h5 class="text-white">
@@ -14,7 +14,7 @@
             <div
               v-for="link in links"
               :key="link.name"
-              class="store-link col-lg-4 col-md-6 mt-5 text-nowrap"
+              class="store-link col-12 col-lg-4 col-md-6 mt-5 text-nowrap"
             >
               <font-awesome-icon
                 :icon="['fab', link.icon]"
@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/koma_face_2.jpg"
+          src="/static/koma_face_2.jpg"
           alt="Koma"
           width="70%"
           height="auto"
@@ -41,7 +41,6 @@
     <div class="row mb-5">
       <div class="col-md-6 offset-md-2">
         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2768196344/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
-          <a href="https://mestnost.bandcamp.com/album/--2">Дорога в Небо by Ko+Ma</a>
         </iframe>
       </div>
     </div>
@@ -93,7 +92,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/koma_doroga_v_nebo_cassette_1.jpg"
+          src="/static/koma_doroga_v_nebo_cassette_1.jpg"
           alt="koma doroga v nebo cassette 1"
           width="90%"
           height="auto"
@@ -101,7 +100,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/koma_doroga_v_nebo_cassette_2.jpg"
+          src="/static/koma_doroga_v_nebo_cassette_2.jpg"
           alt="koma doroga v nebo cassette 2"
           width="90%"
           height="auto"
@@ -109,14 +108,13 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/koma_doroga_v_nebo_cassette_3.jpg"
+          src="/static/koma_doroga_v_nebo_cassette_3.jpg"
           alt="koma doroga v nebo cassette 3"
           width="90%"
           height="auto"
         />
       </div>
     </div>
-  </div>
   </div>
 </template>
 
@@ -180,6 +178,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

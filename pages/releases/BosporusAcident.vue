@@ -1,10 +1,10 @@
 <template>
   <div class="bosporus-accident w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/bosporus_accident.jpg" width="80%" />
+      <div class="col-12 col-md-6 align-self-center">
+        <img src="/static/bosporus_accident.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Raveny x Morphtables</h5>
           <h5 class="text-white">
@@ -14,7 +14,7 @@
             <div
               v-for="link in links"
               :key="link.name"
-              class="store-link col-lg-4 col-md-6 mt-5 text-nowrap"
+              class="store-link col-12 col-lg-4 col-md-6 mt-5 text-nowrap"
             >
               <font-awesome-icon
                 :icon="['fab', link.icon]"
@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/raveny_morphtables_face.jpg"
+          src="/static/raveny_morphtables_face.jpg"
           alt="yella gin"
           width="50%"
           height="auto"
@@ -41,7 +41,6 @@
     <div class="row mb-5">
       <div class="col-md-6 offset-md-2">
         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=539927158/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
-          <a href="https://mestnost.bandcamp.com/album/bosporus-acident">Bosporus Acident by Morphtables, Raveny</a>
         </iframe>
       </div>
     </div>
@@ -90,7 +89,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/bosporus_accident_cassette_1.jpg"
+          src="/static/bosporus_accident_cassette_1.jpg"
           alt="bosporus_accident_cassette_1"
           width="90%"
           height="auto"
@@ -98,7 +97,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/bosporus_accident_cassette_2.jpg"
+          src="/static/bosporus_accident_cassette_2.jpg"
           alt="bosporus_accident_cassette_1"
           width="90%"
           height="auto"
@@ -106,7 +105,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/bosporus_accident_cassette_3.jpg"
+          src="/static/bosporus_accident_cassette_3.jpg"
           alt="bosporus_accident_cassette_3"
           width="90%"
           height="auto"
@@ -176,6 +175,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {

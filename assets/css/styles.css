@@ -1,26 +1,26 @@
 @font-face {
   font-family: 'Cocomat';
-  src: url('~@/assets/fonts/Cocomat.ttf');
+  src: url('~/assets/fonts/Cocomat.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Cocomat';
-  src: url('~@/assets/fonts/Cocomat-Bold.ttf');
+  src: url('~/assets/fonts/Cocomat-Bold.ttf');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Acrom';
-  src: url('~@/assets/fonts/Acrom-Medium.otf');
+  src: url('~/assets/fonts/Acrom-Medium.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Acrom';
-  src: url('~@/assets/fonts/Acrom-Regular.otf');
+  src: url('~/assets/fonts/Acrom-Regular.otf');
   font-weight: lighter;
   font-style: normal;
 }

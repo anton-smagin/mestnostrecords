@@ -1,10 +1,10 @@
 <template>
   <div class="rasputin-cherta-nova w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
-        <img src="~/static/cherta-nova.jpg" width="80%" />
+      <div class="col-12 col-md-6 align-self-center">
+        <img src="/static/cherta-nova.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Andrey Rasputin</h5>
           <h5 class="text-white">
@@ -14,7 +14,7 @@
             <div
               v-for="link in links"
               :key="link.name"
-              class="store-link col-lg-4 col-md-6 mt-5 text-nowrap"
+              class="store-link col-12 col-lg-4 col-md-6 mt-5 text-nowrap"
             >
               <font-awesome-icon
                 :icon="['fab', link.icon]"
@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-md-12 mb-5">
         <img
-          src="~/static/rasputin_face.jpg"
+          src="/static/rasputin_face.jpg"
           alt="rasputin"
           width="70%"
           height="auto"
@@ -41,7 +41,6 @@
     <div class="row mb-5">
       <div class="col-md-6 offset-md-2">
         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3762552334/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
-          <a href="https://mestnost.bandcamp.com/album/cherta-nova">Cherta-nova by Andrey Rasputin</a>
         </iframe>
       </div>
     </div>
@@ -54,6 +53,7 @@
             пруды с зелеными зонами, Битцевский парк с мифическими зайцами, породистыми полевками и легендарным маньяком и много чего еще – у каждого жителя
             найдется свой тайный чертановский алтарь. Все это районное великолепие давно просило озвучки, ведь кино с его фантазийной визуализацией давно уже
             облюбовало чертановские пейзажи – от Рязанова до Бондарчука.
+          </p>
           <p>
             Можно поглубже воткнуть в уши айрподсы, нажать play, и отправиться по местным достопримечательностям.
             Трек Chertona расскажет об одноименной речке, которая является притоком реки Городни – сейчас она превращена в Верхний и Малый Чертановские пруды.
@@ -93,7 +93,7 @@
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/cherta_nova_cassette_1.jpeg"
+          src="/static/cherta_nova_cassette_1.jpeg"
           alt="rasputin cherta-nova cassette 1"
           width="90%"
           height="auto"
@@ -101,7 +101,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/cherta_nova_cassette_2.jpeg"
+          src="/static/cherta_nova_cassette_2.jpeg"
           alt="rasputin cherta-nova cassette 2"
           width="90%"
           height="auto"
@@ -109,7 +109,7 @@
       </div>
       <div class="col-md-4 mt-5">
         <img
-          src="~/static/cherta_nova_cassette_3.jpeg"
+          src="/static/cherta_nova_cassette_3.jpeg"
           alt="rasputin cherta-nova cassette 3"
           width="90%"
           height="auto"
@@ -179,6 +179,8 @@ h1 {
 
 .social {
   font-size: 1em;
+  text-decoration: none;
+  margin-left: 0.1em;
 }
 
 .store-link {
