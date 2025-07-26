@@ -5,7 +5,7 @@
         <div
           v-for="artist in artists"
           :key="`${artist.name}`"
-          class="col-md-4 col-sm-6 col-xs-12 align-items-center"
+          class="col-md-4 col-sm-6 col-12 align-items-center"
         >
           <NuxtLink class="btn" :to="`/${artist.link}`">
             <div class="mb-1 align-middle ">

@@ -1,10 +1,10 @@
 <template>
   <div class="anderdog-dessin-bizarre-imagine w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <img src="/static/imagine.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Anderdog and Dessin Bizarre</h5>
           <h5 class="text-white">

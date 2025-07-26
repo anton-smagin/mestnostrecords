@@ -5,7 +5,7 @@
         <div
           v-for="release in releases"
           :key="`${release.name}.sketch`"
-          class="col-md-4 col-sm-6 col-xs-12 sketch align-items-center"
+          class="col-md-4 col-sm-6 col-12 sketch align-items-center"
         >
           <NuxtLink class="btn" :to="`/${release.name}`">
             <img :src="`/static/${release.image}.jpg`" :alt="`${release.artistName} - ${release.releaseName}`" class="release-image" />

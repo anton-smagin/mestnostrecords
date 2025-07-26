@@ -1,10 +1,10 @@
 <template>
   <div class="lovely-grinch w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <img src="/static/lovely_grinch.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Lovely Grinch</h5>
           <h5 class="text-white"><span>KIKOK</span></h5>
@@ -12,7 +12,7 @@
             <div
               v-for="link in links"
               :key="link.name"
-              class="store-link col-lg-4 col-md-6 mt-5 text-nowrap"
+              class="store-link col-12 col-lg-4 col-md-6 mt-5 text-nowrap"
             >
               <font-awesome-icon
                 :icon="['fab', link.icon]"
@@ -38,9 +38,6 @@
         <div class="col-md-12">
           <div class="col-md-6 offset-md-2">
             <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2730815774/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
-              <a href="https://mestnost.bandcamp.com/album/lovely-grinch">
-                Lovely Grinch by KIKOK
-              </a>
             </iframe>
           </div>
           <div class="description text-white mb-5 mt-5">

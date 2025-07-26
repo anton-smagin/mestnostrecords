@@ -1,10 +1,10 @@
 <template>
   <div class="anderdog-sleep-paralysis w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <img src="/static/anderdog.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Anderdog</h5>
           <h5 class="text-white">
@@ -44,11 +44,7 @@
           style="border: 0; width: 100%; height: 120px"
           src="https://bandcamp.com/EmbeddedPlayer/album=596035728/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
           seamless
-        >
-          <a href="https://mestnost.bandcamp.com/album/sleep-paralysis"
-            >Sleep Paralysis by Anderdog</a
-          >
-        </iframe>
+        ></iframe>
       </div>
     </div>
     <div class="row mb-5 mt-5">

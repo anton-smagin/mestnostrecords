@@ -1,10 +1,10 @@
 <template>
   <div class="koma-doroga-v-nebo w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <img src="/static/doroga_v_nebo_kokokei_edit.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">Ko+Ma</h5>
           <h5 class="text-white">
@@ -15,7 +15,7 @@
             <div
               v-for="link in links"
               :key="link.name"
-              class="store-link col-lg-4 col-md-6 mt-5 text-nowrap"
+              class="store-link col-12 col-lg-4 col-md-6 mt-5 text-nowrap"
             >
               <font-awesome-icon
                 :icon="['fab', link.icon]"
@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="row mb-5">
-      <div class="col-xs-12 offset-3">
+      <div class="col-12 offset-3">
         <iframe
           src="https://vk.com/video_ext.php?oid=-205699954&id=456239029&hd=2&autoplay=1"
           allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
@@ -53,13 +53,11 @@
           <p>
             Клип снимали:
           </p>
-          <p>
-            <ul>
-              <li>Марго Кобозева</li>
-              <li>Юля Горбунова</li>
-              <li>Таня Кондратьева</li>
-            </ul>
-          </p>
+          <ul>
+            <li>Марго Кобозева</li>
+            <li>Юля Горбунова</li>
+            <li>Таня Кондратьева</li>
+          </ul>
           <p class="mt-5">
             Video Ko+Ma and a new interpretation of the track from Kokokei.
             The next album will be released on the label Mestnost in 2025.
@@ -68,13 +66,11 @@
           <p>
             The video was filmed by:
           </p>
-          <p>
-            <ul>
-              <li>Margo Kobozeva</li>
-              <li>Yulia Gorbunova</li>
-              <li>Tanya Kondratieva</li>
-            </ul>
-          </p>
+          <ul>
+            <li>Margo Kobozeva</li>
+            <li>Yulia Gorbunova</li>
+            <li>Tanya Kondratieva</li>
+          </ul>
         </div>
       </div>
     </div>

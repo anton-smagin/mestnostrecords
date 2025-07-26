@@ -1,10 +1,10 @@
 <template>
   <div class="the-way-of-the-dog w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <img src="/static/the_way_of_the_dog.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">The Way of the Dog</h5>
           <h5 class="text-white"><span>Anderdog</span></h5>
@@ -12,7 +12,7 @@
             <div
               v-for="link in links"
               :key="link.name"
-              class="store-link col-lg-4 col-md-6 mt-5 text-nowrap"
+              class="store-link col-12 col-md-6 col-lg-4 mt-5 text-nowrap"
             >
               <font-awesome-icon
                 :icon="['fab', link.icon]"
@@ -57,6 +57,32 @@
             <p>The Dog’s path, according to Anderdog, is a continuous contrast of strength and fluidity—a pushy jungle sound balanced by the clear skies of the album’s finales. True to his creative principles, the artist still shuns symmetry, making every track unpredictable. He blends broken beats with tender instrumental monologues and skillfully wraps the sharp edges of IDM in lyrical textures. Why not? As the great Master Lee once said: "Softness cannot be broken."</p>
           </div>
         </div> 
+        <div class="row mb-5">
+          <div class="col-md-4 mt-5">
+            <img
+              src="/static/the_way_of_the_dog_cassette_1.jpg"
+              alt="the way of the dog cassette 1"
+              width="90%"
+              height="auto"
+            />  
+          </div>
+          <div class="col-md-4 mt-5">
+            <img
+              src="/static/the_way_of_the_dog_cassette_2.jpg"
+              alt="the way of the dog cassette 2"
+              width="90%"
+              height="auto"
+            />  
+          </div>
+          <div class="col-md-4 mt-5">
+            <img
+              src="/static/the_way_of_the_dog_cassette_3.jpg"
+              alt="the way of the dog cassette 3"
+              width="90%"
+              height="auto"
+            />  
+          </div>
+        </div>
       </div>  
     </div>  
   </div>

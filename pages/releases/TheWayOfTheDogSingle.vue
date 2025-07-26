@@ -1,10 +1,10 @@
 <template>
   <div class="the-way-of-the-dog w-100">
     <div class="row mb-5 fill d-flex">
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <img src="/static/the_way_of_the_dog.jpg" width="80%" />
       </div>
-      <div class="col-xs-12 col-md-6 align-self-center">
+      <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="text-white release-name">The Way of the Dog</h5>
           <h5 class="text-white"><span>Anderdog</span></h5>
@@ -12,7 +12,7 @@
             <div
               v-for="link in links"
               :key="link.name"
-              class="store-link col-lg-4 col-md-6 mt-5 text-nowrap"
+              class="store-link col-12 col-lg-4 col-md-6 mt-5 text-nowrap"
             >
               <font-awesome-icon
                 :icon="['fab', link.icon]"
@@ -38,7 +38,6 @@
         <div class="col-md-12">
           <div class="col-md-6 offset-md-2">
             <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=605230901/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
-              <a href="https://mestnost.bandcamp.com/album/the-way-of-the-dog">The Way of the Dog by Anderdog</a>
             </iframe>
           </div>
           <div class="description text-white mb-5 mt-5">
