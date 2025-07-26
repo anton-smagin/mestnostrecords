@@ -9,7 +9,7 @@
         >
           <NuxtLink class="btn" :to="`/${event.link}`">
             <div class="mb-1 align-middle ">
-              <img :src="require(`/static/${event.photo}.jpg`)" class="crop" />
+              <img :src="getImageUrl(event.photo)" class="crop" />
             </div>
             <div class="text-white">
               <p class="description">{{ event.name }}</p>
@@ -41,7 +41,11 @@ export default {
       ]
     }
   },
-  methods: {},
+  methods: {
+    getImageUrl(photo) {
+      return `/static/${photo}.jpg`
+    }
+  },
 }
 </script>
 

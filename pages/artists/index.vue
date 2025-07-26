@@ -9,7 +9,7 @@
         >
           <NuxtLink class="btn" :to="`/${artist.link}`">
             <div class="mb-1 align-middle ">
-              <img :src="require(`/static/${artist.photo}_face.jpg`)" class="crop" />
+              <img :src="getImageUrl(artist.photo)" class="crop" />
             </div>
             <div class="text-white">
               <p class="description">{{ artist.name }}</p>
@@ -141,7 +141,11 @@ export default {
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
   },
-  methods: {},
+  methods: {
+    getImageUrl(photo) {
+      return `/static/${photo}_face.jpg`
+    }
+  },
 }
 </script>
 
