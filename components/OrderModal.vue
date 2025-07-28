@@ -154,37 +154,23 @@ export default {
       try {
         const message = `Заказ: ${this.itemTitle}\n\nИмя: ${this.formData.name}\nКонтакт: ${this.formData.contact}\nСообщение: ${this.formData.message}`
         
-        // Try POST first, if CORS fails, fall back to GET
-        let response
-        try {
-          response = await fetch('https://blue-lake-f917.mestnostishere.workers.dev/', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: new URLSearchParams({
-              name: this.formData.name,
-              message: message,
-              auth: 'supersecretkey'
-            })
-          })
-        } catch (corsError) {
-          // If POST fails due to CORS, try GET request
-          const params = new URLSearchParams({
-            name: this.formData.name,
-            message: message,
-            auth: 'supersecretkey'
-          })
-          response = await fetch(`https://blue-lake-f917.mestnostishere.workers.dev/?${params.toString()}`, {
-            method: 'GET'
-          })
-        }
+        // GET request with query parameters
+        const params = new URLSearchParams({
+          name: this.formData.name,
+          message: message,
+          auth: 'supersecretkey'
+        })
+        
+        const response = await fetch(`https://blue-lake-f917.mestnostishere.workers.dev/?${params.toString()}`, {
+          method: 'GET'
+        })
         
         if (response.ok) {
           this.orderSent = true
         } else {
           throw new Error('Failed to send order')
         }
+        
       } catch (error) {
         console.error('Error sending order:', error)
         this.errorMessage = 'Произошла ошибка при отправке заказа. Попробуйте еще раз.'
