@@ -32,10 +32,10 @@
           </p>
         </div>
       </div>
-      <div class="col-md-12 mt-3 mb-6">
+      <div class="col-12 mt-3 mb-6">
         <h1>Контакты</h1>
       </div>
-      <div class="d-flex justify-content-center">
+      <div class="row">
       <div class="col-md-3 col-sm-6 col-12">
         <a
           class="btn text-white"
@@ -100,6 +100,7 @@ h1 {
   margin: 3% 10%;
   letter-spacing: 0.2em;
   line-height: 2em;
+  text-align: justify;
   font-family: Acrom, sans-serif;
   @media only screen and (max-width: 768px) {
     margin: 4% 10%;

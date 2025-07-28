@@ -15,21 +15,32 @@
         <h5 class="merch-title text-white">{{ title }}</h5>
         <p class="merch-artist text-white">{{ artist }}</p>
         <p class="merch-price text-white">{{ price }}</p>
-        <a 
-          :href="orderLink" 
-          target="_blank" 
+        <button 
+          @click="openOrderModal" 
           class="btn btn-outline-light order-btn"
         >
           Заказать
-        </a>
+        </button>
       </div>
     </div>
+    
+    <OrderModal
+      :show="showModal"
+      :item-title="title"
+      :artist-name="artist"
+      @close="closeModal"
+    />
   </div>
 </template>
 
 <script>
+import OrderModal from './OrderModal.vue'
+
 export default {
   name: 'MerchItem',
+  components: {
+    OrderModal
+  },
   props: {
     title: {
       type: String,
@@ -58,7 +69,8 @@ export default {
   },
   data() {
     return {
-      imageError: false
+      imageError: false,
+      showModal: false
     }
   },
   methods: {
@@ -78,6 +90,12 @@ export default {
     },
     goToAlbum() {
       this.$router.push(this.albumLink)
+    },
+    openOrderModal() {
+      this.showModal = true
+    },
+    closeModal() {
+      this.showModal = false
     }
   }
 }

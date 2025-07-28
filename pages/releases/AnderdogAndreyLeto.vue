@@ -185,7 +185,7 @@ h1 {
   letter-spacing: 0.1em;
   line-height: 1.5em;
   font-family: Acrom, sans-serif;
-  text-align: left;
+  text-align: justify;
   @media only screen and (max-width: 768px) {
     letter-spacing: 0.08em;
   }
@@ -204,6 +204,11 @@ h1 {
   @media only screen and (max-width: 768px) {
     margin-left: 0;
   }
+}
+
+.store-link svg {
+  font-size: 1em;
+  vertical-align: middle;
 }
 
 .release-name {
