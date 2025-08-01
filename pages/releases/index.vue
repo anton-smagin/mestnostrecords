@@ -27,6 +27,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/Relikt1',
+          artistName: 'Andrey Rasputin',
+          releaseName: 'RELIKT-1',
+          image: 'relikt_1',
+        },
+        {
           name: 'releases/TheWayOfTheDog',
           artistName: 'Anderdog',
           releaseName: 'The Way of the Dog',
