@@ -130,16 +130,16 @@
       <div class="row mb-5">
           <div class="col-md-6 mt-5">
             <img
-              src="/static/imagined_awekenings_1.jpg"
-              alt="veter cassette 1"
+              src="/static/imagined_awakenings_cassette_1.jpg"
+              alt="imagined awakenings cassette 1"
               width="90%"
               height="auto"
             />
           </div>
           <div class="col-md-6 mt-5">
             <img
-              src="/static/imagined_awekenings_2.jpg"
-              alt="veter cassette 2"
+              src="/static/imagined_awakenings_cassette_2.jpg"
+              alt="imagined awakenings cassette 2"
               width="90%"
               height="auto"
             />

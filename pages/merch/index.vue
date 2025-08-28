@@ -176,6 +176,15 @@ export default {
           albumLink: '/releases/SunInsteadOfHead'
         },
         {
+          id: 20,
+          title: 'Я был спутником солнца',
+          artist: 'Yella Gin',
+          cassetteId: 'yella_gin',
+          price: '1500 ₽',
+          orderLink: 'https://mestnost.bandcamp.com/album/--3',
+          albumLink: '/releases/YaBilSputnicomSolnca'
+        },
+        {
           id: 17,
           title: 'Shinra Banshou',
           artist: 'HAJIME KOJIRO',
@@ -183,6 +192,15 @@ export default {
           price: '1500 ₽',
           orderLink: 'https://mestnost.bandcamp.com/album/shinra-banshou',
           albumLink: '/releases/ShinraBanshou'
+        },
+        {
+          id: 22,
+          title: 'Imagined / Awakenings',
+          artist: 'H. Ruine / MIKHAIL KIREEV',
+          cassetteId: 'imagined_awakenings',
+          price: '1500 ₽',
+          orderLink: 'https://mestnost.bandcamp.com/album/imagined-awakenings',
+          albumLink: 'releases/ImaginedAwakenings'
         },
         {
           id: 18,
@@ -203,20 +221,21 @@ export default {
           albumLink: '/releases/TheWayOfTheDog'
         },
         {
-          id: 20,
-          title: 'Я был спутником солнца',
-          artist: 'Yella Gin',
-          cassetteId: 'yella_gin',
+          id: 21,
+          title: 'Relikt 1',
+          artist: 'Andrey Rasputin',
+          cassetteId: 'relikt_1',
           price: '1500 ₽',
-          orderLink: 'https://mestnost.bandcamp.com/album/--3',
-          albumLink: '/releases/YaBilSputnicomSolnca'
+          orderLink: 'https://mestnost.bandcamp.com/album/relikt-1/',
+          albumLink: '/releases/Relikt1'
         }
       ]
     }
   },
   computed: {
     sortedMerchItems() {
-      return this.merchItems.sort((a, b) => a.artist.localeCompare(b.artist) || a.title.localeCompare(b.title))
+      return this.merchItems.reverse();
+      // return this.merchItems.sort((a, b) => a.artist.localeCompare(b.artist) || a.title.localeCompare(b.title))
     }
   }
 }

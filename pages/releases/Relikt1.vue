@@ -66,8 +66,31 @@
             По романам Азимова и Лема, по саундтрекам Алексея Рыбникова, по уютной гордости за советских ученых и по соседу дяде Косте — скромному инженеру, собравшему твой первый радиоприемник.
           </p>
         </div>
-        <div class="col-md-6 offset-md-3 mb-5">
-          <img src="/static/relikt_1_cassette.jpg" width="100%" />
+        <div class="row mb-5">
+          <div class="col-md-4 mt-5">
+            <img
+              src="/static/relikt_1_cassette_1.jpg"
+              alt="relikt_1 cassette 1"
+              width="90%"
+              height="auto"
+            />
+          </div>
+          <div class="col-md-4 mt-5">
+            <img
+              src="/static/relikt_1_cassette_2.jpg"
+              alt="relikt_1 cassette 2"
+              width="90%"
+              height="auto"
+            />
+          </div>
+          <div class="col-md-4 mt-5">
+            <img
+              src="/static/relikt_1_cassette_3.jpg"
+              alt="relikt_1 cassette 3"
+              width="90%"
+              height="auto"
+            />
+          </div>
         </div>
         <div class="description text-white mb-5">
           <p>

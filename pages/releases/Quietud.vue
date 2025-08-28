@@ -60,33 +60,32 @@
             The piece can be classified as lo-fi house in terms of genre, but – “dacha”. For the author, it turned into something more than just a circumstance. Dacha is the embodiment of clear meaning and symbol of sacred idleness, a personification of the question: “why have we forgotten how to just be?” The eight tracks of the album are imbued with the dacha vibe – things like childhood, coziness, and security. They make your head feel weightless, and there is nothing bad about it - it is just life as it is.
           </p>
         </div>
-        <div class="row mb-5">
-      <div class="col-md-4 mt-5">
-        <img
-          src="/static/quietud_cassette_1.jpg"
-          alt="quietud cassette 1"
-          width="90%"
-          height="auto"
-        />
+      <div class="row mb-5">
+        <div class="col-md-4 mt-5">
+          <img
+            src="/static/quietud_cassette_1.jpg"
+            alt="quietud cassette 1"
+            width="90%"
+            height="auto"
+          />
+        </div>
+        <div class="col-md-4 mt-5">
+          <img
+            src="/static/quietud_cassette_2.jpg"
+            alt="quietud cassette 2"
+            width="90%"
+            height="auto"
+          />
+        </div>
+        <div class="col-md-4 mt-5">
+          <img
+            src="/static/quietud_cassette_3.jpg"
+            alt="quietud cassette 3"
+            width="90%"
+            height="auto"
+          />
+        </div>
       </div>
-      <div class="col-md-4 mt-5">
-        <img
-          src="/static/quietud_cassette_2.jpg"
-          alt="quietud cassette 2"
-          width="90%"
-          height="auto"
-        />
-      </div>
-      <div class="col-md-4 mt-5">
-        <img
-          src="/static/quietud_cassette_3.jpg"
-          alt="quietud cassette 3"
-          width="90%"
-          height="auto"
-        />
-      </div>
-    </div>
-        <!-- quietud_cassette_1 -->
       </div>
     </div>
   </div>
