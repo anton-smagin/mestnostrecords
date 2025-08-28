@@ -234,8 +234,8 @@ export default {
   },
   computed: {
     sortedMerchItems() {
-      return this.merchItems.reverse();
-      // return this.merchItems.sort((a, b) => a.artist.localeCompare(b.artist) || a.title.localeCompare(b.title))
+      // return this.merchItems.reverse();
+      return this.merchItems.sort((a, b) => a.artist.localeCompare(b.artist) || a.title.localeCompare(b.title))
     }
   }
 }

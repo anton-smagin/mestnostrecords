@@ -29,7 +29,7 @@
             <NuxtLink class="btn text-nowrap" to="/events">События</NuxtLink>
           </div>
           <div class="col-sm-12" @click="menuShow = false">
-            <NuxtLink class="btn text-nowrap" to="/merch">Мерч</NuxtLink>
+            <NuxtLink class="btn text-nowrap" to="/merch" style="cursor: pointer; pointer-events: auto;" @click="navigateToMerch">Мерч</NuxtLink>
           </div>
           <div class="col-sm-12" @click="menuShow = false">
             <NuxtLink class="btn text-nowrap" to="/contacts">Контакты</NuxtLink>
@@ -52,7 +52,7 @@
         <NuxtLink class="btn text-nowrap px-2" to="/events">События</NuxtLink>
       </div>
       <div class="col-md-1 d-none d-md-block">
-        <NuxtLink class="btn text-nowrap px-2" to="/merch">Мерч</NuxtLink>
+        <NuxtLink class="btn text-nowrap px-2" to="/merch" style="cursor: pointer; pointer-events: auto;">Мерч</NuxtLink>
       </div>
     </div>
   </div>
