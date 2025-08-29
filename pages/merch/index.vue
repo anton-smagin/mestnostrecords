@@ -16,6 +16,7 @@
           :price="item.price"
           :order-link="item.orderLink"
           :album-link="item.albumLink"
+          :out-of-stock="item.outOfStock"
         />
       </div>
     </div>
@@ -52,8 +53,9 @@ export default {
           title: 'Slow Crunch',
           artist: 'KIKOK',
           cassetteId: 'slow_crunch',
-          price: '1500 ₽',
-          albumLink: '/releases/SlowCrunch'
+          price: 'нет в наличии',
+          albumLink: '/releases/SlowCrunch',
+          outOfStock: true
         },
         {
           id: 22,
@@ -108,8 +110,9 @@ export default {
           title: 'Shinra Banshou',
           artist: 'HAJIME KOJIRO',
           cassetteId: 'shinra_banshou',
-          price: '1500 ₽',
-          albumLink: '/releases/ShinraBanshou'
+          price: 'нет в наличии',
+          albumLink: '/releases/ShinraBanshou',
+          outOfStock: true
         },
         {
           id: 14,
@@ -140,16 +143,18 @@ export default {
           title: 'Mandarin',
           artist: 'Kokokei',
           cassetteId: 'mandarin',
-          price: '1500 ₽',
-          albumLink: '/releases/KokokeiMandarin'
+          price: 'нет в наличии',
+          albumLink: '/releases/KokokeiMandarin',
+          outOfStock: true
         },
         {
           id: 13,
           title: 'Fields of Domodedovskaya',
           artist: 'Kisser',
           cassetteId: 'fields_of_domodedovskaya',
-          price: '1500 ₽',
-          albumLink: '/releases/FieldsOfDomodevskaya'
+          price: 'нет в наличии',
+          albumLink: '/releases/FieldsOfDomodevskaya',
+          outOfStock: true
         },
         {
           id: 16,
@@ -180,16 +185,18 @@ export default {
           title: 'Mimoza',
           artist: 'Kokokei',
           cassetteId: 'mimoza',
-          price: '1500 ₽',
-          albumLink: '/releases/KokokeiMimoza'
+          price: 'нет в наличии',
+          albumLink: '/releases/KokokeiMimoza',
+          outOfStock: true
         },
         {
           id: 11,
           title: 'Romantic Selection',
           artist: 'Anderdog & Andrey Leto',
           cassetteId: 'anderdog_leto',
-          price: '1500 ₽',
-          albumLink: '/releases/AnderdogAndreyLeto'
+          price: 'нет в наличии',
+          albumLink: '/releases/AnderdogAndreyLeto',
+          outOfStock: true
         },
         {
           id: 4,

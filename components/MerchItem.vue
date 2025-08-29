@@ -18,8 +18,10 @@
         <button 
           @click="openOrderModal" 
           class="btn btn-outline-light order-btn"
+          :class="{ 'out-of-stock': outOfStock }"
+          :disabled="outOfStock"
         >
-          Заказать
+          {{ outOfStock ? 'Нет в наличии' : 'Заказать' }}
         </button>
       </div>
     </div>
@@ -65,6 +67,10 @@ export default {
     albumLink: {
       type: String,
       required: true
+    },
+    outOfStock: {
+      type: Boolean,
+      default: false
     }
   },
   data() {
@@ -92,7 +98,9 @@ export default {
       this.$router.push(this.albumLink)
     },
     openOrderModal() {
-      this.showModal = true
+      if (!this.outOfStock) {
+        this.showModal = true
+      }
     },
     closeModal() {
       this.showModal = false
@@ -185,6 +193,18 @@ export default {
   background-color: #91a79d;
   color: black;
   border-color: #91a79d;
+}
+
+.order-btn.out-of-stock {
+  border-color: #666;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.order-btn.out-of-stock:hover {
+  background-color: transparent;
+  color: #666;
+  border-color: #666;
 }
 
 @media only screen and (max-width: 1000px) {
