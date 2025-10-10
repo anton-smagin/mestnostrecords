@@ -71,7 +71,7 @@ export default {
           link: 'https://vk.com/mestnostmunk24'
         },
         {
-          name: 'Билет',
+          name: 'Билеты',
           icon: '🎟️',
           link: 'https://moscow.qtickets.events/116238-vecherinka-leybla-mestnost',
           emoji: true

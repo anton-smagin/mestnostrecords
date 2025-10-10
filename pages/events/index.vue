@@ -28,7 +28,12 @@ export default {
   data() {
     return {
       events: [
-      {
+        {
+          name: 'Мунк 17-10-25',
+          photo: '17-10-25-munk',
+          link: 'events/17-10-25-Munk'
+        },
+        {
           name: 'Munk 24-08-24',
           photo: '24-08-24-munk',
           link: 'events/24-08-24-Munk'

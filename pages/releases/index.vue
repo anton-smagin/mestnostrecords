@@ -27,6 +27,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/RatioEtCaritas',
+          artistName: 'Dubree',
+          releaseName: 'Ratio et Сaritas',
+          image: 'dubree_ratio_et_caritas',
+        },
+        {
           name: 'releases/Relikt1',
           artistName: 'Andrey Rasputin',
           releaseName: 'RELIKT-1',
