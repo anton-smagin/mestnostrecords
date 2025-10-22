@@ -65,11 +65,27 @@
           </p>
         </div>
         <div class="row mb-5">
-          <div class="col-md-12">
+          <div class="col-md-4 mb-3">
             <img
-              src="/static/ratio_et_caritas_cassette.jpeg"
-              alt="Ratio et Caritas cassette"
-              width="70%"
+              src="/static/ratio_et_caritas_cassette_1.jpeg"
+              alt="Ratio et Caritas cassette 1"
+              width="100%"
+              height="auto"
+            />
+          </div>
+          <div class="col-md-4 mb-3">
+            <img
+              src="/static/ratio_et_caritas_cassette_2.jpeg"
+              alt="Ratio et Caritas cassette 2"
+              width="100%"
+              height="auto"
+            />
+          </div>
+          <div class="col-md-4 mb-3">
+            <img
+              src="/static/ratio_et_caritas_cassette_3.jpeg"
+              alt="Ratio et Caritas cassette 3"
+              width="100%"
               height="auto"
             />
           </div>
