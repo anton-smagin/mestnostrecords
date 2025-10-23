@@ -33,6 +33,14 @@ export default {
     return {
       merchItems: [
         {
+          id: 23,
+          title: 'Ratio et Сaritas',
+          artist: 'Dubree',
+          cassetteId: 'ratio_et_caritas',
+          price: '1500 ₽',
+          albumLink: '/releases/RatioEtCaritas'
+        },
+        {
           id: 21,
           title: 'Relikt 1',
           artist: 'Andrey Rasputin',
@@ -45,8 +53,9 @@ export default {
           title: 'The Way of the Dog',
           artist: 'Anderdog',
           cassetteId: 'the_way_of_the_dog',
-          price: '1500 ₽',
-          albumLink: '/releases/TheWayOfTheDog'
+          price: 'нет в наличии',
+          albumLink: '/releases/TheWayOfTheDog',
+          outOfStock: true
         },
         {
           id: 18,
@@ -119,8 +128,9 @@ export default {
           title: 'Helix',
           artist: 'Morakh',
           cassetteId: 'helix_cassette',
-          price: '1500 ₽',
-          albumLink: '/releases/Helix'
+          price: 'нет в наличии',
+          albumLink: '/releases/Helix',
+          outOfStock: true
         },
         {
           id: 12,
