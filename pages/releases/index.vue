@@ -27,6 +27,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/SlowCrunchRemixes',
+          artistName: 'KIKOK',
+          releaseName: 'Slow Crunch remixes',
+          image: 'slow_crunches_remixes',
+        },
+        {
           name: 'releases/RatioEtCaritas',
           artistName: 'Dubree',
           releaseName: 'Ratio et Сaritas',
