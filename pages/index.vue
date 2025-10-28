@@ -5,7 +5,7 @@
         <h1 class="text-white logo w-100">МЕСТНОСТЬ</h1>
       </div>
     </div>
-    <footer class="d-flex justify-content-start">
+    <footer class="footer-links d-flex flex-column flex-sm-row align-items-start gap-2">
       <a
         class="btn text-white"
         href="https://t.me/mestnost_label"
@@ -43,3 +43,15 @@ export default {
   name: 'IndexPage',
 }
 </script>
+
+<style scoped>
+.footer-links {
+  padding: 1.5rem 1rem;
+}
+
+.footer-links .btn {
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: flex-start;
+}
+</style>

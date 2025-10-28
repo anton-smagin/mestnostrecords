@@ -2,7 +2,7 @@
   <div class="imagined-awakenings w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-12 col-md-6 align-self-center">
-        <img src="/static/imagined_awakenings.jpg" width="80%" />
+        <NuxtImg src="/static/imagined_awakenings.webp" style="max-width: 80%; height: auto;" format="webp" :quality="85" />
       </div>
       <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -50,12 +50,11 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <img
-          src="/static/h_ruine_face.jpg"
+        <NuxtImg
+          src="/static/h_ruine_face.webp"
           alt="h. ruine"
-          width="50%"
-          height="auto"
-        />
+          style="max-width: 50%; height: auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
     </div>
     <div class="row mb-5 mt-5">
@@ -70,12 +69,11 @@
     </div>
     <!-- <div class="row">
       <div class="col-md-12 mb-5">
-        <img
-          src="/static/mikhail_kireev_face.jpg"
+        <NuxtImg
+          src="/static/mikhail_kireev_face.webp"
           alt="mikhail kireev"
-          width="50%"
-          height="auto"
-        />
+          style="max-width: 50%; height: auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
     </div> -->
     <div class="row mb-5 mt-5">
@@ -129,20 +127,18 @@
       </div>
       <div class="row mb-5">
           <div class="col-md-6 mt-5">
-            <img
-              src="/static/imagined_awakenings_cassette_1.jpg"
+            <NuxtImg
+              src="/static/imagined_awakenings_cassette_1.webp"
               alt="imagined awakenings cassette 1"
-              width="90%"
-              height="auto"
-            />
+          style="display: block; width: 90%; height: auto; margin: 0 auto;"
+             format="webp" :quality="85" loading="lazy" />
           </div>
           <div class="col-md-6 mt-5">
-            <img
-              src="/static/imagined_awakenings_cassette_2.jpg"
+            <NuxtImg
+              src="/static/imagined_awakenings_cassette_2.webp"
               alt="imagined awakenings cassette 2"
-              width="90%"
-              height="auto"
-            />
+          style="display: block; width: 90%; height: auto; margin: 0 auto;"
+             format="webp" :quality="85" loading="lazy" />
           </div>
         </div> 
     </div>    

@@ -2,7 +2,7 @@
   <div class="sun-instead-of-head w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-12 col-md-6 align-self-center">
-        <img src="/static/sun_instead_of_head.jpg" width="80%" />
+        <NuxtImg src="/static/sun_instead_of_head.webp" style="max-width: 80%; height: auto;" format="webp" :quality="85" />
       </div>
       <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -30,12 +30,11 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <img
-          src="/static/max_ananyev_face.jpg"
+        <NuxtImg
+          src="/static/max_ananyev_face.webp"
           alt="Max Ananyev"
-          width="70%"
-          height="auto"
-        />
+          style="max-width: 70%; height: auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
     </div>
     <div class="row mb-5">
@@ -74,32 +73,31 @@
           </p>
         </div>
         <div class="col-md-12">
-          <iframe src="https://player.vimeo.com/video/734328735?h=d8d77aa050" width="100%" height="540" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://player.vimeo.com/video/734328735?h=d8d77aa050" width="100%"
+          style="display: block; width: 100%; height: auto;"
+          height="540" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="row mb-5">
           <div class="col-md-4 mt-5">
-            <img
-              src="/static/max_ananyev_cassette_1.jpg"
+            <NuxtImg
+              src="/static/max_ananyev_cassette_1.webp"
               alt="max ananyev sun instead of head cassette 1"
-              width="90%"
-              height="auto"
-            />
+          style="display: block; width: 90%; height: auto; margin: 0 auto;"
+             format="webp" :quality="85" loading="lazy" />
           </div>
           <div class="col-md-4 mt-5">
-            <img
-              src="/static/max_ananyev_cassette_2.jpg"
+            <NuxtImg
+              src="/static/max_ananyev_cassette_2.webp"
               alt="max ananyev sun instead of head cassette 2"
-              width="90%"
-              height="auto"
-            />
+          style="display: block; width: 90%; height: auto; margin: 0 auto;"
+             format="webp" :quality="85" loading="lazy" />
           </div>
           <div class="col-md-4 mt-5">
-            <img
-              src="/static/max_ananyev_cassette_3.jpg"
+            <NuxtImg
+              src="/static/max_ananyev_cassette_3.webp"
               alt="max ananyev sun instead of head cassette 3"
-              width="90%"
-              height="auto"
-            />
+          style="display: block; width: 90%; height: auto; margin: 0 auto;"
+             format="webp" :quality="85" loading="lazy" />
           </div>
         </div>
       </div>

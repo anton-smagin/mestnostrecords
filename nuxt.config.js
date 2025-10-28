@@ -46,7 +46,22 @@ export default defineNuxtConfig({
   components: true,
 
   // Modules for dev and build (recommended): https://nuxt.com/docs/api/configuration/nuxt-config#modules
-  modules: [],
+  modules: ['@nuxt/image'],
+
+  // Image optimization configuration
+  image: {
+    quality: 80,
+    formats: ['webp', 'jpeg'],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+    },
+    densities: [1, 2],
+  },
 
   // Build Configuration: https://nuxt.com/docs/api/configuration/nuxt-config#build
   build: {},

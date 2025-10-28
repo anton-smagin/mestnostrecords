@@ -9,7 +9,7 @@
         >
           <NuxtLink class="btn" :to="`/${event.link}`">
             <div class="mb-1 align-middle ">
-              <img :src="getImageUrl(event.photo)" class="crop" />
+              <NuxtImg :src="getImageUrl(event.photo)" class="crop" format="webp" :quality="85" loading="lazy" />
             </div>
             <div class="text-white">
               <p class="description">{{ event.name }}</p>
@@ -48,7 +48,7 @@ export default {
   },
   methods: {
     getImageUrl(photo) {
-      return `/static/${photo}.jpg`
+      return `/static/${photo}.webp`
     }
   },
 }

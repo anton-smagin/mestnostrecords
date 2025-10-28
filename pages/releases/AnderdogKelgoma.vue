@@ -2,7 +2,7 @@
   <div class="anderdog-kelgoma w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-12 col-md-6 align-self-center">
-        <img src="/static/anderdog_kelgoma.jpg" width="80%" />
+        <NuxtImg src="/static/anderdog_kelgoma.webp" style="max-width: 80%; height: auto;" format="webp" :quality="85" />
       </div>
       <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -30,12 +30,11 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <img
-          src="/static/anderdog_face_kelgoma.jpeg"
+        <NuxtImg
+          src="/static/anderdog_face_kelgoma.webp"
           alt="anderdog"
-          width="70%"
-          height="auto"
-        />
+          style="max-width: 70%; height: auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
     </div>
     <div class="row mb-5">
@@ -75,28 +74,25 @@
     </div>
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
-        <img
-          src="/static/kelgoma_cassette_1.jpeg"
+        <NuxtImg
+          src="/static/kelgoma_cassette_1.webp"
           alt="anderdog kelgoma cassette 1"
-          width="90%"
-          height="auto"
-        />
+          style="display: block; width: 90%; height: auto; margin: 0 auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
       <div class="col-md-4 mt-5">
-        <img
-          src="/static/kelgoma_cassette_2.jpeg"
+        <NuxtImg
+          src="/static/kelgoma_cassette_2.webp"
           alt="anderdog kelgoma cassette 2"
-          width="90%"
-          height="auto"
-        />
+          style="display: block; width: 90%; height: auto; margin: 0 auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
       <div class="col-md-4 mt-5">
-        <img
-          src="/static/kelgoma_cassette_3.jpeg"
+        <NuxtImg
+          src="/static/kelgoma_cassette_3.webp"
           alt="anderdog kelgoma cassette 3"
-          width="90%"
-          height="auto"
-        />
+          style="display: block; width: 90%; height: auto; margin: 0 auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
     </div>
   </div>
@@ -142,7 +138,7 @@ export default {
         {
           hid: 'og:image',
           name: 'og:image',
-          content: '/static/anderdog_kelgoma.jpg'
+          content: '/static/anderdog_kelgoma.webp'
         },
         {
           hid: 'og:title',
@@ -173,6 +169,13 @@ h1 {
   text-align: justify;
   @media only screen and (max-width: 768px) {
     letter-spacing: 0.08em;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .description {
+    margin: 0;
   }
 }
 

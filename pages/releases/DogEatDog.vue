@@ -2,7 +2,7 @@
   <div class="anderdog-dog-eat-dog w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-12 col-md-6 align-self-center">
-        <img src="/static/anderdog_dog_eat_dog.jpg" width="80%" />
+        <NuxtImg src="/static/anderdog_dog_eat_dog.webp" style="max-width: 80%; height: auto;" format="webp" :quality="85" />
       </div>
       <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -30,12 +30,11 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <img
-          src="/static/anderdog_face_dog_eat.jpeg"
+        <NuxtImg
+          src="/static/anderdog_face_dog_eat.webp"
           alt="anderdog"
-          width="50%"
-          height="auto"
-        />
+          style="max-width: 50%; height: auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
     </div>
     <div class="row mb-5">

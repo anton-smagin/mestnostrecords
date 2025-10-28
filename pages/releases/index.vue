@@ -8,7 +8,7 @@
           class="col-md-4 col-sm-6 col-12 sketch align-items-center"
         >
           <NuxtLink class="btn" :to="`/${release.name}`">
-            <img :src="`/static/${release.image}.jpg`" :alt="`${release.artistName} - ${release.releaseName}`" class="release-image" />
+            <NuxtImg :src="`/static/${release.image}.webp`" :alt="`${release.artistName} - ${release.releaseName}`" class="release-image" format="webp" :quality="85" loading="lazy" />
             <div :key="`${release.name}.description`" class="text-white">
               <p class="description">{{ release.artistName }}</p>
               <p class="description">{{ release.releaseName }}</p>

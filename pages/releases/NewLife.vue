@@ -2,7 +2,7 @@
   <div class="dj-headsick-new-life w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-12 col-md-6 align-self-center">
-        <img src="/static/new_life.jpg" width="80%" />
+        <NuxtImg src="/static/new_life.webp" style="max-width: 80%; height: auto;" format="webp" :quality="85" />
       </div>
       <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -36,12 +36,11 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <img
-          src="/static/dj_headsick_face.jpg"
+        <NuxtImg
+          src="/static/dj_headsick_face.webp"
           alt="dj headsick"
-          width="70%"
-          height="auto"
-        />
+          style="max-width: 70%; height: auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
     </div>
     <div class="row mb-5 mt-5">

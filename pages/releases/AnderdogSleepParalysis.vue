@@ -2,7 +2,7 @@
   <div class="anderdog-sleep-paralysis w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-12 col-md-6 align-self-center">
-        <img src="/static/anderdog.jpg" width="80%" />
+        <NuxtImg src="/static/anderdog.webp" style="max-width: 80%; height: auto;" format="webp" :quality="85" />
       </div>
       <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -30,12 +30,11 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <img
-          src="/static/anderdog_face.jpg"
+        <NuxtImg
+          src="/static/anderdog_face.webp"
           alt="anderdog"
-          width="70%"
-          height="auto"
-        />
+          style="max-width: 70%; height: auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
     </div>
     <div class="row mb-5">
@@ -75,28 +74,25 @@
     </div>
     <div class="row mb-5">
       <div class="col-md-4 mt-5">
-        <img
-          src="/static/anderdog_cassette_1.jpeg"
+        <NuxtImg
+          src="/static/anderdog_cassette_1.webp"
           alt="anderdog"
-          width="80%"
-          height="auto"
-        />
+          style="display: block; width: 80%; height: auto; margin: 0 auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
       <div class="col-md-4 mt-5">
-        <img
-          src="/static/anderdog_cassette_2.jpeg"
+        <NuxtImg
+          src="/static/anderdog_cassette_2.webp"
           alt="anderdog"
-          width="80%"
-          height="auto"
-        />
+          style="display: block; width: 80%; height: auto; margin: 0 auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
       <div class="col-md-4 mt-5">
-        <img
-          src="/static/anderdog_cassette_3.jpeg"
+        <NuxtImg
+          src="/static/anderdog_cassette_3.webp"
           alt="anderdog"
-          width="80%"
-          height="auto"
-        />
+          style="display: block; width: 80%; height: auto; margin: 0 auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
     </div>
   </div>

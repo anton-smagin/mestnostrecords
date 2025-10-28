@@ -2,7 +2,7 @@
   <div class="shinra-banshou w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-12 col-md-6 align-self-center">
-        <img src="/static/shinra_banshou.jpg" width="80%" />
+        <NuxtImg src="/static/shinra_banshou.webp" style="max-width: 80%; height: auto;" format="webp" :quality="85" />
       </div>
       <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -28,12 +28,11 @@
     </div>
     <div class="row">
       <div class="col-md-12 mb-5">
-        <img
-          src="/static/hajime_kojiro_face.jpg"
+        <NuxtImg
+          src="/static/hajime_kojiro_face.webp"
           alt="hajime kojiro"
-          width="70%"
-          height="auto"
-        />
+          style="max-width: 70%; height: auto;"
+         format="webp" :quality="85" loading="lazy" />
       </div>
     </div>
     <div class="row mb-5 mt-5">
@@ -102,28 +101,25 @@
         </div>
         <div class="row mb-5">
           <div class="col-md-4 mt-5">
-            <img
-              src="/static/shinra_banshou_cassette_1.jpg"
+            <NuxtImg
+              src="/static/shinra_banshou_cassette_1.webp"
               alt="shinra banshou cassette 1"
-              width="90%"
-              height="auto"
-            />
+          style="display: block; width: 90%; height: auto; margin: 0 auto;"
+             format="webp" :quality="85" loading="lazy" />
           </div>
           <div class="col-md-4 mt-5">
-            <img
-              src="/static/shinra_banshou_cassette_2.jpg"
+            <NuxtImg
+              src="/static/shinra_banshou_cassette_2.webp"
               alt="shinra banshou cassette 2"
-              width="90%"
-              height="auto"
-            />
+          style="display: block; width: 90%; height: auto; margin: 0 auto;"
+             format="webp" :quality="85" loading="lazy" />
           </div>
           <div class="col-md-4 mt-5">
-            <img
-              src="/static/shinra_banshou_cassette_3.jpg"
+            <NuxtImg
+              src="/static/shinra_banshou_cassette_3.webp"
               alt="shinra banshou  cassette 3"
-              width="90%"
-              height="auto"
-            />
+          style="display: block; width: 90%; height: auto; margin: 0 auto;"
+             format="webp" :quality="85" loading="lazy" />
           </div>
         </div>
       </div>

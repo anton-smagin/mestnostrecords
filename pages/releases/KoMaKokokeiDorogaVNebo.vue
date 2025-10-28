@@ -2,7 +2,7 @@
   <div class="koma-doroga-v-nebo w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-12 col-md-6 align-self-center">
-        <img src="/static/doroga_v_nebo_kokokei_edit.jpg" width="80%" />
+        <NuxtImg src="/static/doroga_v_nebo_kokokei_edit.webp" style="max-width: 80%; height: auto;" format="webp" :quality="85" />
       </div>
       <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">

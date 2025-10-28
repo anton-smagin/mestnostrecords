@@ -9,7 +9,7 @@
         >
           <NuxtLink class="btn" :to="`/${artist.link}`">
             <div class="mb-1 align-middle ">
-              <img :src="getImageUrl(artist.photo)" class="crop" />
+              <NuxtImg :src="getImageUrl(artist.photo)" class="crop" format="webp" :quality="85" loading="lazy" />
             </div>
             <div class="text-white">
               <p class="description">{{ artist.name }}</p>
@@ -143,7 +143,7 @@ export default {
   },
   methods: {
     getImageUrl(photo) {
-      return `/static/${photo}_face.jpg`
+      return `/static/${photo}_face.webp`
     }
   },
 }

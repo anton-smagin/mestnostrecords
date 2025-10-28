@@ -2,7 +2,7 @@
   <div class="the-way-of-the-dog w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-12 col-md-6 align-self-center">
-        <img src="/static/the_way_of_the_dog.jpg" width="80%" />
+        <NuxtImg src="/static/the_way_of_the_dog.webp" style="max-width: 80%; height: auto;" format="webp" :quality="85" />
       </div>
       <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
@@ -27,13 +27,12 @@
       </div>
       <div class="row mb-5 mt-5">
         <div class="col-md-12 mb-5 align-self-center text-center">
-          <img
-            src="/static/anderdog_face_the_way_of_the_dog.jpeg"
+          <NuxtImg
+            src="/static/anderdog_face_the_way_of_the_dog.webp"
             alt="anderdog"
-            width="50%"
-            height="auto"
+            style="max-width: 50%; height: auto;"
             class="mx-auto d-block"
-          />
+           format="webp" :quality="85" loading="lazy" />
         </div>
         <div class="col-md-12">
           <div class="col-md-6 offset-md-2">

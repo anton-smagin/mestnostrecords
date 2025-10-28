@@ -2,11 +2,11 @@
   <div class="w-100">
     <div id="nav" class="row justify-content-between">
       <div class="d-flex w-80 justify-content-end">
-        <img
+        <NuxtImg
           class="hamburger d-block d-md-none"
           src="/static/white-hamburger.png"
-          width="30px"
-          height="30px"
+          width="30"
+          height="30"
           alt=""
           @click="menuShow = !menuShow"
         />

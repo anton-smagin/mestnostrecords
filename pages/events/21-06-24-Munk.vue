@@ -2,7 +2,7 @@
   <div class="munk-21-06-24 w-100">
     <div class="row mb-5 fill d-flex">
       <div class="col-12 col-md-6 align-self-center">
-        <img src="/static/21-06-24-munk.jpg" width="80%" />
+        <NuxtImg src="/static/21-06-24-munk.webp" style="max-width: 80%; height: auto;" format="webp" :quality="85" />
       </div>
       <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">

@@ -2,13 +2,16 @@
   <div class="merch-item col-md-4 col-sm-6 col-12 align-items-center mb-4">
     <div class="merch-card">
       <div class="merch-image-container">
-        <img 
-          :src="getImageUrl()" 
-          :alt="title" 
+        <NuxtImg
+          :src="getImageUrl()"
+          :alt="title"
           class="merch-image"
           @error="handleImageError"
           @click="goToAlbum"
           style="cursor: pointer;"
+          format="webp"
+          :quality="85"
+          loading="lazy"
         />
       </div>
       <div class="merch-info">
@@ -81,14 +84,14 @@ export default {
   },
   methods: {
     getImageUrl() {
-      // Try jpg first, then jpeg if jpg doesn't exist
-      return `/static/${this.cassetteId}_cassette_2.jpg`
+      // Use WebP format
+      return `/static/${this.cassetteId}_cassette_2.webp`
     },
     handleImageError(event) {
-      // If jpg fails, try jpeg
+      // If cassette_2 fails, try cassette_1
       if (!this.imageError) {
         this.imageError = true;
-        event.target.src = `/static/${this.cassetteId}_cassette_1.jpeg`;
+        event.target.src = `/static/${this.cassetteId}_cassette_1.webp`;
       } else {
         // If both fail, show a placeholder or hide the image
         event.target.style.display = 'none';
