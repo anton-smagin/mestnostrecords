@@ -7,6 +7,15 @@
         </div>
       </div>
       <div class="row p-5">
+        <TShirtItem
+          v-for="tshirt in tshirts"
+          :key="tshirt.id"
+          :title="tshirt.title"
+          :description="tshirt.description"
+          :image-url="tshirt.imageUrl"
+          :price="tshirt.price"
+          :out-of-stock="tshirt.outOfStock"
+        />
         <MerchItem
           v-for="item in sortedMerchItems"
           :key="item.id"
@@ -27,10 +36,39 @@
 export default {
   name: 'MerchPage',
   components: {
-    MerchItem: () => import('~/components/MerchItem.vue')
+    MerchItem: () => import('~/components/MerchItem.vue'),
+    TShirtItem: () => import('~/components/TShirtItem.vue')
   },
   data() {
     return {
+      tshirts: [
+        {
+          id: 't1',
+          title: 'Местность dubree',
+          description: [
+            'футболка gildan hammer белая',
+            '100% хлопок',
+            'принт на спине 28х28см с обложкой альбома',
+            'размеры S/M/L/XL'
+          ],
+          imageUrl: '/static/dubree_t_shirt.webp',
+          price: '2500 ₽',
+          outOfStock: false
+        },
+        {
+          id: 't2',
+          title: 'Местность река reflect',
+          description: [
+            'футболка gildan hammer черная',
+            '100% хлопок',
+            'принт на светоотражающей пленке',
+            'размеры S/M/L/XL'
+          ],
+          imageUrl: '/static/mestnost_t_shirt.webp',
+          price: '2500 ₽',
+          outOfStock: false
+        }
+      ],
       merchItems: [
         {
           id: 23,

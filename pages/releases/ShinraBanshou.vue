@@ -188,12 +188,14 @@ h1 {
 .social {
   font-size: 1em;
   text-decoration: none;
-  margin-left: 0.1em;
+  margin-left: 0.5em;
+  vertical-align: middle;
 }
 
 .store-link {
   display: inline-block;
-  margin-left: 0.1em;
+  margin-left: 0.5em;
+  vertical-align: middle;
   letter-spacing: 0.2em;
   @media only screen and (max-width: 768px) {
     margin-left: 0;

@@ -138,6 +138,11 @@ export default {
           photo: 'kikok',
           link: 'releases/LovelyGrinch'
         },
+        {
+          name: 'Dubree',
+          photo: 'dubree',
+          link: 'releases/RatioEtCaritas'
+        },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
   },

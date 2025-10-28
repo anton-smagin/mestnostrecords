@@ -1,25 +1,26 @@
 <template>
-  <div class="merch-item col-md-4 col-sm-6 col-12 align-items-center mb-4">
-    <div class="merch-card">
-      <div class="merch-image-container">
+  <div class="tshirt-item col-md-4 col-sm-6 col-12 align-items-center mb-4">
+    <div class="tshirt-card">
+      <div class="tshirt-image-container">
         <NuxtImg
-          :src="getImageUrl()"
+          :src="imageUrl"
           :alt="title"
-          class="merch-image"
-          @error="handleImageError"
-          @click="goToAlbum"
-          style="cursor: pointer;"
+          class="tshirt-image"
           format="webp"
           :quality="85"
           loading="lazy"
         />
       </div>
-      <div class="merch-info">
-        <h5 class="merch-title text-white">{{ title }}</h5>
-        <p class="merch-artist text-white">{{ artist }}</p>
-        <p class="merch-price text-white">{{ price }}</p>
-        <button 
-          @click="openOrderModal" 
+      <div class="tshirt-info">
+        <h5 class="tshirt-title text-white">{{ title }}</h5>
+        <div class="tshirt-description">
+          <p v-for="(line, index) in descriptionLines" :key="index" class="description-line">
+            {{ line }}
+          </p>
+        </div>
+        <p class="tshirt-price text-white">{{ price }}</p>
+        <button
+          @click="openOrderModal"
           class="btn btn-outline-light order-btn"
           :class="{ 'out-of-stock': outOfStock }"
           :disabled="outOfStock"
@@ -28,11 +29,11 @@
         </button>
       </div>
     </div>
-    
+
     <OrderModal
       :show="showModal"
       :item-title="title"
-      :item-name="artist"
+      :item-name="'Футболка'"
       @close="closeModal"
     />
   </div>
@@ -42,7 +43,7 @@
 import OrderModal from './OrderModal.vue'
 
 export default {
-  name: 'MerchItem',
+  name: 'TShirtItem',
   components: {
     OrderModal
   },
@@ -51,25 +52,17 @@ export default {
       type: String,
       required: true
     },
-    artist: {
-      type: String,
+    description: {
+      type: Array,
       required: true
     },
-    cassetteId: {
+    imageUrl: {
       type: String,
       required: true
     },
     price: {
       type: String,
-      default: '1500 ₽'
-    },
-    orderLink: {
-      type: String,
-      required: true
-    },
-    albumLink: {
-      type: String,
-      required: true
+      default: '2500 ₽'
     },
     outOfStock: {
       type: Boolean,
@@ -78,28 +71,15 @@ export default {
   },
   data() {
     return {
-      imageError: false,
       showModal: false
     }
   },
+  computed: {
+    descriptionLines() {
+      return this.description
+    }
+  },
   methods: {
-    getImageUrl() {
-      // Use WebP format
-      return `/static/${this.cassetteId}_cassette_2.webp`
-    },
-    handleImageError(event) {
-      // If cassette_2 fails, try cassette_1
-      if (!this.imageError) {
-        this.imageError = true;
-        event.target.src = `/static/${this.cassetteId}_cassette_1.webp`;
-      } else {
-        // If both fail, show a placeholder or hide the image
-        event.target.style.display = 'none';
-      }
-    },
-    goToAlbum() {
-      this.$router.push(this.albumLink)
-    },
     openOrderModal() {
       if (!this.outOfStock) {
         this.showModal = true
@@ -113,11 +93,11 @@ export default {
 </script>
 
 <style scoped>
-.merch-item {
+.tshirt-item {
   padding: 16px;
 }
 
-.merch-card {
+.tshirt-card {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 8px;
   padding: 20px;
@@ -128,16 +108,16 @@ export default {
   flex-direction: column;
 }
 
-.merch-card:hover {
+.tshirt-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-.merch-image-container {
+.tshirt-image-container {
   margin-bottom: 15px;
 }
 
-.merch-image {
+.tshirt-image {
   width: 100%;
   max-width: 280px;
   height: 280px;
@@ -146,33 +126,39 @@ export default {
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.merch-image:hover {
+.tshirt-image:hover {
   transform: scale(1.05);
   opacity: 0.9;
 }
 
-.merch-info {
+.tshirt-info {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.merch-title {
+.tshirt-title {
   font-family: Acrom, sans-serif;
   font-size: 1.1em;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
-.merch-artist {
+.tshirt-description {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.description-line {
   font-family: Acrom, sans-serif;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-  opacity: 0.8;
+  font-size: 0.85em;
+  margin-bottom: 5px;
+  color: #999;
+  line-height: 1.4;
 }
 
-.merch-price {
+.tshirt-price {
   font-family: Acrom, sans-serif;
   font-size: 1.2em;
   font-weight: bold;
@@ -211,21 +197,21 @@ export default {
 }
 
 @media only screen and (max-width: 1000px) {
-  .merch-image {
+  .tshirt-image {
     width: 210px;
     height: 210px;
   }
-  
-  .merch-title {
+
+  .tshirt-title {
     font-size: 1em;
   }
-  
-  .merch-artist {
-    font-size: 0.8em;
+
+  .description-line {
+    font-size: 0.75em;
   }
-  
-  .merch-price {
+
+  .tshirt-price {
     font-size: 1.1em;
   }
 }
-</style> 
+</style>

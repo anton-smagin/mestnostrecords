@@ -33,7 +33,18 @@
               placeholder="Телефон или email"
             />
           </div>
-          
+
+          <div class="form-group">
+            <label for="telegram" class="form-label">Telegram</label>
+            <input
+              type="text"
+              id="telegram"
+              v-model="formData.telegram"
+              class="form-control"
+              placeholder="@username"
+            />
+          </div>
+
           <div class="form-group">
             <label for="message" class="form-label">Сообщение *</label>
             <textarea
@@ -99,7 +110,7 @@ export default {
       type: String,
       required: true
     },
-    artistName: {
+    itemName: {
       type: String,
       required: true
     }
@@ -109,6 +120,7 @@ export default {
       formData: {
         name: '',
         contact: '',
+        telegram: '',
         message: ''
       },
       loading: false,
@@ -121,7 +133,7 @@ export default {
     show(newVal) {
       if (newVal) {
         // Prefill the message when modal opens
-        this.formData.message = `Я бы хотел приобрести: ${this.artistName} - ${this.itemTitle}`
+        this.formData.message = `Я бы хотел приобрести: ${this.itemName} - ${this.itemTitle}`
       }
     }
   },
@@ -133,6 +145,7 @@ export default {
         this.formData = {
           name: '',
           contact: '',
+          telegram: '',
           message: ''
         }
         this.orderSent = false
@@ -150,27 +163,33 @@ export default {
     
     async submitOrder() {
       this.loading = true
-      
+
       try {
-        const message = `Заказ: ${this.itemTitle}\n\nИмя: ${this.formData.name}\nКонтакт: ${this.formData.contact}\nСообщение: ${this.formData.message}`
-        
+        let message = `Заказ: ${this.itemTitle}\n\nИмя: ${this.formData.name}\nКонтакт: ${this.formData.contact}`
+
+        if (this.formData.telegram) {
+          message += `\nTelegram: ${this.formData.telegram}`
+        }
+
+        message += `\nСообщение: ${this.formData.message}`
+
         // GET request with query parameters
         const params = new URLSearchParams({
           name: this.formData.name,
           message: message,
           auth: 'supersecretkey'
         })
-        
+
         const response = await fetch(`https://blue-lake-f917.mestnostishere.workers.dev/?${params.toString()}`, {
           method: 'GET'
         })
-        
+
         if (response.ok) {
           this.orderSent = true
         } else {
           throw new Error('Failed to send order')
         }
-        
+
       } catch (error) {
         console.error('Error sending order:', error)
         this.errorMessage = 'Произошла ошибка при отправке заказа. Попробуйте еще раз.'
