@@ -117,8 +117,9 @@ export default {
           title: 'Дрёма',
           artist: 'ВСЕСЛАВЪ',
           cassetteId: 'vseslav',
-          price: '1500 ₽',
-          albumLink: '/releases/Dryoma'
+          price: 'нет в наличии',
+          albumLink: '/releases/Dryoma',
+          outOfStock: true
         },
         {
           id: 10,
