@@ -27,6 +27,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/Relikt0',
+          artistName: 'Andrey Rasputin',
+          releaseName: 'RELIKT-0',
+          image: 'relikt_0',
+        },
+        {
           name: 'releases/SlowCrunchRemixes',
           artistName: 'KIKOK',
           releaseName: 'Slow Crunch remixes',
