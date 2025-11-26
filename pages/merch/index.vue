@@ -7,26 +7,26 @@
         </div>
       </div>
       <div class="row p-5">
-        <TShirtItem
-          v-for="tshirt in tshirts"
-          :key="tshirt.id"
-          :title="tshirt.title"
-          :description="tshirt.description"
-          :image-url="tshirt.imageUrl"
-          :price="tshirt.price"
-          :out-of-stock="tshirt.outOfStock"
-        />
-        <MerchItem
-          v-for="item in sortedMerchItems"
-          :key="item.id"
-          :title="item.title"
-          :artist="item.artist"
-          :cassette-id="item.cassetteId"
-          :price="item.price"
-          :order-link="item.orderLink"
-          :album-link="item.albumLink"
-          :out-of-stock="item.outOfStock"
-        />
+        <template v-for="item in sortedMerchItems" :key="item.id">
+          <MerchItem
+            v-if="item.type === 'cassette'"
+            :title="item.title"
+            :artist="item.artist"
+            :cassette-id="item.cassetteId"
+            :price="item.price"
+            :order-link="item.orderLink"
+            :album-link="item.albumLink"
+            :out-of-stock="item.outOfStock"
+          />
+          <TShirtItem
+            v-if="item.type === 'tshirt'"
+            :title="item.title"
+            :description="item.description"
+            :image-url="item.imageUrl"
+            :price="item.price"
+            :out-of-stock="item.outOfStock"
+          />
+        </template>
       </div>
     </div>
   </div>
@@ -41,9 +41,19 @@ export default {
   },
   data() {
     return {
-      tshirts: [
+      merchItems: [
+        {
+          id: 24,
+          type: 'cassette',
+          title: 'Undisclosed Circuit',
+          artist: 'Ambidextrous',
+          cassetteId: 'ambidextrous_undisclosed_circuit',
+          price: '1500 ₽',
+          albumLink: ''
+        },
         {
           id: 't1',
+          type: 'tshirt',
           title: 'Местность dubree',
           description: [
             'футболка gildan hammer белая',
@@ -57,6 +67,7 @@ export default {
         },
         {
           id: 't2',
+          type: 'tshirt',
           title: 'Местность река reflect',
           description: [
             'футболка gildan hammer черная',
@@ -67,19 +78,10 @@ export default {
           imageUrl: '/static/mestnost_t_shirt.webp',
           price: '2500 ₽',
           outOfStock: false
-        }
-      ],
-      merchItems: [
-        {
-          id: 24,
-          title: 'Undisclosed Circuit',
-          artist: 'Ambidextrous',
-          cassetteId: 'ambidextrous_undisclosed_circuit',
-          price: '1500 ₽',
-          albumLink: ''
         },
         {
           id: 23,
+          type: 'cassette',
           title: 'Ratio et Сaritas',
           artist: 'Dubree',
           cassetteId: 'ratio_et_caritas',
@@ -88,6 +90,7 @@ export default {
         },
         {
           id: 21,
+          type: 'cassette',
           title: 'Relikt 1',
           artist: 'Andrey Rasputin',
           cassetteId: 'relikt_1',
@@ -96,6 +99,7 @@ export default {
         },
         {
           id: 19,
+          type: 'cassette',
           title: 'The Way of the Dog',
           artist: 'Anderdog',
           cassetteId: 'the_way_of_the_dog',
@@ -105,6 +109,7 @@ export default {
         },
         {
           id: 18,
+          type: 'cassette',
           title: 'Slow Crunch',
           artist: 'KIKOK',
           cassetteId: 'slow_crunch',
@@ -114,6 +119,7 @@ export default {
         },
         {
           id: 22,
+          type: 'cassette',
           title: 'Imagined / Awakenings',
           artist: 'H. Ruine / MIKHAIL KIREEV',
           cassetteId: 'imagined_awakenings',
@@ -122,6 +128,7 @@ export default {
         },
         {
           id: 7,
+          type: 'cassette',
           title: 'Дрёма',
           artist: 'ВСЕСЛАВЪ',
           cassetteId: 'vseslav',
@@ -131,6 +138,7 @@ export default {
         },
         {
           id: 10,
+          type: 'cassette',
           title: 'Anderdog Bizarre',
           artist: 'Anderdog',
           cassetteId: 'anderdog_bizarre',
@@ -139,6 +147,7 @@ export default {
         },
         {
           id: 6,
+          type: 'cassette',
           title: 'Veter',
           artist: 'Ne Tvoy Drug',
           cassetteId: 'veter',
@@ -147,6 +156,7 @@ export default {
         },
         {
           id: 15,
+          type: 'cassette',
           title: 'Ko+Ma & Kokokei - Дорога в небо',
           artist: 'Ko+Ma & Kokokei',
           cassetteId: 'koma_doroga_v_nebo',
@@ -155,6 +165,7 @@ export default {
         },
         {
           id: 5,
+          type: 'cassette',
           title: 'Quietud',
           artist: 'Ilya Orange',
           cassetteId: 'quietud',
@@ -163,6 +174,7 @@ export default {
         },
         {
           id: 17,
+          type: 'cassette',
           title: 'Shinra Banshou',
           artist: 'HAJIME KOJIRO',
           cassetteId: 'shinra_banshou',
@@ -172,6 +184,7 @@ export default {
         },
         {
           id: 14,
+          type: 'cassette',
           title: 'Helix',
           artist: 'Morakh',
           cassetteId: 'helix_cassette',
@@ -181,6 +194,7 @@ export default {
         },
         {
           id: 12,
+          type: 'cassette',
           title: 'Bosporus Accident',
           artist: 'Raveny x Morphtables',
           cassetteId: 'bosporus_accident',
@@ -189,6 +203,7 @@ export default {
         },
         {
           id: 20,
+          type: 'cassette',
           title: 'Я был спутником солнца',
           artist: 'Yella Gin',
           cassetteId: 'yella_gin',
@@ -197,6 +212,7 @@ export default {
         },
         {
           id: 2,
+          type: 'cassette',
           title: 'Mandarin',
           artist: 'Kokokei',
           cassetteId: 'mandarin',
@@ -206,6 +222,7 @@ export default {
         },
         {
           id: 13,
+          type: 'cassette',
           title: 'Fields of Domodedovskaya',
           artist: 'Kisser',
           cassetteId: 'fields_of_domodedovskaya',
@@ -215,6 +232,7 @@ export default {
         },
         {
           id: 16,
+          type: 'cassette',
           title: 'Sun Instead of Head',
           artist: 'Max Ananyev',
           cassetteId: 'max_ananyev',
@@ -223,6 +241,7 @@ export default {
         },
         {
           id: 1,
+          type: 'cassette',
           title: 'Grounded Rectangle',
           artist: 'Ambidextrous',
           cassetteId: 'ambidextrous',
@@ -231,6 +250,7 @@ export default {
         },
         {
           id: 9,
+          type: 'cassette',
           title: 'Xazy',
           artist: 'Ne Tvoy Drug',
           cassetteId: 'xazy',
@@ -239,6 +259,7 @@ export default {
         },
         {
           id: 3,
+          type: 'cassette',
           title: 'Mimoza',
           artist: 'Kokokei',
           cassetteId: 'mimoza',
@@ -248,6 +269,7 @@ export default {
         },
         {
           id: 11,
+          type: 'cassette',
           title: 'Romantic Selection',
           artist: 'Anderdog & Andrey Leto',
           cassetteId: 'anderdog_leto',
@@ -257,6 +279,7 @@ export default {
         },
         {
           id: 4,
+          type: 'cassette',
           title: 'Limes',
           artist: 'Morakh',
           cassetteId: 'morakh',
@@ -265,6 +288,7 @@ export default {
         },
         {
           id: 8,
+          type: 'cassette',
           title: 'Vvvedenskaya Attempts',
           artist: 'Vvvedenskaya',
           cassetteId: 'vvvedenskaya',
