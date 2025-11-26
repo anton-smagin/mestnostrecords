@@ -71,6 +71,14 @@ export default {
       ],
       merchItems: [
         {
+          id: 24,
+          title: 'Undisclosed Circuit',
+          artist: 'Ambidextrous',
+          cassetteId: 'ambidextrous_undisclosed_circuit',
+          price: '1500 ₽',
+          albumLink: ''
+        },
+        {
           id: 23,
           title: 'Ratio et Сaritas',
           artist: 'Dubree',

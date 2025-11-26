@@ -65,7 +65,7 @@ export default {
     },
     orderLink: {
       type: String,
-      required: true
+      default: ''
     },
     albumLink: {
       type: String,
