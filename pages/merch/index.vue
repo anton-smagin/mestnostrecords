@@ -49,7 +49,7 @@ export default {
           artist: 'Ambidextrous',
           cassetteId: 'ambidextrous_undisclosed_circuit',
           price: '1500 ₽',
-          albumLink: ''
+          albumLink: '/releases/UndisclosedCircuit'
         },
         {
           id: 't1',

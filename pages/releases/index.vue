@@ -27,6 +27,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/UndisclosedCircuit',
+          artistName: 'Ambidextrous',
+          releaseName: 'Undisclosed Circuit',
+          image: 'ambidextrous_undisclosed_circuit',
+        },
+        {
           name: 'releases/Relikt0',
           artistName: 'Andrey Rasputin',
           releaseName: 'RELIKT-0',
