@@ -27,28 +27,14 @@
       </div>
     </div>
     <div class="row mb-5">
-      <div class="col-12">
-        <v-carousel
-          hide-delimiter-background
-          show-arrows="hover"
-          cycle
-          :interval="5000"
-          class="carousel-container"
-        >
-          <v-carousel-item
-            v-for="(image, index) in carouselImages"
-            :key="index"
-          >
-            <NuxtImg
-              :src="image.src"
-              :alt="image.alt"
-              style="max-width: 70%; height: auto; display: block; margin: 0 auto;"
-              format="webp"
-              :quality="85"
-              loading="lazy"
-            />
-          </v-carousel-item>
-        </v-carousel>
+      <div class="col-12 text-center">
+        <NuxtImg
+          src="/static/kokokei_evkalipt_face_5.webp"
+          alt="Kokokei Evkalipt"
+          style="max-width: 70%; height: auto; display: block; margin: 0 auto;"
+          format="webp"
+          :quality="85"
+        />
       </div>
     </div>
     <div class="row mb-5 mt-5">
@@ -117,13 +103,6 @@ export default {
           link: 'https://vk.com/music/album/-2000095872_26095872_9220ff8a59e75d574e',
         },
       ],
-      carouselImages: [
-        { src: '/static/kokokei_evkalipt_face_1.webp', alt: 'Kokokei Evkalipt 1' },
-        { src: '/static/kokokei_evkalipt_face_2.webp', alt: 'Kokokei Evkalipt 2' },
-        { src: '/static/kokokei_evkalipt_face_3.webp', alt: 'Kokokei Evkalipt 3' },
-        { src: '/static/kokokei_evkalipt_face_4.webp', alt: 'Kokokei Evkalipt 4' },
-        { src: '/static/kokokei_evkalipt_face_5.webp', alt: 'Kokokei Evkalipt 5' },
-      ],
     }
   },
 }
@@ -181,43 +160,4 @@ h1 {
   font-size: 0.8em;
 }
 
-.carousel-container {
-  max-width: 70%;
-  margin: 0 auto;
-  @media only screen and (max-width: 768px) {
-    max-width: 100%;
-    height: 60vh !important;
-  }
-}
-
-.carousel-container :deep(.v-carousel__controls) {
-  background: transparent;
-}
-
-.carousel-container :deep(.v-carousel-item) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.carousel-container :deep(.v-carousel-item) img {
-  @media only screen and (max-width: 768px) {
-    max-width: 100% !important;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-}
-
-.carousel-container :deep(.v-window__container),
-.carousel-container :deep(.v-carousel__item) {
-  height: 100%;
-}
-
-.carousel-container :deep(.v-responsive__content) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 </style>
