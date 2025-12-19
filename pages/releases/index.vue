@@ -27,6 +27,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/Evkalipt',
+          artistName: 'Kokokei',
+          releaseName: 'Evkalipt',
+          image: 'kokokei_evkaliipt',
+        },
+        {
           name: 'releases/UndisclosedCircuit',
           artistName: 'Ambidextrous',
           releaseName: 'Undisclosed Circuit',

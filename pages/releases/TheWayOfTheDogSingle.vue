@@ -35,7 +35,7 @@
            format="webp" :quality="85" loading="lazy" />
         </div>
         <div class="col-md-12">
-          <div class="col-md-6 offset-md-2">
+          <div class="col-md-6 offset-md-2 bandcamp-player">
             <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=605230901/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
             </iframe>
           </div>

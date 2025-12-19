@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="row mb-5">
-      <div class="col-md-6 offset-md-2">
+      <div class="col-md-6 offset-md-2 bandcamp-player">
         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2287507512/size=large/bgcol=333333/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
         </iframe>
       </div>
