@@ -58,6 +58,15 @@
           Релиз выйдет ограниченным тиражом: в каждую кассету будет вложен настоящий лист обожжённого эвкалипта - физический отпечаток той самой горной деревушки.</p>
           <p class="shadowed">Music by Kokokei<br>Artwork by Maria Ko<br>Mastered by Fedor Vetkalov</p>
         </div>
+        <div class="col-12 text-center mb-5">
+          <NuxtImg
+            src="/static/kokokei_evkalipt_face_2.webp"
+            alt="Kokokei Evkalipt"
+            style="max-width: 70%; height: auto; display: block; margin: 0 auto;"
+            format="webp"
+            :quality="85"
+          />
+        </div>
         <div class="description text-white mb-5">
           <p>Evkalipt is the final part of the sound triptych by Kostya Kokokei, co-founder of the label Mestnost. The series was created in the Caucasus mountains and inspired by a close interaction with nature. The release includes ambient jam sketches that convey a meditative presence, as well as more structured tracks influenced by IDM and trip-hop.</p>
           <p>Kostya says about the release:<br>
@@ -65,6 +74,15 @@
           <p>Thank you to everyone who trusted me and listened to my music. Because of this, something new appeared in the Universe. Let's stay together and respect each other. I sincerely believe that Love will prevail."</p>
           <p>Mastering was done by Fedor Vetkalov - composer, musician and teacher.<br>
           The release will come out as a limited edition: each cassette will include a real burnt eucalyptus leaf, a physical imprint of that mountain village.</p>
+        </div>
+        <div class="col-12 text-center mb-5">
+          <NuxtImg
+            src="/static/kokokei_evkalipt_face_3.webp"
+            alt="Kokokei Evkalipt"
+            style="max-width: 70%; height: auto; display: block; margin: 0 auto;"
+            format="webp"
+            :quality="85"
+          />
         </div>
       </div>
     </div>
