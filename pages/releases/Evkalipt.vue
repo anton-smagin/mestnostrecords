@@ -14,10 +14,12 @@
               :key="link.name"
               class="store-link col-12 col-lg-4 col-md-6 mt-5 text-nowrap"
             >
-              <font-awesome-icon
-                :icon="['fab', link.icon]"
-                class="text-white"
-              />
+              <ClientOnly>
+                <font-awesome-icon
+                  :icon="['fab', link.icon]"
+                  class="text-white"
+                />
+              </ClientOnly>
               <a :href="link.link" target="_blank" class="text-white social">
                 {{ link.name }}
               </a>
@@ -44,7 +46,6 @@
           src="https://bandcamp.com/EmbeddedPlayer/album=1149277045/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
           seamless
         >
-          <a href="https://mestnost.bandcamp.com/album/evkalipt">Evkalipt by Kokokei</a>
         </iframe>
       </div>
     </div>

@@ -43,6 +43,15 @@ export default {
     return {
       merchItems: [
         {
+          id: 25,
+          type: 'cassette',
+          title: 'Evkalipt',
+          artist: 'Kokokei',
+          cassetteId: 'evkalipt',
+          price: '1500 ₽',
+          albumLink: '/releases/Evkalipt'
+        },
+        {
           id: 24,
           type: 'cassette',
           title: 'Undisclosed Circuit',
