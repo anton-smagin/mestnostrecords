@@ -6,7 +6,10 @@ import {
   faBandcamp,
   faSpotify,
   faVk,
-  faFacebook
+  faFacebook,
+  faInstagram,
+  faTelegram,
+  faSoundcloud
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -16,7 +19,10 @@ library.add(
   faBandcamp,
   faSpotify,
   faVk,
-  faFacebook
+  faFacebook,
+  faInstagram,
+  faTelegram,
+  faSoundcloud
 )
 
 export default defineNuxtPlugin(nuxtApp => {

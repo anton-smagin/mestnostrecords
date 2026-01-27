@@ -7,7 +7,7 @@
           :key="`${artist.name}`"
           class="col-md-4 col-sm-6 col-12 align-items-center"
         >
-          <NuxtLink class="btn" :to="`/${artist.link}`">
+          <NuxtLink class="btn" :to="getArtistLink(artist)">
             <div class="mb-1 align-middle ">
               <NuxtImg :src="getImageUrl(artist.photo)" class="crop" format="webp" :quality="85" loading="lazy" />
             </div>
@@ -22,126 +22,132 @@
 </template>
 
 <script>
+import { useArtists } from '~/composables/useArtists'
+
 export default {
   name: 'ArtistsPage',
   components: {},
+  setup() {
+    const { hasSocialMedia, getArtistSlug } = useArtists()
+    return { hasSocialMedia, getArtistSlug }
+  },
   data() {
     return {
       artists: [
         {
           name: 'Kisser',
           photo: 'kisser',
-          link: 'releases/FieldsOfDomodevskaya'
+          fallbackLink: 'releases/FieldsOfDomodevskaya'
         },
         {
           name: 'Max Ananyev',
           photo: 'max_ananyev',
-          link: 'releases/SunInsteadOfHead'
+          fallbackLink: 'releases/SunInsteadOfHead'
         },
         {
           name: 'Ne Tvoy Drug',
           photo: 'ne_tvoy_drug',
-          link: 'releases/Xazy'
+          fallbackLink: 'releases/Xazy'
         },
         {
           name: 'Ko+Ma',
           photo: 'koma',
-          link: 'releases/DorogaVNebo'
+          fallbackLink: 'releases/DorogaVNebo'
         },
         {
           name: 'Andrey Rasputin',
           photo: 'rasputin',
-          link: 'releases/ChertaNova'
+          fallbackLink: 'releases/ChertaNova'
         },
         {
           name: 'Kokokei',
           photo: 'kokokei',
-          link: 'releases/KokokeiMandarin'
+          fallbackLink: 'releases/KokokeiMandarin'
         },
         {
           name: 'Anderdog and Andrey Leto',
           photo: 'anderdogandreyleto',
-          link: 'releases/AnderdogAndreyLeto'
+          fallbackLink: 'releases/AnderdogAndreyLeto'
         },
         {
           name: 'Morakh',
           photo: 'morakh',
-          link: 'releases/MorakhLimes'
+          fallbackLink: 'releases/MorakhLimes'
         },
         {
           name: 'Vvvedenskaya',
           photo: 'vvvedenskaya',
-          link: 'releases/VvvedenskayaAttempts'
+          fallbackLink: 'releases/VvvedenskayaAttempts'
         },
         {
           name: 'Microdog',
           photo: 'microdog',
-          link: 'releases/MicrodogEastSide'
+          fallbackLink: 'releases/MicrodogEastSide'
         },
         {
           name: 'Ambidextrous',
           photo: 'ambidextrous',
-          link: 'releases/GroundedRectangle'
+          fallbackLink: 'releases/GroundedRectangle'
         },
         {
           name: 'Anderdog',
           photo: 'anderdog',
-          link: 'releases/DogEatDog'
+          fallbackLink: 'releases/DogEatDog'
         },
         {
           name: 'Yella Gin',
           photo: 'yella_gin',
-          link: 'releases/YaBilSputnicomSolnca'
+          fallbackLink: 'releases/YaBilSputnicomSolnca'
         },
         {
           name: 'Raveny x Morphtables',
           photo: 'raveny_morphtables',
-          link: 'releases/BosporusAcident'
+          fallbackLink: 'releases/BosporusAcident'
         },
         {
           name: 'HAJIME KOJIRO',
           photo: 'hajime_kojiro',
-          link: 'releases/ShinraBanshou'
+          fallbackLink: 'releases/ShinraBanshou'
         },
         {
           name: 'DJ HeadSick',
           photo: 'dj_headsick',
-          link: 'releases/NewLife'
+          fallbackLink: 'releases/NewLife'
         },
         {
           name: 'Ilya Orange',
           photo: 'ilya_orange',
-          link: 'releases/Quietud'
+          fallbackLink: 'releases/Quietud'
         },
         {
           name: 'Dessin Bizarre',
           photo: 'dessin_bizarre',
-          link: 'releases/Imagine'
+          fallbackLink: 'releases/Imagine'
         },
         {
           name: 'ВСЕСЛАВЪ',
           photo: 'vseslav',
-          link: 'releases/Dryoma'
+          fallbackLink: 'releases/Dryoma'
         },
         {
           name: 'H. Ruine',
           photo: 'h_ruine',
-          link: 'releases/ImaginedAwakenings'
+          fallbackLink: 'releases/ImaginedAwakenings'
         },
         {
           name: 'Mikhail Kireev',
           photo: 'mikhail_kireev',
-          link: 'releases/ImaginedAwakenings'
+          fallbackLink: 'releases/ImaginedAwakenings'
         },
         {
           name: 'KIKOK',
           photo: 'kikok',
-          link: 'releases/LovelyGrinch'
+          fallbackLink: 'releases/LovelyGrinch'
         },
         {
           name: 'Dubree',
           photo: 'dubree',
-          link: 'releases/RatioEtCaritas'
+          fallbackLink: 'releases/RatioEtCaritas'
         },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
@@ -149,6 +155,12 @@ export default {
   methods: {
     getImageUrl(photo) {
       return `/static/${photo}_face.webp`
+    },
+    getArtistLink(artist) {
+      if (this.hasSocialMedia(artist.name)) {
+        return `/artists/${this.getArtistSlug(artist.name)}`
+      }
+      return `/${artist.fallbackLink}`
     }
   },
 }
