@@ -40,6 +40,24 @@
           bandcamp
         </a>
       </div>
+      <div class="col-md-3 col-sm-6 col-12">
+        <a
+          class="btn text-white"
+          href="https://soundcloud.com/mestnost-records"
+          target="_blank"
+        >
+          soundcloud
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12">
+        <a
+          class="btn text-white"
+          href="https://www.mixcloud.com/Mestnost_Records/"
+          target="_blank"
+        >
+          mixcloud
+        </a>
+      </div>
     </div>
     <p class="text-white mt-5">
       для демо и сотрудничества <a href="mailto:mestnostishere@gmail.com">mestnostishere@gmail.com</a>

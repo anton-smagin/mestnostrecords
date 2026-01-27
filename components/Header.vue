@@ -2,7 +2,7 @@
   <div class="w-100">
     <div id="nav" class="row justify-content-between">
       <!-- Mobile hamburger button -->
-      <div class="d-flex w-80 justify-content-end d-lg-none">
+      <div class="hamburger-wrapper d-flex w-80 justify-content-end">
         <button
           class="hamburger-btn"
           :class="{ 'is-active': menuShow }"
@@ -20,20 +20,20 @@
       <transition name="fade">
         <div
           v-if="menuShow"
-          class="mobile-overlay d-lg-none"
+          class="mobile-overlay"
           @click="menuShow = false"
         />
       </transition>
 
       <!-- Mobile menu -->
       <transition name="slide">
-        <div v-if="menuShow" class="mobile-menu d-lg-none">
+        <div v-if="menuShow" class="mobile-menu">
           <nav class="mobile-nav">
             <div class="mobile-nav-item" @click="menuShow = false">
               <NuxtLink class="mobile-link" to="/">Главная</NuxtLink>
             </div>
             <div class="mobile-nav-item" @click="menuShow = false">
-              <NuxtLink class="mobile-link" to="/about">О местности</NuxtLink>
+              <NuxtLink class="mobile-link cocomat-font" to="/about">О местности</NuxtLink>
             </div>
             <div class="mobile-nav-item" @click="menuShow = false">
               <NuxtLink class="mobile-link" to="/releases">Релизы</NuxtLink>
@@ -52,23 +52,23 @@
       </transition>
 
       <!-- Desktop menu -->
-      <div class="row justify-content-between">
-        <div class="col-lg-1 d-none d-lg-block">
+      <div class="desktop-menu row justify-content-between">
+        <div class="desktop-menu-item">
           <NuxtLink class="btn text-nowrap px-2" to="/">Главная</NuxtLink>
         </div>
-        <div class="col-lg-1 d-none d-lg-block">
-          <NuxtLink class="btn text-nowrap px-2" to="/about">Местность</NuxtLink>
+        <div class="desktop-menu-item">
+          <NuxtLink class="btn text-nowrap px-2 cocomat-font" to="/about">Местность</NuxtLink>
         </div>
-        <div class="col-lg-1 d-none d-lg-block">
+        <div class="desktop-menu-item">
           <NuxtLink class="btn text-nowrap px-2" to="/releases">Релизы</NuxtLink>
         </div>
-        <div class="col-lg-1 d-none d-lg-block">
+        <div class="desktop-menu-item">
           <NuxtLink class="btn text-nowrap px-2" to="/artists">Артисты</NuxtLink>
         </div>
-        <div class="col-lg-1 d-none d-lg-block">
+        <div class="desktop-menu-item">
           <NuxtLink class="btn text-nowrap px-2" to="/events">События</NuxtLink>
         </div>
-        <div class="col-lg-1 d-none d-lg-block">
+        <div class="desktop-menu-item">
           <NuxtLink class="btn text-nowrap px-2" to="/merch">Мерч</NuxtLink>
         </div>
       </div>
@@ -100,6 +100,40 @@ export default {
 </script>
 
 <style scoped>
+/* Custom 958px breakpoint */
+.hamburger-wrapper {
+  display: flex;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.desktop-menu-item {
+  display: block;
+  width: 10%;
+  padding: 0;
+}
+
+@media (min-width: 958px) {
+  .hamburger-wrapper {
+    display: none !important;
+  }
+
+  .mobile-overlay,
+  .mobile-menu {
+    display: none !important;
+  }
+
+  .desktop-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+  }
+}
+
 .hamburger-btn {
   background: none;
   border: none;
@@ -171,6 +205,10 @@ export default {
 .mobile-link.router-link-exact-active {
   color: #91a79d;
   padding-left: 1rem;
+}
+
+.mobile-link.cocomat-font {
+  font-family: Cocomat, sans-serif;
 }
 
 /* Fade transition for overlay */

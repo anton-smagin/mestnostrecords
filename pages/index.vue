@@ -42,6 +42,24 @@
       >
         <font-awesome-icon :icon="['fab', 'bandcamp']" class="social-icon" />
       </a>
+      <a
+        href="https://soundcloud.com/mestnost-records"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link text-white"
+        title="SoundCloud"
+      >
+        <font-awesome-icon :icon="['fab', 'soundcloud']" class="social-icon" />
+      </a>
+      <a
+        href="https://www.mixcloud.com/Mestnost_Records/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link text-white"
+        title="Mixcloud"
+      >
+        <font-awesome-icon :icon="['fab', 'mixcloud']" class="social-icon" />
+      </a>
     </footer>
   </div>
 </template>

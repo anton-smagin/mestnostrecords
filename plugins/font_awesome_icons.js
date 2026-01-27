@@ -9,7 +9,8 @@ import {
   faFacebook,
   faInstagram,
   faTelegram,
-  faSoundcloud
+  faSoundcloud,
+  faMixcloud
 } from '@fortawesome/free-brands-svg-icons'
 import { faLocationDot, faTicket, faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -24,6 +25,7 @@ library.add(
   faInstagram,
   faTelegram,
   faSoundcloud,
+  faMixcloud,
   faLocationDot,
   faTicket,
   faBars,
