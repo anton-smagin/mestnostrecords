@@ -238,7 +238,7 @@ export default {
 .modal-title {
   color: white;
   margin: 0;
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-weight: bold;
 }
 
@@ -270,7 +270,7 @@ export default {
 
 .form-label {
   color: white;
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-weight: bold;
   margin-bottom: 8px;
   display: block;
@@ -283,7 +283,7 @@ export default {
   border-radius: 4px;
   background-color: #2a2a2a;
   color: white;
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-size: 14px;
 }
 
@@ -307,7 +307,7 @@ export default {
 .btn {
   padding: 10px 20px;
   border-radius: 4px;
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-weight: bold;
   text-decoration: none;
   border: none;
@@ -352,13 +352,13 @@ export default {
 }
 
 .success-message h5 {
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .success-message p {
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   margin-bottom: 30px;
   opacity: 0.8;
 }
@@ -375,14 +375,14 @@ export default {
 }
 
 .error-message h5 {
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-weight: bold;
   margin-bottom: 10px;
   color: #ff6b6b;
 }
 
 .error-message p {
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   margin-bottom: 30px;
   opacity: 0.8;
 }

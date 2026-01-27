@@ -168,7 +168,7 @@ export default {
 
 <style scoped>
 .description {
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-size: 0.8em;
   font-weight: bold;
   cursor: pointer;

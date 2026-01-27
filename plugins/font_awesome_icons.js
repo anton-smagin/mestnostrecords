@@ -11,6 +11,7 @@ import {
   faTelegram,
   faSoundcloud
 } from '@fortawesome/free-brands-svg-icons'
+import { faLocationDot, faTicket, faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(
@@ -22,7 +23,11 @@ library.add(
   faFacebook,
   faInstagram,
   faTelegram,
-  faSoundcloud
+  faSoundcloud,
+  faLocationDot,
+  faTicket,
+  faBars,
+  faXmark
 )
 
 export default defineNuxtPlugin(nuxtApp => {

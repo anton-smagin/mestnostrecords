@@ -165,7 +165,7 @@ h1 {
   margin: 0 15%;
   letter-spacing: 0.1em;
   line-height: 1.5em;
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   text-align: justify;
   @media only screen and (max-width: 768px) {
     letter-spacing: 0.08em;

@@ -15,6 +15,7 @@
         <div class="mt-5 artist-info">
           <h2 class="text-white artist-name">{{ displayName }}</h2>
           <p v-if="artist['локация']" class="text-white location">
+            <font-awesome-icon :icon="['fas', 'location-dot']" class="location-icon" />
             {{ artist['локация'] }}
           </p>
           <div class="social-links mt-4">
@@ -173,10 +174,11 @@ export default {
 
 .artist-info {
   padding: 0 2rem;
+  text-align: center;
 }
 
 .artist-name {
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-weight: bold;
   letter-spacing: 0.15em;
   font-size: 2.5rem;
@@ -184,16 +186,21 @@ export default {
 }
 
 .location {
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   letter-spacing: 0.1em;
   font-size: 1.1rem;
   opacity: 0.8;
+}
+
+.location-icon {
+  margin-right: 0.4em;
 }
 
 .social-links {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .social-link {
@@ -235,7 +242,7 @@ export default {
 }
 
 .release-title {
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-size: 0.9em;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -259,15 +266,6 @@ export default {
 @media only screen and (max-width: 768px) {
   .artist-name {
     font-size: 1.8rem;
-    text-align: center;
-  }
-
-  .location {
-    text-align: center;
-  }
-
-  .social-links {
-    justify-content: center;
   }
 
   .artist-info {

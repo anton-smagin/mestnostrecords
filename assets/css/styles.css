@@ -25,6 +25,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'NotoSans';
+  src: url('~/assets/fonts/NotoSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('~/assets/fonts/NotoSans-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('~/assets/fonts/NotoSans-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
 html {
   min-height: 100vh;
   margin: 0;

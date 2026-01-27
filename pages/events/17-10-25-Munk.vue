@@ -13,15 +13,10 @@
               :key="link.name"
               class="store-link col-12 col-lg-4 col-md-6 mt-5 text-nowrap"
             >
-            <div v-if="link.emoji">
-              {{ link.icon }}
-            </div>
-            <div v-else>
-              <font-awesome-icon
-                :icon="['fab', link.icon]"
-                class="text-white"
-              />
-            </div>
+            <font-awesome-icon
+              :icon="[link.solid ? 'fas' : 'fab', link.icon]"
+              class="text-white"
+            />
               <a :href="link.link" target="_blank" class="text-white social">
                 {{ link.name }}
               </a>
@@ -61,9 +56,9 @@ export default {
         },
         {
           name: 'Билеты',
-          icon: '🎟️',
+          icon: 'ticket',
           link: 'https://moscow.qtickets.events/191669-mestnost',
-          emoji: true
+          solid: true
         }
       ],
     }
@@ -85,7 +80,7 @@ h1 {
   margin: 0 5%;
   letter-spacing: 0.1em;
   line-height: 1.5em;
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   text-align: justify;
   @media only screen and (max-width: 768px) {
     letter-spacing: 0.08em;

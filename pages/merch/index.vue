@@ -322,7 +322,7 @@ export default {
 }
 
 h1 {
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-weight: bold;
   letter-spacing: 0.1em;
 }

@@ -139,7 +139,7 @@ export default {
 }
 
 .tshirt-title {
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-size: 1.1em;
   font-weight: bold;
   margin-bottom: 15px;
@@ -151,7 +151,7 @@ export default {
 }
 
 .description-line {
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-size: 0.85em;
   margin-bottom: 5px;
   color: #999;
@@ -159,7 +159,7 @@ export default {
 }
 
 .tshirt-price {
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 15px;
@@ -167,7 +167,7 @@ export default {
 }
 
 .order-btn {
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 4px;

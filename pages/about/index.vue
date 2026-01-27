@@ -29,47 +29,47 @@
           </p>
         </div>
       </div>
-      <div class="col-12 mt-3 mb-6">
+      <div class="col-12 mt-3 mb-4">
         <h1>Контакты</h1>
       </div>
-      <div class="row">
-      <div class="col-md-3 col-sm-6 col-12">
+      <div class="social-links">
         <a
-          class="btn text-white"
           href="https://t.me/mestnost_label"
           target="_blank"
+          rel="noopener noreferrer"
+          class="social-link text-white"
+          title="Telegram"
         >
-          telegram
+          <font-awesome-icon :icon="['fab', 'telegram']" class="social-icon" />
         </a>
-      </div>
-      <div class="col-md-3 col-sm-6 col-12">
         <a
-          class="btn text-white"
           href="https://www.instagram.com/mestnostrecords"
           target="_blank"
+          rel="noopener noreferrer"
+          class="social-link text-white"
+          title="Instagram"
         >
-          instagram
+          <font-awesome-icon :icon="['fab', 'instagram']" class="social-icon" />
         </a>
-      </div>
-      <div class="col-md-3 col-sm-6 col-12">
         <a
-          class="btn text-white"
           href="https://vk.com/mestnostrecords"
           target="_blank"
+          rel="noopener noreferrer"
+          class="social-link text-white"
+          title="VKontakte"
         >
-          вк
+          <font-awesome-icon :icon="['fab', 'vk']" class="social-icon" />
         </a>
-      </div>
-      <div class="col-md-3 col-sm-6 col-12">
         <a
-          class="btn text-white"
           href="https://mestnost.bandcamp.com"
           target="_blank"
+          rel="noopener noreferrer"
+          class="social-link text-white"
+          title="Bandcamp"
         >
-          bandcamp
+          <font-awesome-icon :icon="['fab', 'bandcamp']" class="social-icon" />
         </a>
       </div>
-    </div>
     <p class="text-white mt-5 mb-5">
       для демо и сотрудничества <a href="mailto:mestnostishere@gmail.com">mestnostishere@gmail.com</a>
     </p>  
@@ -98,11 +98,39 @@ h1 {
   letter-spacing: 0.2em;
   line-height: 2em;
   text-align: justify;
-  font-family: Acrom, sans-serif;
+  font-family: NotoSans, sans-serif;
   @media only screen and (max-width: 768px) {
     margin: 4% 10%;
     font-size: 1em;
     letter-spacing: 0.1em;
   }
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  border-color: #91a79d;
+  background-color: rgba(145, 167, 157, 0.2);
+}
+
+.social-icon {
+  font-size: 1.4rem;
 }
 </style>
