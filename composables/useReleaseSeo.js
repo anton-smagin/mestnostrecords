@@ -18,7 +18,7 @@ export function useReleaseSeo(overrides = {}) {
   const siteUrl = config.public.siteUrl || 'https://mestnostrecords.com'
   const title = overrides.title || `${release.artistName} — ${release.releaseName}`
   const description = overrides.description || `${release.releaseName} by ${release.artistName} on Mestnost Records`
-  const imageUrl = overrides.image || `${siteUrl}/static/${release.image}.jpg`
+  const imageUrl = overrides.image || `${siteUrl}/static/${release.image}.webp`
   const pageUrl = `${siteUrl}/${release.name}`
 
   useSeoMeta({
