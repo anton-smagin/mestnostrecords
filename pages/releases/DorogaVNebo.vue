@@ -115,8 +115,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'DorogaVNebo',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

@@ -144,8 +144,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'VvedenskayaAttempts',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

@@ -98,8 +98,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'UndisclosedCircuit',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

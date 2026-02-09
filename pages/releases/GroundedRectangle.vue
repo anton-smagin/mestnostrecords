@@ -115,8 +115,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'GroundedRectangle',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

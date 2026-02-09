@@ -102,8 +102,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'TheWayOfTheDog',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

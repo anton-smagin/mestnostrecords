@@ -68,8 +68,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'LovelyGrinch',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

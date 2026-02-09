@@ -112,8 +112,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'YellaGinYaBilSputnicomSolnca',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

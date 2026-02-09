@@ -128,8 +128,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'ShinraBanshou',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

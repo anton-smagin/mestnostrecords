@@ -116,8 +116,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'RasputinChertaNova',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

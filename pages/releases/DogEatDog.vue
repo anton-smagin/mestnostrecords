@@ -82,8 +82,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'AnderdogKelgoma',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

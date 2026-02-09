@@ -74,8 +74,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'KoMaRealFace',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

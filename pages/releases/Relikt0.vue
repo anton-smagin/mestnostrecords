@@ -84,8 +84,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'Relikt0',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

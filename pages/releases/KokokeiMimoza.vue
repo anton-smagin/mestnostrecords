@@ -144,8 +144,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'KokokeiMimoza',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

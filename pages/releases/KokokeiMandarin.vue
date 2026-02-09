@@ -87,8 +87,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'KokokeiMandarin',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

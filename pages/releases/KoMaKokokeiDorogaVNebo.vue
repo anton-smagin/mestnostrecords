@@ -78,8 +78,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'DorogaVNeboKokokeiEdit',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

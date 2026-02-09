@@ -168,8 +168,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'MorakhLimes',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

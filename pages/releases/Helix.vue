@@ -97,8 +97,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'HelixMorakh',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

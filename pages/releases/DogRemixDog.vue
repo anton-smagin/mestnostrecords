@@ -60,8 +60,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'AnderdogDogRemixDog',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

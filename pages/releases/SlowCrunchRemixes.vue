@@ -71,8 +71,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'KikokSlowCrunchRemixes',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

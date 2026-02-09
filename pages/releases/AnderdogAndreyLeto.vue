@@ -135,8 +135,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'AnderdogAndreyLeto',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

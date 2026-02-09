@@ -103,8 +103,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'NeTvoyDrugXazy',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

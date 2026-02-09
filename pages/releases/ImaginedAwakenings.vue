@@ -146,8 +146,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'ImaginedAwakenings',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

@@ -126,8 +126,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'VseslavDryoma',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

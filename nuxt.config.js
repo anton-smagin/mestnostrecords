@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  // Enable SSR for proper meta tag rendering during static generation
+  ssr: true,
+
   // Global page headers: https://nuxt.com/docs/api/configuration/nuxt-config#head
   app: {
     head: {
@@ -16,6 +19,13 @@ export default defineNuxtConfig({
           content: 'Московский лейбл «Местность»',
         },
         { name: 'format-detection', content: 'telephone=no' },
+        // Default Open Graph meta tags (fallback for pages without specific OG tags)
+        { property: 'og:site_name', content: 'Mestnost Records' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: 'https://mestnostrecords.com/static/mestnost_og_default.jpg' },
+        { property: 'og:locale', content: 'ru_RU' },
+        // Twitter Card defaults
+        { name: 'twitter:card', content: 'summary_large_image' },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
@@ -65,6 +75,14 @@ export default defineNuxtConfig({
 
   // Build Configuration: https://nuxt.com/docs/api/configuration/nuxt-config#build
   build: {},
+
+  // Nitro configuration for static generation
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+    },
+  },
 
   // Runtime config for environment variables
   runtimeConfig: {

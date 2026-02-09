@@ -118,8 +118,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'AndreyRasputinRelikt1',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

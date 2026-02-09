@@ -99,8 +99,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'AnderdogSleepParalysis',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [

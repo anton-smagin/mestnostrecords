@@ -133,8 +133,13 @@
 </template>
 
 <script>
+import { useReleaseSeo } from '~/composables/useReleaseSeo'
+
 export default {
   name: 'AmbidextrousErrorism',
+  setup() {
+    useReleaseSeo()
+  },
   data() {
     return {
       links: [
