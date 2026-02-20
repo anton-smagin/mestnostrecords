@@ -49,7 +49,7 @@ export default {
           artist: 'DJ Slon',
           cassetteId: 'dj_slon',
           price: '1500 ₽',
-          albumLink: ''
+          albumLink: '/releases/HimeriProraba'
         },
         {
           id: 25,

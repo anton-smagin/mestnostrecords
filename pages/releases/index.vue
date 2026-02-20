@@ -27,6 +27,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/HimeriProraba',
+          artistName: 'DJ Slon',
+          releaseName: 'Химеры прораба',
+          image: 'dj_slon_himeri_proraba_cover',
+        },
+        {
           name: 'releases/Evkalipt',
           artistName: 'Kokokei',
           releaseName: 'Evkalipt',

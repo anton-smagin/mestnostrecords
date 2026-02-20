@@ -129,7 +129,8 @@ export default {
         'H. Ruine': 'h_ruine_face',
         'Mikhail Kireev': 'mikhail_kireev_face',
         'KIKOK': 'kikok_face',
-        'Dubree': 'dubree_face'
+        'Dubree': 'dubree_face',
+        'DJ Slon': 'dj_slon_face'
       }
 
       const photo = photoMap[this.displayName]

@@ -149,6 +149,11 @@ export default {
           photo: 'dubree',
           fallbackLink: 'releases/RatioEtCaritas'
         },
+        {
+          name: 'DJ Slon',
+          photo: 'dj_slon',
+          fallbackLink: 'releases/HimeriProraba'
+        },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
   },
