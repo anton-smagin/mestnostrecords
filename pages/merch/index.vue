@@ -43,6 +43,15 @@ export default {
     return {
       merchItems: [
         {
+          id: 26,
+          type: 'cassette',
+          title: 'Химеры прораба',
+          artist: 'DJ Slon',
+          cassetteId: 'dj_slon',
+          price: '1500 ₽',
+          albumLink: ''
+        },
+        {
           id: 25,
           type: 'cassette',
           title: 'Evkalipt',
