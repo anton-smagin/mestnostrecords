@@ -72,6 +72,7 @@
             сведение Олег Азелицкий, Андрей Барбекю, студия Underground Experience<br>
             мастеринг, продюсирование, треклист: Константин Колычев | Kokokei<br>
             дизайн обложки и кассеты Марго Кобозева | morgoblin
+            Пресс-релиз: Соня Шпильберг
           </p>
         </div>
         <div class="row mb-5 mt-5">
@@ -109,8 +110,9 @@
             <p class="shadowed mt-5">
               music by Oleg Azelitsky | Dj Slon<br>
               mixing by Oleg Azelitsky, Andrey Barbecue, Underground Experience studio<br>
-              mastering, producing, tracklist: Konstantin Kolychev | Kokokei<br>
+              mastering, producing, tracklist by Konstantin Kolychev | Kokokei<br>
               cover and cassette design by Margo Kobozeva | morgoblin
+              press release by Sonya Spielberg
             </p>
           </div>
         </div>
@@ -134,6 +136,26 @@ export default {
           name: 'Bandcamp',
           icon: 'bandcamp',
           link: 'https://mestnost.bandcamp.com/album/--5',
+        },
+        {
+          name: 'Apple Music',
+          icon: 'apple',
+          link: 'https://music.apple.com/ge/album/%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D1%8B-%D0%BF%D1%80%D0%BE%D1%80%D0%B0%D0%B1%D0%B0/1877224662',
+        },
+        {
+          name: 'Spotify',
+          icon: 'spotify',
+          link: 'https://open.spotify.com/album/3yQ4jwUsblPpHZcdH34Ru8',
+        },
+        {
+          name: 'Yandex',
+          icon: 'yandex',
+          link: 'https://music.yandex.ru/album/40686502',
+        },
+        {
+          name: 'vk',
+          icon: 'vk',
+          link: 'https://vk.com/music/album/-2000751642_26751642_fc0acb41567a5695b1',
         },
       ],
     }
