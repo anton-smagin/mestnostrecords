@@ -27,6 +27,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/Poludryoma',
+          artistName: 'ВСЕСЛАВЪ',
+          releaseName: 'Полудрёма',
+          image: 'poludryoma',
+        },
+        {
           name: 'releases/HimeriProraba',
           artistName: 'DJ Slon',
           releaseName: 'Химеры прораба',
@@ -264,7 +270,7 @@ export default {
 
 <style scoped>
 .description {
-  font-family: NotoSans, sans-serif;
+  font-family: NotoSans, sans-serif !important;
   font-size: 0.8em;
   font-weight: bold;
   cursor: pointer;

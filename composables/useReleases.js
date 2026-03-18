@@ -1,5 +1,11 @@
 const releases = [
   {
+    name: 'releases/Poludryoma',
+    artistName: 'ВСЕСЛАВЪ',
+    releaseName: 'Полудрёма',
+    image: 'poludryoma',
+  },
+  {
     name: 'releases/HimeriProraba',
     artistName: 'DJ Slon',
     releaseName: 'Химеры прораба',

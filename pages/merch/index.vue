@@ -43,6 +43,15 @@ export default {
     return {
       merchItems: [
         {
+          id: 27,
+          type: 'cassette',
+          title: 'Полудрёма',
+          artist: 'ВСЕСЛАВЪ',
+          cassetteId: 'poludryoma',
+          price: '1500 ₽',
+          albumLink: '/releases/Poludryoma'
+        },
+        {
           id: 26,
           type: 'cassette',
           title: 'Химеры прораба',
