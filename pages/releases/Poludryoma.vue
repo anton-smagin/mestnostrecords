@@ -114,6 +114,26 @@ export default {
           icon: 'bandcamp',
           link: 'https://mestnost.bandcamp.com/album/--6',
         },
+        {
+          name: 'Apple Music',
+          icon: 'apple',
+          link: 'https://music.apple.com/ge/album/%D0%BF%D0%BE%D0%BB%D1%83%D0%B4%D1%80%D1%91%D0%BC%D0%B0/1884164947',
+        },
+        {
+          name: 'Spotify',
+          icon: 'spotify',
+          link: 'https://open.spotify.com/album/1p0NgJj9wcpltf7n33FXtl?si=LSAGZvrFSdyoShwIcoyPbA',
+        },
+        {
+          name: 'Yandex',
+          icon: 'yandex',
+          link: 'https://music.yandex.com/album/41086044',
+        },
+        {
+          name: 'vk',
+          icon: 'vk',
+          link: 'https://vk.com/music/album/-2000994154_26994154_d3d7bba63c6878388d',
+        },
       ],
     }
   },
