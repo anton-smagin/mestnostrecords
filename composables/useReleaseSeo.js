@@ -5,7 +5,7 @@ export function useReleaseSeo(overrides = {}) {
   const config = useRuntimeConfig()
   const { releases } = useReleases()
 
-  // Extract the release slug from the route path (e.g., '/releases/Evkalipt' -> 'releases/Evkalipt')
+  // Extract the release slug from the route path (e.g., '/releases/relikt-0' -> 'releases/relikt-0')
   const routePath = route.path.replace(/^\//, '').replace(/\/$/, '')
 
   // Find the release that matches the current route
@@ -19,7 +19,7 @@ export function useReleaseSeo(overrides = {}) {
   const title = overrides.title || `${release.artistName} — ${release.releaseName}`
   const description = overrides.description || `${release.releaseName} by ${release.artistName} on Mestnost Records`
   const imageUrl = overrides.image || `${siteUrl}/static/${release.image}.webp`
-  const pageUrl = `${siteUrl}/${release.name}`
+  const canonicalUrl = `${siteUrl}/${release.name}`
 
   useSeoMeta({
     title,
@@ -27,12 +27,16 @@ export function useReleaseSeo(overrides = {}) {
     description,
     ogDescription: description,
     ogImage: imageUrl,
-    ogUrl: pageUrl,
+    ogUrl: canonicalUrl,
     ogType: 'music.album',
     ogSiteName: 'Mestnost Records',
     twitterCard: 'summary_large_image',
     twitterTitle: title,
     twitterDescription: description,
     twitterImage: imageUrl,
+  })
+
+  useHead({
+    link: [{ rel: 'canonical', href: canonicalUrl }]
   })
 }

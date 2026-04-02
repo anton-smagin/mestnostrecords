@@ -49,7 +49,7 @@
             KIKOK — Slow Crunch remixes (MES033, 2025)
           </p>
           <p>
-            Ремиксы на альбом <nuxt-link to="/releases/SlowCrunch">KIKOK — Slow Crunch</nuxt-link>, вышедший на местности в апреле 2025 года.
+            Ремиксы на альбом <nuxt-link to="/releases/slow-crunch">KIKOK — Slow Crunch</nuxt-link>, вышедший на местности в апреле 2025 года.
             Релиз доступен для бесплатного скачивания на Bandcamp.
           </p>
           <p>

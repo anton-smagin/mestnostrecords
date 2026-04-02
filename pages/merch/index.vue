@@ -56,7 +56,7 @@ export default {
           artist: 'ВСЕСЛАВЪ',
           cassetteId: 'poludryoma',
           price: '1500 ₽',
-          albumLink: '/releases/Poludryoma'
+          albumLink: '/releases/poludryoma'
         },
         {
           id: 26,
@@ -65,7 +65,7 @@ export default {
           artist: 'DJ Slon',
           cassetteId: 'dj_slon',
           price: '1500 ₽',
-          albumLink: '/releases/HimeriProraba'
+          albumLink: '/releases/himeri-proraba'
         },
         {
           id: 25,
@@ -74,7 +74,7 @@ export default {
           artist: 'Kokokei',
           cassetteId: 'evkalipt',
           price: '1500 ₽',
-          albumLink: '/releases/Evkalipt'
+          albumLink: '/releases/evkalipt'
         },
         {
           id: 24,
@@ -83,7 +83,7 @@ export default {
           artist: 'Ambidextrous',
           cassetteId: 'ambidextrous_undisclosed_circuit',
           price: '1500 ₽',
-          albumLink: '/releases/UndisclosedCircuit'
+          albumLink: '/releases/undisclosed-circuit'
         },
         {
           id: 't1',
@@ -120,7 +120,7 @@ export default {
           artist: 'Dubree',
           cassetteId: 'ratio_et_caritas',
           price: '1500 ₽',
-          albumLink: '/releases/RatioEtCaritas'
+          albumLink: '/releases/ratio-et-caritas'
         },
         {
           id: 21,
@@ -129,7 +129,7 @@ export default {
           artist: 'Andrey Rasputin',
           cassetteId: 'relikt_1',
           price: '1500 ₽',
-          albumLink: '/releases/Relikt1'
+          albumLink: '/releases/relikt-1'
         },
         {
           id: 19,
@@ -138,7 +138,7 @@ export default {
           artist: 'Anderdog',
           cassetteId: 'the_way_of_the_dog',
           price: 'нет в наличии',
-          albumLink: '/releases/TheWayOfTheDog',
+          albumLink: '/releases/the-way-of-the-dog',
           outOfStock: true
         },
         {
@@ -148,7 +148,7 @@ export default {
           artist: 'KIKOK',
           cassetteId: 'slow_crunch',
           price: 'нет в наличии',
-          albumLink: '/releases/SlowCrunch',
+          albumLink: '/releases/slow-crunch',
           outOfStock: true
         },
         {
@@ -158,7 +158,7 @@ export default {
           artist: 'H. Ruine / MIKHAIL KIREEV',
           cassetteId: 'imagined_awakenings',
           price: '1500 ₽',
-          albumLink: 'releases/ImaginedAwakenings'
+          albumLink: 'releases/imagined-awakenings'
         },
         {
           id: 7,
@@ -167,7 +167,7 @@ export default {
           artist: 'ВСЕСЛАВЪ',
           cassetteId: 'vseslav',
           price: 'нет в наличии',
-          albumLink: '/releases/Dryoma',
+          albumLink: '/releases/dryoma',
           outOfStock: true
         },
         {
@@ -177,7 +177,7 @@ export default {
           artist: 'Anderdog',
           cassetteId: 'anderdog_bizarre',
           price: '1500 ₽',
-          albumLink: '/releases/Imagine'
+          albumLink: '/releases/imagine'
         },
         {
           id: 6,
@@ -186,7 +186,7 @@ export default {
           artist: 'Ne Tvoy Drug',
           cassetteId: 'veter',
           price: '1500 ₽',
-          albumLink: '/releases/Veter'
+          albumLink: '/releases/veter'
         },
         {
           id: 15,
@@ -195,7 +195,7 @@ export default {
           artist: 'Ko+Ma & Kokokei',
           cassetteId: 'koma_doroga_v_nebo',
           price: '1500 ₽',
-          albumLink: '/releases/KoMaKokokeiDorogaVNebo'
+          albumLink: '/releases/ko-ma-kokokei-doroga-v-nebo'
         },
         {
           id: 5,
@@ -204,7 +204,7 @@ export default {
           artist: 'Ilya Orange',
           cassetteId: 'quietud',
           price: '1500 ₽',
-          albumLink: '/releases/Quietud'
+          albumLink: '/releases/quietud'
         },
         {
           id: 17,
@@ -213,7 +213,7 @@ export default {
           artist: 'HAJIME KOJIRO',
           cassetteId: 'shinra_banshou',
           price: 'нет в наличии',
-          albumLink: '/releases/ShinraBanshou',
+          albumLink: '/releases/shinra-banshou',
           outOfStock: true
         },
         {
@@ -223,7 +223,7 @@ export default {
           artist: 'Morakh',
           cassetteId: 'helix_cassette',
           price: 'нет в наличии',
-          albumLink: '/releases/Helix',
+          albumLink: '/releases/helix',
           outOfStock: true
         },
         {
@@ -233,7 +233,7 @@ export default {
           artist: 'Raveny x Morphtables',
           cassetteId: 'bosporus_accident',
           price: '1500 ₽',
-          albumLink: '/releases/BosporusAcident'
+          albumLink: '/releases/bosporus-acident'
         },
         {
           id: 20,
@@ -242,7 +242,7 @@ export default {
           artist: 'Yella Gin',
           cassetteId: 'yella_gin',
           price: '1500 ₽',
-          albumLink: '/releases/YaBilSputnicomSolnca'
+          albumLink: '/releases/ya-bil-sputnicom-solnca'
         },
         {
           id: 29,
@@ -251,7 +251,7 @@ export default {
           artist: 'Anderdog',
           cassetteId: 'dog_eat_dog',
           price: '1500 ₽',
-          albumLink: '/releases/DogEatDog'
+          albumLink: '/releases/dog-eat-dog'
         },
         {
           id: 2,
@@ -260,7 +260,7 @@ export default {
           artist: 'Kokokei',
           cassetteId: 'mandarin',
           price: 'нет в наличии',
-          albumLink: '/releases/KokokeiMandarin',
+          albumLink: '/releases/kokokei-mandarin',
           outOfStock: true
         },
         {
@@ -270,7 +270,7 @@ export default {
           artist: 'Kisser',
           cassetteId: 'fields_of_domodedovskaya',
           price: 'нет в наличии',
-          albumLink: '/releases/FieldsOfDomodevskaya',
+          albumLink: '/releases/fields-of-domodevskaya',
           outOfStock: true
         },
         {
@@ -280,7 +280,7 @@ export default {
           artist: 'Max Ananyev',
           cassetteId: 'max_ananyev',
           price: '1500 ₽',
-          albumLink: '/releases/SunInsteadOfHead'
+          albumLink: '/releases/sun-instead-of-head'
         },
         {
           id: 1,
@@ -289,7 +289,7 @@ export default {
           artist: 'Ambidextrous',
           cassetteId: 'ambidextrous',
           price: '1500 ₽',
-          albumLink: '/releases/GroundedRectangle'
+          albumLink: '/releases/grounded-rectangle'
         },
         {
           id: 9,
@@ -298,7 +298,7 @@ export default {
           artist: 'Ne Tvoy Drug',
           cassetteId: 'xazy',
           price: '1500 ₽',
-          albumLink: '/releases/Xazy'
+          albumLink: '/releases/xazy'
         },
         {
           id: 28,
@@ -307,7 +307,7 @@ export default {
           artist: 'Andrey Rasputin',
           cassetteId: 'cherta_nova',
           price: '1500 ₽',
-          albumLink: '/releases/ChertaNova'
+          albumLink: '/releases/cherta-nova'
         },
         {
           id: 3,
@@ -316,7 +316,7 @@ export default {
           artist: 'Kokokei',
           cassetteId: 'mimoza',
           price: 'нет в наличии',
-          albumLink: '/releases/KokokeiMimoza',
+          albumLink: '/releases/kokokei-mimoza',
           outOfStock: true
         },
         {
@@ -326,7 +326,7 @@ export default {
           artist: 'Anderdog & Andrey Leto',
           cassetteId: 'anderdog_leto',
           price: 'нет в наличии',
-          albumLink: '/releases/AnderdogAndreyLeto',
+          albumLink: '/releases/anderdog-andrey-leto',
           outOfStock: true
         },
         {
@@ -336,7 +336,7 @@ export default {
           artist: 'Morakh',
           cassetteId: 'morakh',
           price: '1500 ₽',
-          albumLink: '/releases/MorakhLimes'
+          albumLink: '/releases/morakh-limes'
         },
         {
           id: 8,
@@ -345,7 +345,7 @@ export default {
           artist: 'Vvvedenskaya',
           cassetteId: 'vvvedenskaya',
           price: '1500 ₽',
-          albumLink: '/releases/VvvedenskayaAttempts'
+          albumLink: '/releases/vvvedenskaya-attempts'
         }
       ]
     }

@@ -6,27 +6,21 @@
 </template>
 
 <script setup>
-const RELEASE_PAGES = [
-  'AmbidextrousErrorism', 'AnderdogAndreyLeto', 'AnderdogKelgoma',
-  'AnderdogSleepParalysis', 'BosporusAcident', 'ChertaNova',
-  'DogEatDog', 'DogRemixDog', 'DorogaVNebo', 'Dryoma', 'Evkalipt',
-  'FieldsOfDomodevskaya', 'GroundedRectangle', 'Helix', 'HimeriProraba',
-  'Imagine', 'ImaginedAwakenings', 'KokokeiMandarin', 'KokokeiMimoza',
-  'KoMaKokokeiDorogaVNebo', 'KoMaRealFace', 'LovelyGrinch',
-  'MicrodogEastSide', 'MorakhLimes', 'NewLife', 'Poludryoma', 'Quietud',
-  'RatioEtCaritas', 'Relikt0', 'Relikt1', 'ShinraBanshou', 'SlowCrunch',
-  'SlowCrunchRemixes', 'SunInsteadOfHead', 'TheWayOfTheDog',
-  'TheWayOfTheDogSingle', 'UndisclosedCircuit', 'Veter',
-  'VvvedenskayaAttempts', 'Xazy', 'YaBilSputnicomSolnca'
-]
+function toKebabCase(str) {
+  return str
+    .replace(/([A-Z]+)([A-Z][a-z])/g, '$1-$2')
+    .replace(/([a-z])([A-Z])/g, '$1-$2')
+    .replace(/([a-zA-Z])(\d)/g, '$1-$2')
+    .replace(/(\d)([a-zA-Z])/g, '$1-$2')
+    .toLowerCase()
+}
 
 const route = useRoute()
 const slug = route.params.slug
-const camel = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('')
-const match = RELEASE_PAGES.find(p => p.toLowerCase() === camel.toLowerCase())
+const kebab = toKebabCase(slug)
 
-if (match) {
-  await navigateTo(`/releases/${match}`, { redirectCode: 301, replace: true })
+if (kebab !== slug) {
+  await navigateTo(`/releases/${kebab}`, { redirectCode: 301, replace: true })
 }
 </script>
 

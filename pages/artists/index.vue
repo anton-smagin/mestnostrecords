@@ -37,122 +37,122 @@ export default {
         {
           name: 'Kisser',
           photo: 'kisser',
-          fallbackLink: 'releases/FieldsOfDomodevskaya'
+          fallbackLink: 'releases/fields-of-domodevskaya'
         },
         {
           name: 'Max Ananyev',
           photo: 'max_ananyev',
-          fallbackLink: 'releases/SunInsteadOfHead'
+          fallbackLink: 'releases/sun-instead-of-head'
         },
         {
           name: 'Ne Tvoy Drug',
           photo: 'ne_tvoy_drug',
-          fallbackLink: 'releases/Xazy'
+          fallbackLink: 'releases/xazy'
         },
         {
           name: 'Ko+Ma',
           photo: 'koma',
-          fallbackLink: 'releases/DorogaVNebo'
+          fallbackLink: 'releases/doroga-v-nebo'
         },
         {
           name: 'Andrey Rasputin',
           photo: 'rasputin',
-          fallbackLink: 'releases/ChertaNova'
+          fallbackLink: 'releases/cherta-nova'
         },
         {
           name: 'Kokokei',
           photo: 'kokokei',
-          fallbackLink: 'releases/KokokeiMandarin'
+          fallbackLink: 'releases/kokokei-mandarin'
         },
         {
           name: 'Anderdog and Andrey Leto',
           photo: 'anderdogandreyleto',
-          fallbackLink: 'releases/AnderdogAndreyLeto'
+          fallbackLink: 'releases/anderdog-andrey-leto'
         },
         {
           name: 'Morakh',
           photo: 'morakh',
-          fallbackLink: 'releases/MorakhLimes'
+          fallbackLink: 'releases/morakh-limes'
         },
         {
           name: 'Vvvedenskaya',
           photo: 'vvvedenskaya',
-          fallbackLink: 'releases/VvvedenskayaAttempts'
+          fallbackLink: 'releases/vvvedenskaya-attempts'
         },
         {
           name: 'Microdog',
           photo: 'microdog',
-          fallbackLink: 'releases/MicrodogEastSide'
+          fallbackLink: 'releases/microdog-east-side'
         },
         {
           name: 'Ambidextrous',
           photo: 'ambidextrous',
-          fallbackLink: 'releases/GroundedRectangle'
+          fallbackLink: 'releases/grounded-rectangle'
         },
         {
           name: 'Anderdog',
           photo: 'anderdog',
-          fallbackLink: 'releases/DogEatDog'
+          fallbackLink: 'releases/dog-eat-dog'
         },
         {
           name: 'Yella Gin',
           photo: 'yella_gin',
-          fallbackLink: 'releases/YaBilSputnicomSolnca'
+          fallbackLink: 'releases/ya-bil-sputnicom-solnca'
         },
         {
           name: 'Raveny x Morphtables',
           photo: 'raveny_morphtables',
-          fallbackLink: 'releases/BosporusAcident'
+          fallbackLink: 'releases/bosporus-acident'
         },
         {
           name: 'HAJIME KOJIRO',
           photo: 'hajime_kojiro',
-          fallbackLink: 'releases/ShinraBanshou'
+          fallbackLink: 'releases/shinra-banshou'
         },
         {
           name: 'DJ HeadSick',
           photo: 'dj_headsick',
-          fallbackLink: 'releases/NewLife'
+          fallbackLink: 'releases/new-life'
         },
         {
           name: 'Ilya Orange',
           photo: 'ilya_orange',
-          fallbackLink: 'releases/Quietud'
+          fallbackLink: 'releases/quietud'
         },
         {
           name: 'Dessin Bizarre',
           photo: 'dessin_bizarre',
-          fallbackLink: 'releases/Imagine'
+          fallbackLink: 'releases/imagine'
         },
         {
           name: 'ВСЕСЛАВЪ',
           photo: 'vseslav',
-          fallbackLink: 'releases/Dryoma'
+          fallbackLink: 'releases/dryoma'
         },
         {
           name: 'H. Ruine',
           photo: 'h_ruine',
-          fallbackLink: 'releases/ImaginedAwakenings'
+          fallbackLink: 'releases/imagined-awakenings'
         },
         {
           name: 'Mikhail Kireev',
           photo: 'mikhail_kireev',
-          fallbackLink: 'releases/ImaginedAwakenings'
+          fallbackLink: 'releases/imagined-awakenings'
         },
         {
           name: 'KIKOK',
           photo: 'kikok',
-          fallbackLink: 'releases/LovelyGrinch'
+          fallbackLink: 'releases/lovely-grinch'
         },
         {
           name: 'Dubree',
           photo: 'dubree',
-          fallbackLink: 'releases/RatioEtCaritas'
+          fallbackLink: 'releases/ratio-et-caritas'
         },
         {
           name: 'DJ Slon',
           photo: 'dj_slon',
-          fallbackLink: 'releases/HimeriProraba'
+          fallbackLink: 'releases/himeri-proraba'
         },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }

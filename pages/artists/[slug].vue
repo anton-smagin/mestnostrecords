@@ -73,7 +73,7 @@ import { useReleases } from '~/composables/useReleases'
 export default {
   name: 'ArtistPage',
   setup() {
-    const { getArtistBySlug, getSocialLinks, getDisplayName } = useArtists()
+    const { getArtistBySlug, getSocialLinks, getDisplayName, getArtistSlug } = useArtists()
     const { getReleasesByArtist } = useReleases()
     const route = useRoute()
     const config = useRuntimeConfig()
@@ -109,19 +109,27 @@ export default {
       const photoFile = photoMap[name] || (releases.length > 0 ? releases[0].image : null)
       const imageUrl = photoFile ? `${siteUrl}/static/${photoFile}.webp` : `${siteUrl}/static/mestnost_logo.webp`
 
+      // Canonical URL uses kebab-case for consistent robot indexing
+      const canonicalSlug = getArtistSlug(name)
+      const canonicalUrl = `${siteUrl}/artists/${canonicalSlug}`
+
       useSeoMeta({
         title: `${name} | Mestnost Records`,
         ogTitle: `${name} | Mestnost Records`,
         description,
         ogDescription: description,
         ogImage: imageUrl,
-        ogUrl: `${siteUrl}/artists/${slug}`,
+        ogUrl: canonicalUrl,
         ogType: 'profile',
         ogSiteName: 'Mestnost Records',
         twitterCard: 'summary_large_image',
         twitterTitle: `${name} | Mestnost Records`,
         twitterDescription: description,
         twitterImage: imageUrl,
+      })
+
+      useHead({
+        link: [{ rel: 'canonical', href: canonicalUrl }]
       })
     }
 
