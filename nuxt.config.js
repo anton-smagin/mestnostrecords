@@ -1,3 +1,23 @@
+import { readdirSync } from 'node:fs'
+import { resolve } from 'node:path'
+
+// Generate CamelCase → kebab-case redirect rules from release page files
+function generateReleaseRedirects() {
+  const dir = resolve(__dirname, 'pages/releases')
+  const files = readdirSync(dir).filter(f =>
+    f.endsWith('.vue') && f !== 'index.vue' && f !== '[slug].vue'
+  )
+  const rules = {}
+  for (const file of files) {
+    const kebab = file.replace('.vue', '')
+    const camel = kebab.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('')
+    if (camel !== kebab) {
+      rules[`/releases/${camel}`] = { redirect: `/releases/${kebab}` }
+    }
+  }
+  return rules
+}
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // Enable SSR for proper meta tag rendering during static generation
@@ -75,6 +95,9 @@ export default defineNuxtConfig({
 
   // Build Configuration: https://nuxt.com/docs/api/configuration/nuxt-config#build
   build: {},
+
+  // CamelCase → kebab-case redirects generated from release page files
+  routeRules: generateReleaseRedirects(),
 
   // Nitro configuration for static generation
   nitro: {
