@@ -93,7 +93,13 @@ export function useArtists() {
   const artists = parseCSV(csvData)
 
   function getArtistBySlug(slug) {
-    return artists.find(artist => generateSlug(artist['артист']) === slug)
+    // Direct match (kebab-case)
+    const direct = artists.find(artist => generateSlug(artist['артист']) === slug)
+    if (direct) return direct
+
+    // Convert CamelCase to kebab-case and try again
+    const kebab = slug.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase()
+    return artists.find(artist => generateSlug(artist['артист']) === kebab) || null
   }
 
   function getArtistByName(name) {

@@ -75,6 +75,55 @@ export default {
   setup() {
     const { getArtistBySlug, getSocialLinks, getDisplayName } = useArtists()
     const { getReleasesByArtist } = useReleases()
+    const route = useRoute()
+    const config = useRuntimeConfig()
+
+    const slug = route.params.slug
+    const artist = getArtistBySlug(slug)
+
+    if (artist) {
+      const name = getDisplayName(artist)
+      const siteUrl = config.public.siteUrl || 'https://mestnostrecords.com'
+      const location = artist['локация']
+      const description = location
+        ? `${name} — ${location} | Mestnost Records`
+        : `${name} | Mestnost Records`
+
+      // Reuse photo logic to get OG image
+      const photoMap = {
+        'Kisser': 'kisser_face', 'Max Ananyev': 'max_ananyev_face',
+        'Ne Tvoy Drug': 'ne_tvoy_drug_face', 'Ko+Ma': 'koma_face',
+        'Andrey Rasputin': 'rasputin_face', 'Kokokei': 'kokokei_face',
+        'Anderdog and Andrey Leto': 'anderdogandreyleto_face',
+        'Morakh': 'morakh_face', 'Vvvedenskaya': 'vvvedenskaya_face',
+        'Microdog': 'microdog_face', 'Ambidextrous': 'ambidextrous_face',
+        'Anderdog': 'anderdog_face', 'Yella Gin': 'yella_gin_face',
+        'Raveny x Morphtables': 'raveny_morphtables_face',
+        'HAJIME KOJIRO': 'hajime_kojiro_face', 'DJ HeadSick': 'dj_headsick_face',
+        'Ilya Orange': 'ilya_orange_face', 'Dessin Bizarre': 'dessin_bizarre_face',
+        'ВСЕСЛАВЪ': 'vseslav_face', 'H. Ruine': 'h_ruine_face',
+        'Mikhail Kireev': 'mikhail_kireev_face', 'KIKOK': 'kikok_face',
+        'Dubree': 'dubree_face', 'DJ Slon': 'dj_slon_face'
+      }
+      const releases = getReleasesByArtist(name)
+      const photoFile = photoMap[name] || (releases.length > 0 ? releases[0].image : null)
+      const imageUrl = photoFile ? `${siteUrl}/static/${photoFile}.webp` : `${siteUrl}/static/mestnost_logo.webp`
+
+      useSeoMeta({
+        title: `${name} | Mestnost Records`,
+        ogTitle: `${name} | Mestnost Records`,
+        description,
+        ogDescription: description,
+        ogImage: imageUrl,
+        ogUrl: `${siteUrl}/artists/${slug}`,
+        ogType: 'profile',
+        ogSiteName: 'Mestnost Records',
+        twitterCard: 'summary_large_image',
+        twitterTitle: `${name} | Mestnost Records`,
+        twitterDescription: description,
+        twitterImage: imageUrl,
+      })
+    }
 
     return {
       getArtistBySlug,
@@ -146,11 +195,6 @@ export default {
       return null
     }
   },
-  head() {
-    return {
-      title: this.displayName ? `${this.displayName} | Mestnost` : 'Artist | Mestnost'
-    }
-  }
 }
 </script>
 

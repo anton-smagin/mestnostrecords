@@ -45,6 +45,20 @@
     </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
+        <div class="col-12 text-center mb-5">
+          <NuxtImg
+            src="/static/dog_eat_dog_cassette_2.webp"
+            alt="Anderdog Dog Eat Dog cassette"
+            style="max-width: 70%; height: auto; display: block; margin: 0 auto;"
+            format="webp"
+            :quality="85"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5 mt-5">
+      <div class="col-md-12">
         <div class="description text-white mb-5">
           <p>
             "Dog Eat Dog" — четвертый релиз от резидента “Местности” — Андердога.

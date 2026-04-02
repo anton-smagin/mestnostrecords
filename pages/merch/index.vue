@@ -14,6 +14,7 @@
             :artist="item.artist"
             :cassette-id="item.cassetteId"
             :price="item.price"
+            :numeric-price="item.numericPrice || 1500"
             :order-link="item.orderLink"
             :album-link="item.albumLink"
             :out-of-stock="item.outOfStock"
@@ -29,6 +30,9 @@
         </template>
       </div>
     </div>
+
+    <CartBar @checkout="showCheckout = true" />
+    <CartCheckoutModal :show="showCheckout" @close="showCheckout = false" />
   </div>
 </template>
 
@@ -37,10 +41,13 @@ export default {
   name: 'MerchPage',
   components: {
     MerchItem: () => import('~/components/MerchItem.vue'),
-    TShirtItem: () => import('~/components/TShirtItem.vue')
+    TShirtItem: () => import('~/components/TShirtItem.vue'),
+    CartBar: () => import('~/components/CartBar.vue'),
+    CartCheckoutModal: () => import('~/components/CartCheckoutModal.vue')
   },
   data() {
     return {
+      showCheckout: false,
       merchItems: [
         {
           id: 27,
@@ -238,6 +245,15 @@ export default {
           albumLink: '/releases/YaBilSputnicomSolnca'
         },
         {
+          id: 29,
+          type: 'cassette',
+          title: 'Dog Eat Dog',
+          artist: 'Anderdog',
+          cassetteId: 'dog_eat_dog',
+          price: '1500 ₽',
+          albumLink: '/releases/DogEatDog'
+        },
+        {
           id: 2,
           type: 'cassette',
           title: 'Mandarin',
@@ -283,6 +299,15 @@ export default {
           cassetteId: 'xazy',
           price: '1500 ₽',
           albumLink: '/releases/Xazy'
+        },
+        {
+          id: 28,
+          type: 'cassette',
+          title: 'Cherta-nova',
+          artist: 'Andrey Rasputin',
+          cassetteId: 'cherta_nova',
+          price: '1500 ₽',
+          albumLink: '/releases/ChertaNova'
         },
         {
           id: 3,
@@ -337,6 +362,7 @@ export default {
 .merch-page {
   background-color: black;
   min-height: 100vh;
+  padding-bottom: 80px;
 }
 
 h1 {

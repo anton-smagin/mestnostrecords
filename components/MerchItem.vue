@@ -18,14 +18,24 @@
         <h5 class="merch-title text-white">{{ title }}</h5>
         <p class="merch-artist text-white">{{ artist }}</p>
         <p class="merch-price text-white">{{ price }}</p>
-        <button 
-          @click="openOrderModal" 
-          class="btn btn-outline-light order-btn"
-          :class="{ 'out-of-stock': outOfStock }"
-          :disabled="outOfStock"
-        >
-          {{ outOfStock ? 'Нет в наличии' : 'Заказать' }}
-        </button>
+        <div class="merch-buttons">
+          <button
+            v-if="!outOfStock"
+            @click="toggleCart"
+            class="btn cart-btn"
+            :class="{ 'in-cart': inCart }"
+          >
+            {{ inCart ? 'В корзине ✓' : 'В корзину' }}
+          </button>
+          <button
+            @click="openOrderModal"
+            class="btn btn-outline-light order-btn"
+            :class="{ 'out-of-stock': outOfStock }"
+            :disabled="outOfStock"
+          >
+            {{ outOfStock ? 'Нет в наличии' : 'Заказать' }}
+          </button>
+        </div>
       </div>
     </div>
     
@@ -40,6 +50,8 @@
 
 <script>
 import OrderModal from './OrderModal.vue'
+import { useCart } from '~/composables/useCart'
+import { computed } from 'vue'
 
 export default {
   name: 'MerchItem',
@@ -63,6 +75,10 @@ export default {
       type: String,
       default: '1500 ₽'
     },
+    numericPrice: {
+      type: Number,
+      default: 1500
+    },
     orderLink: {
       type: String,
       default: ''
@@ -76,6 +92,11 @@ export default {
       default: false
     }
   },
+  setup(props) {
+    const { addItem, removeItem, isInCart } = useCart()
+    const inCart = computed(() => isInCart(props.cassetteId))
+    return { addItem, removeItem, isInCart, inCart }
+  },
   data() {
     return {
       imageError: false,
@@ -84,16 +105,13 @@ export default {
   },
   methods: {
     getImageUrl() {
-      // Use WebP format
       return `/static/${this.cassetteId}_cassette_2.webp`
     },
     handleImageError(event) {
-      // If cassette_2 fails, try cassette_1
       if (!this.imageError) {
         this.imageError = true;
         event.target.src = `/static/${this.cassetteId}_cassette_1.webp`;
       } else {
-        // If both fail, show a placeholder or hide the image
         event.target.style.display = 'none';
       }
     },
@@ -107,6 +125,18 @@ export default {
     },
     closeModal() {
       this.showModal = false
+    },
+    toggleCart() {
+      if (this.inCart) {
+        this.removeItem(this.cassetteId)
+      } else {
+        this.addItem({
+          id: this.cassetteId,
+          title: this.title,
+          artist: this.artist,
+          cassetteId: this.cassetteId
+        })
+      }
     }
   }
 }
@@ -177,7 +207,41 @@ export default {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #91a79d;
+  color: white;
+}
+
+.merch-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cart-btn {
+  font-family: NotoSans, sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.cart-btn:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.cart-btn.in-cart {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.cart-btn.in-cart:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .order-btn {
@@ -187,15 +251,15 @@ export default {
   border-radius: 4px;
   text-decoration: none;
   transition: all 0.3s ease;
-  border: 2px solid #91a79d;
-  color: #91a79d;
+  border: 2px solid white;
+  color: white;
   background: transparent;
 }
 
 .order-btn:hover {
-  background-color: #91a79d;
+  background-color: white;
   color: black;
-  border-color: #91a79d;
+  border-color: white;
 }
 
 .order-btn.out-of-stock {
