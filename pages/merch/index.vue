@@ -119,8 +119,9 @@ export default {
           title: 'Ratio et Сaritas',
           artist: 'Dubree',
           cassetteId: 'ratio_et_caritas',
-          price: '1500 ₽',
-          albumLink: '/releases/ratio-et-caritas'
+          price: 'нет в наличии',
+          albumLink: '/releases/ratio-et-caritas',
+          outOfStock: true
         },
         {
           id: 21,
@@ -176,8 +177,9 @@ export default {
           title: 'Anderdog Bizarre',
           artist: 'Anderdog',
           cassetteId: 'anderdog_bizarre',
-          price: '1500 ₽',
-          albumLink: '/releases/imagine'
+          price: 'нет в наличии',
+          albumLink: '/releases/imagine',
+          outOfStock: true
         },
         {
           id: 6,
@@ -250,8 +252,9 @@ export default {
           title: 'Dog Eat Dog',
           artist: 'Anderdog',
           cassetteId: 'dog_eat_dog',
-          price: '1500 ₽',
-          albumLink: '/releases/dog-eat-dog'
+          price: 'нет в наличии',
+          albumLink: '/releases/dog-eat-dog',
+          outOfStock: true
         },
         {
           id: 2,
@@ -279,8 +282,9 @@ export default {
           title: 'Sun Instead of Head',
           artist: 'Max Ananyev',
           cassetteId: 'max_ananyev',
-          price: '1500 ₽',
-          albumLink: '/releases/sun-instead-of-head'
+          price: 'нет в наличии',
+          albumLink: '/releases/sun-instead-of-head',
+          outOfStock: true
         },
         {
           id: 1,
@@ -288,8 +292,9 @@ export default {
           title: 'Grounded Rectangle',
           artist: 'Ambidextrous',
           cassetteId: 'ambidextrous',
-          price: '1500 ₽',
-          albumLink: '/releases/grounded-rectangle'
+          price: 'нет в наличии',
+          albumLink: '/releases/grounded-rectangle',
+          outOfStock: true
         },
         {
           id: 9,
@@ -306,8 +311,9 @@ export default {
           title: 'Cherta-nova',
           artist: 'Andrey Rasputin',
           cassetteId: 'cherta_nova',
-          price: '1500 ₽',
-          albumLink: '/releases/cherta-nova'
+          price: 'нет в наличии',
+          albumLink: '/releases/cherta-nova',
+          outOfStock: true
         },
         {
           id: 3,
@@ -335,8 +341,9 @@ export default {
           title: 'Limes',
           artist: 'Morakh',
           cassetteId: 'morakh',
-          price: '1500 ₽',
-          albumLink: '/releases/morakh-limes'
+          price: 'нет в наличии',
+          albumLink: '/releases/morakh-limes',
+          outOfStock: true
         },
         {
           id: 8,
@@ -344,8 +351,9 @@ export default {
           title: 'Vvvedenskaya Attempts',
           artist: 'Vvvedenskaya',
           cassetteId: 'vvvedenskaya',
-          price: '1500 ₽',
-          albumLink: '/releases/vvvedenskaya-attempts'
+          price: 'нет в наличии',
+          albumLink: '/releases/vvvedenskaya-attempts',
+          outOfStock: true
         }
       ]
     }
