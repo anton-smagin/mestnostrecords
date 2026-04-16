@@ -96,8 +96,8 @@ export default {
             'размеры S/M/L/XL'
           ],
           imageUrl: '/static/dubree_t_shirt.webp',
-          price: '2500 ₽',
-          outOfStock: false
+          price: 'нет в наличии',
+          outOfStock: true
         },
         {
           id: 't2',
