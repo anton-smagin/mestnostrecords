@@ -119,9 +119,8 @@ export default {
           title: 'Ratio et Сaritas',
           artist: 'Dubree',
           cassetteId: 'ratio_et_caritas',
-          price: 'нет в наличии',
-          albumLink: '/releases/ratio-et-caritas',
-          outOfStock: true
+          price: '1500 ₽',
+          albumLink: '/releases/ratio-et-caritas'
         },
         {
           id: 21,
@@ -158,8 +157,9 @@ export default {
           title: 'Imagined / Awakenings',
           artist: 'H. Ruine / MIKHAIL KIREEV',
           cassetteId: 'imagined_awakenings',
-          price: '1500 ₽',
-          albumLink: 'releases/imagined-awakenings'
+          price: 'нет в наличии',
+          albumLink: 'releases/imagined-awakenings',
+          outOfStock: true
         },
         {
           id: 7,
@@ -234,8 +234,9 @@ export default {
           title: 'Bosporus Accident',
           artist: 'Raveny x Morphtables',
           cassetteId: 'bosporus_accident',
-          price: '1500 ₽',
-          albumLink: '/releases/bosporus-acident'
+          price: 'нет в наличии',
+          albumLink: '/releases/bosporus-acident',
+          outOfStock: true
         },
         {
           id: 20,
