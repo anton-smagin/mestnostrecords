@@ -100,9 +100,14 @@ export default {
           fallbackLink: 'releases/ya-bil-sputnicom-solnca'
         },
         {
-          name: 'Raveny x Morphtables',
+          name: 'Raveny',
           photo: 'raveny_morphtables',
           fallbackLink: 'releases/bosporus-acident'
+        },
+        {
+          name: 'Morphtables',
+          photo: 'morphtables',
+          fallbackLink: 'releases/absurdance'
         },
         {
           name: 'HAJIME KOJIRO',

@@ -71,8 +71,19 @@ html {
 }
 
 .home {
-  background: url('/static/background.webp') no-repeat center center fixed !important;
-  background-size: cover;
+  background:
+    linear-gradient(
+      to bottom,
+      black 0%,
+      black 10%,
+      transparent 10%,
+      transparent 80%,
+      black 80%,
+      black 100%
+    ),
+    url('/static/lofi_background.webp') no-repeat center center fixed !important;
+  background-size: 100% 100%, cover;
+  background-color: black;
 }
 
 .logo {

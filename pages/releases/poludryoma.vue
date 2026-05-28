@@ -43,9 +43,8 @@
           style="border: 0; width: 100%; height: 120px;"
           src="https://bandcamp.com/EmbeddedPlayer/album=3803754582/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
           seamless
-        >
-          <a href="https://mestnost.bandcamp.com/album/--6">Полудрёма by ВСЕСЛАВЪ</a>
-        </iframe>
+          title="Полудрёма by ВСЕСЛАВЪ"
+        ></iframe>
       </div>
     </div>
     <div class="row mb-5 mt-5">

@@ -27,6 +27,12 @@ export default {
     return {
       releases: [
         {
+          name: 'releases/absurdance',
+          artistName: 'Morphtables',
+          releaseName: 'Absurdance',
+          image: 'absurdance',
+        },
+        {
           name: 'releases/poludryoma',
           artistName: 'ВСЕСЛАВЪ',
           releaseName: 'Полудрёма',

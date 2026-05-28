@@ -50,6 +50,15 @@ export default {
       showCheckout: false,
       merchItems: [
         {
+          id: 30,
+          type: 'cassette',
+          title: 'Absurdance',
+          artist: 'Morphtables',
+          cassetteId: 'absurdance',
+          price: '1500 ₽',
+          albumLink: '/releases/absurdance'
+        },
+        {
           id: 27,
           type: 'cassette',
           title: 'Полудрёма',
