@@ -142,6 +142,26 @@ export default {
           icon: 'bandcamp',
           link: 'https://mestnost.bandcamp.com/album/absurdance',
         },
+        {
+          name: 'Apple Music',
+          icon: 'apple',
+          link: 'https://music.apple.com/ge/album/absurdance/6768816964',
+        },
+        {
+          name: 'Spotify',
+          icon: 'spotify',
+          link: 'https://open.spotify.com/album/36leOc6SSo8dVDd8FQklNt',
+        },
+        {
+          name: 'Yandex',
+          icon: 'yandex',
+          link: 'https://music.yandex.com/album/42057468',
+        },
+        {
+          name: 'vk',
+          icon: 'vk',
+          link: 'https://vk.com/music/album/-2000687931_27687931_1893f71423c5eb0af9',
+        },
       ],
     }
   },

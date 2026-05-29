@@ -75,10 +75,10 @@ html {
     linear-gradient(
       to bottom,
       black 0%,
-      black 10%,
+      black 5%,
       transparent 10%,
       transparent 80%,
-      black 80%,
+      black 90%,
       black 100%
     ),
     url('/static/lofi_background.webp') no-repeat center center fixed !important;
