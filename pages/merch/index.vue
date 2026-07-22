@@ -73,8 +73,9 @@ export default {
           title: 'Химеры прораба',
           artist: 'DJ Slon',
           cassetteId: 'dj_slon',
-          price: '1500 ₽',
-          albumLink: '/releases/himeri-proraba'
+          price: 'нет в наличии',
+          albumLink: '/releases/himeri-proraba',
+          outOfStock: true
         },
         {
           id: 25,
@@ -91,8 +92,9 @@ export default {
           title: 'Undisclosed Circuit',
           artist: 'Ambidextrous',
           cassetteId: 'ambidextrous_undisclosed_circuit',
-          price: '1500 ₽',
-          albumLink: '/releases/undisclosed-circuit'
+          price: 'нет в наличии',
+          albumLink: '/releases/undisclosed-circuit',
+          outOfStock: true
         },
         {
           id: 't1',
@@ -128,8 +130,9 @@ export default {
           title: 'Ratio et Сaritas',
           artist: 'Dubree',
           cassetteId: 'ratio_et_caritas',
-          price: '1500 ₽',
-          albumLink: '/releases/ratio-et-caritas'
+          price: 'нет в наличии',
+          albumLink: '/releases/ratio-et-caritas',
+          outOfStock: true
         },
         {
           id: 21,
@@ -166,9 +169,8 @@ export default {
           title: 'Imagined / Awakenings',
           artist: 'H. Ruine / MIKHAIL KIREEV',
           cassetteId: 'imagined_awakenings',
-          price: 'нет в наличии',
-          albumLink: 'releases/imagined-awakenings',
-          outOfStock: true
+          price: '1500 ₽',
+          albumLink: 'releases/imagined-awakenings'
         },
         {
           id: 7,
@@ -186,9 +188,8 @@ export default {
           title: 'Anderdog Bizarre',
           artist: 'Anderdog',
           cassetteId: 'anderdog_bizarre',
-          price: 'нет в наличии',
-          albumLink: '/releases/imagine',
-          outOfStock: true
+          price: '1500 ₽',
+          albumLink: '/releases/imagine'
         },
         {
           id: 6,
@@ -196,8 +197,9 @@ export default {
           title: 'Veter',
           artist: 'Ne Tvoy Drug',
           cassetteId: 'veter',
-          price: '1500 ₽',
-          albumLink: '/releases/veter'
+          price: 'нет в наличии',
+          albumLink: '/releases/veter',
+          outOfStock: true
         },
         {
           id: 15,
@@ -223,9 +225,8 @@ export default {
           title: 'Shinra Banshou',
           artist: 'HAJIME KOJIRO',
           cassetteId: 'shinra_banshou',
-          price: 'нет в наличии',
-          albumLink: '/releases/shinra-banshou',
-          outOfStock: true
+          price: '1500 ₽',
+          albumLink: '/releases/shinra-banshou'
         },
         {
           id: 14,
@@ -233,9 +234,8 @@ export default {
           title: 'Helix',
           artist: 'Morakh',
           cassetteId: 'helix_cassette',
-          price: 'нет в наличии',
-          albumLink: '/releases/helix',
-          outOfStock: true
+          price: '1500 ₽',
+          albumLink: '/releases/helix'
         },
         {
           id: 12,
@@ -243,9 +243,8 @@ export default {
           title: 'Bosporus Accident',
           artist: 'Raveny x Morphtables',
           cassetteId: 'bosporus_accident',
-          price: 'нет в наличии',
-          albumLink: '/releases/bosporus-acident',
-          outOfStock: true
+          price: '1500 ₽',
+          albumLink: '/releases/bosporus-acident'
         },
         {
           id: 20,
@@ -253,8 +252,9 @@ export default {
           title: 'Я был спутником солнца',
           artist: 'Yella Gin',
           cassetteId: 'yella_gin',
-          price: '1500 ₽',
-          albumLink: '/releases/ya-bil-sputnicom-solnca'
+          price: 'нет в наличии',
+          albumLink: '/releases/ya-bil-sputnicom-solnca',
+          outOfStock: true
         },
         {
           id: 29,
@@ -321,9 +321,8 @@ export default {
           title: 'Cherta-nova',
           artist: 'Andrey Rasputin',
           cassetteId: 'cherta_nova',
-          price: 'нет в наличии',
-          albumLink: '/releases/cherta-nova',
-          outOfStock: true
+          price: '1500 ₽',
+          albumLink: '/releases/cherta-nova'
         },
         {
           id: 3,
