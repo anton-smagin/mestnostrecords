@@ -225,8 +225,9 @@ export default {
           title: 'Shinra Banshou',
           artist: 'HAJIME KOJIRO',
           cassetteId: 'shinra_banshou',
-          price: '1500 ₽',
-          albumLink: '/releases/shinra-banshou'
+          price: 'нет в наличии',
+          albumLink: '/releases/shinra-banshou',
+          outOfStock: true
         },
         {
           id: 14,
