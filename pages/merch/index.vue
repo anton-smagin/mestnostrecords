@@ -235,8 +235,9 @@ export default {
           title: 'Helix',
           artist: 'Morakh',
           cassetteId: 'helix_cassette',
-          price: '1500 ₽',
-          albumLink: '/releases/helix'
+          price: 'нет в наличии',
+          albumLink: '/releases/helix',
+          outOfStock: true
         },
         {
           id: 12,
@@ -322,8 +323,9 @@ export default {
           title: 'Cherta-nova',
           artist: 'Andrey Rasputin',
           cassetteId: 'cherta_nova',
-          price: '1500 ₽',
-          albumLink: '/releases/cherta-nova'
+          price: 'нет в наличии',
+          albumLink: '/releases/cherta-nova',
+          outOfStock: true
         },
         {
           id: 3,
