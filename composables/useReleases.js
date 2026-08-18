@@ -1,5 +1,11 @@
 const releases = [
   {
+    name: 'releases/pazly-vremeni',
+    artistName: 'tih i radosten',
+    releaseName: 'Пазлы времени',
+    image: 'pazly_vremeni',
+  },
+  {
     name: 'releases/absurdance',
     artistName: 'Morphtables',
     releaseName: 'Absurdance',
