@@ -50,6 +50,15 @@ export default {
       showCheckout: false,
       merchItems: [
         {
+          id: 31,
+          type: 'cassette',
+          title: 'Пазлы времени',
+          artist: 'tih i radosten',
+          cassetteId: 'pazly_vremeni',
+          price: '1500 ₽',
+          albumLink: '/releases/pazly-vremeni'
+        },
+        {
           id: 30,
           type: 'cassette',
           title: 'Absurdance',
