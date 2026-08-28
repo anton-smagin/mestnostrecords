@@ -66,6 +66,15 @@
             В альбоме tih i radosten Миша во многом следует традициям Райли, используя необычные сочетания инструментов — духовых, ударных, струнных, и осторожно преображая звук цифрой. Получилось девять медитативных, мелодичных и при этом минималистичных треков, где все выразительные средства направлены на то, чтобы развернуть перед слушателем основу — мелодику распева. Автор подарил нам способ перекинуть мостик между тысячелетиями и услышать музыку до эпохи «украшательства», не просто пройти по касательной, а погрузиться в самую суть, где запечатана культура духа.
           </p>
         </div>
+        <div class="row mb-5">
+          <div class="col-12 text-center mb-5">
+            <NuxtImg
+              src="/static/pazly_vremeni_cassette_2.webp"
+              alt="tih i radosten Пазлы времени cassette"
+              style="max-width: 70%; height: auto; display: block; margin: 0 auto;"
+              format="webp" :quality="85" loading="lazy" />
+          </div>
+        </div>
         <div class="description text-white mb-5">
           <p>
             tih i radosten is the fresh album by Misha Klimov — an electronic musician from Moscow, a multi-instrumentalist, and a member of around 15 bands. Yet the most important thing for him is singing in a choir. It was precisely this role as a chorister that led him to the idea for the release, which essentially grew into an entire project.
@@ -103,6 +112,26 @@ export default {
           name: 'Bandcamp',
           icon: 'bandcamp',
           link: 'https://mestnost.bandcamp.com/album/--7',
+        },
+        {
+          name: 'Apple Music',
+          icon: 'apple',
+          link: 'https://music.apple.com/ge/album/%D0%BF%D0%B0%D0%B7%D0%BB%D1%8B-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8/6800113627',
+        },
+        {
+          name: 'Spotify',
+          icon: 'spotify',
+          link: 'https://open.spotify.com/album/3E5GETaI0DoXC0PG8pY2ZZ',
+        },
+        {
+          name: 'Yandex',
+          icon: 'yandex',
+          link: 'https://music.yandex.ru/album/43486829',
+        },
+        {
+          name: 'vk',
+          icon: 'vk',
+          link: 'https://vk.com/music/album/-2000837505_28837505_74e46ba8cdd2ae4641',
         },
       ],
     }
