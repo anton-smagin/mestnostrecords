@@ -67,11 +67,25 @@
           </p>
         </div>
         <div class="row mb-5">
-          <div class="col-12 text-center mb-5">
+          <div class="col-md-4 mt-5">
+            <NuxtImg
+              src="/static/pazly_vremeni_cassette_1.webp"
+              alt="tih i radosten Пазлы времени cassette 1"
+              style="display: block; width: 90%; height: auto; margin: 0 auto;"
+              format="webp" :quality="85" loading="lazy" />
+          </div>
+          <div class="col-md-4 mt-5">
             <NuxtImg
               src="/static/pazly_vremeni_cassette_2.webp"
-              alt="tih i radosten Пазлы времени cassette"
-              style="max-width: 70%; height: auto; display: block; margin: 0 auto;"
+              alt="tih i radosten Пазлы времени cassette 2"
+              style="display: block; width: 90%; height: auto; margin: 0 auto;"
+              format="webp" :quality="85" loading="lazy" />
+          </div>
+          <div class="col-md-4 mt-5">
+            <NuxtImg
+              src="/static/pazly_vremeni_cassette_3.webp"
+              alt="tih i radosten Пазлы времени cassette 3"
+              style="display: block; width: 90%; height: auto; margin: 0 auto;"
               format="webp" :quality="85" loading="lazy" />
           </div>
         </div>
