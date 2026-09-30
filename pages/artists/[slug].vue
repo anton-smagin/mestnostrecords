@@ -103,7 +103,8 @@ export default {
         'Ilya Orange': 'ilya_orange_face', 'Dessin Bizarre': 'dessin_bizarre_face',
         'ВСЕСЛАВЪ': 'vseslav_face', 'H. Ruine': 'h_ruine_face',
         'Mikhail Kireev': 'mikhail_kireev_face', 'KIKOK': 'kikok_face',
-        'Dubree': 'dubree_face', 'DJ Slon': 'dj_slon_face'
+        'Dubree': 'dubree_face', 'DJ Slon': 'dj_slon_face',
+        'tih i radosten': 'tih_i_radosten_artist_face'
       }
       const releases = getReleasesByArtist(name)
       const photoFile = photoMap[name] || (releases.length > 0 ? releases[0].image : null)
@@ -188,7 +189,8 @@ export default {
         'Mikhail Kireev': 'mikhail_kireev_face',
         'KIKOK': 'kikok_face',
         'Dubree': 'dubree_face',
-        'DJ Slon': 'dj_slon_face'
+        'DJ Slon': 'dj_slon_face',
+        'tih i radosten': 'tih_i_radosten_artist_face'
       }
 
       const photo = photoMap[this.displayName]

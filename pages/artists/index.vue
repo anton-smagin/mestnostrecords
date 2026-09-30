@@ -159,6 +159,11 @@ export default {
           photo: 'dj_slon',
           fallbackLink: 'releases/himeri-proraba'
         },
+        {
+          name: 'tih i radosten',
+          photo: 'tih_i_radosten_artist',
+          fallbackLink: 'releases/pazly-vremeni'
+        },
       ].sort((a,b)=> (a.name > b.name ? 1 : -1))
     }
   },
