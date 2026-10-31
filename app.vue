@@ -1,9 +1,21 @@
 <template>
-  <div id="app">
+  <div id="app" :class="{ 'relief-theme': isRelief }">
+    <ReliefEeg v-if="isRelief" />
     <Header />
     <NuxtPage />
   </div>
 </template>
+
+<script setup>
+const route = useRoute()
+const { isReliefRoute } = useRelief()
+// Relief (sublabel) pages use the same layout in white
+const isRelief = computed(() => isReliefRoute(route.path))
+
+useHead({
+  htmlAttrs: { class: computed(() => (isRelief.value ? 'relief-html' : '')) },
+})
+</script>
 
 <style>
 body {
@@ -68,6 +80,16 @@ body {
 
 html {
   height: 100%;
+}
+
+/* Relief: paper colour of its artwork instead of black (overrides the !important black above) */
+html.relief-html {
+  background-color: #eeede8 !important;
+}
+
+/* transparent so the background lines (z-index: -1) show through */
+html.relief-html body {
+  background-color: transparent !important;
 }
 
 .home {

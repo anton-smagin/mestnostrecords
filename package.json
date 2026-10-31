@@ -14,7 +14,10 @@
     "lint": "yarn lint:js && yarn lint:style && yarn lint:prettier",
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix && yarn lint:style --fix",
     "prepare": "husky install",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "dev:relief": "RELIEF_SITE=1 nuxt dev",
+    "generate:relief": "RELIEF_SITE=1 nuxt generate",
+    "deploy:relief": "gh-pages --dist .output/public --repo git@github.com:anton-smagin/relief-site.git --branch gh-pages --cname relief.mestnostrecords.com --nojekyll"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint --cache",
