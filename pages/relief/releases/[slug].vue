@@ -30,6 +30,13 @@
         </div>
       </div>
     </div>
+    <div v-if="artist" class="row">
+      <div class="col-md-12 mb-5">
+        <NuxtLink :to="reliefPath(`/artists/${artist.slug}`)">
+          <img :src="artist.photo" :alt="artist.name" class="artist-photo" loading="lazy" />
+        </NuxtLink>
+      </div>
+    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description mb-5">
@@ -42,12 +49,14 @@
 
 <script setup>
 const route = useRoute()
-const { reliefReleases, reliefPath } = useRelief()
+const { reliefReleases, reliefArtists, reliefPath } = useRelief()
 const release = reliefReleases.find(r => r.slug === route.params.slug)
 
 if (!release) {
   throw createError({ statusCode: 404, statusMessage: 'Release not found' })
 }
+
+const artist = reliefArtists.find(a => a.slug === release.artistSlug)
 
 const title = `${release.artistName} — ${release.releaseName}`
 useSeoMeta({
@@ -70,6 +79,11 @@ useSeoMeta({
 }
 
 /* Cocomat Bold has a broken Cyrillic "о", so the name stays regular weight */
+.artist-photo {
+  max-width: 50%;
+  height: auto;
+}
+
 .release-name {
   letter-spacing: 0.2em;
 }
