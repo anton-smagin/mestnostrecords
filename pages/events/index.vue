@@ -29,6 +29,16 @@ export default {
     return {
       events: [
         {
+          name: 'Автомойка 07-11-26',
+          photo: '07-11-26-avtomoyka',
+          link: 'events/07-11-26-Avtomoyka'
+        },
+        {
+          name: 'Автомойка 24-10-26',
+          photo: '24-10-26-avtomoyka',
+          link: 'events/24-10-26-Avtomoyka'
+        },
+        {
           name: 'Мунк 17-10-25',
           photo: '17-10-25-munk',
           link: 'events/17-10-25-Munk'
