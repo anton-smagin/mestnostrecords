@@ -29,23 +29,18 @@
       <transition name="slide">
         <div v-if="menuShow" class="mobile-menu">
           <nav class="mobile-nav">
-            <div class="mobile-nav-item" @click="menuShow = false">
-              <NuxtLink class="mobile-link" to="/">Главная</NuxtLink>
-            </div>
-            <div class="mobile-nav-item" @click="menuShow = false">
-              <NuxtLink class="mobile-link cocomat-font" to="/about">О местности</NuxtLink>
-            </div>
-            <div class="mobile-nav-item" @click="menuShow = false">
-              <NuxtLink class="mobile-link" to="/releases">Релизы</NuxtLink>
-            </div>
-            <div class="mobile-nav-item" @click="menuShow = false">
-              <NuxtLink class="mobile-link" to="/artists">Артисты</NuxtLink>
-            </div>
-            <div class="mobile-nav-item" @click="menuShow = false">
-              <NuxtLink class="mobile-link" to="/events">События</NuxtLink>
-            </div>
-            <div class="mobile-nav-item" @click="menuShow = false">
-              <NuxtLink class="mobile-link" to="/merch">Мерч</NuxtLink>
+            <div
+              v-for="item in menu"
+              :key="item.to"
+              class="mobile-nav-item"
+              @click="menuShow = false"
+            >
+              <NuxtLink
+                class="mobile-link"
+                :class="item.class"
+                :to="item.to"
+                :external="item.external"
+              >{{ item.mobileLabel || item.label }}</NuxtLink>
             </div>
           </nav>
         </div>
@@ -53,23 +48,13 @@
 
       <!-- Desktop menu -->
       <div class="desktop-menu row justify-content-between">
-        <div class="desktop-menu-item">
-          <NuxtLink class="btn text-nowrap px-2" to="/">Главная</NuxtLink>
-        </div>
-        <div class="desktop-menu-item">
-          <NuxtLink class="btn text-nowrap px-2 cocomat-font" to="/about">Местность</NuxtLink>
-        </div>
-        <div class="desktop-menu-item">
-          <NuxtLink class="btn text-nowrap px-2" to="/releases">Релизы</NuxtLink>
-        </div>
-        <div class="desktop-menu-item">
-          <NuxtLink class="btn text-nowrap px-2" to="/artists">Артисты</NuxtLink>
-        </div>
-        <div class="desktop-menu-item">
-          <NuxtLink class="btn text-nowrap px-2" to="/events">События</NuxtLink>
-        </div>
-        <div class="desktop-menu-item">
-          <NuxtLink class="btn text-nowrap px-2" to="/merch">Мерч</NuxtLink>
+        <div v-for="item in menu" :key="item.to" class="desktop-menu-item">
+          <NuxtLink
+            class="btn text-nowrap px-2"
+            :class="item.class"
+            :to="item.to"
+            :external="item.external"
+          >{{ item.label }}</NuxtLink>
         </div>
       </div>
     </div>
@@ -79,6 +64,31 @@
 <script>
 export default {
   name: 'HeaderComponent',
+  setup() {
+    const route = useRoute()
+    const { reliefPath, mestnostUrl, isReliefRoute } = useRelief()
+
+    // Mestnost and Relief share one menu layout. Relief links back to Mestnost;
+    // Mestnost will link to Relief once it is public:
+    // { label: 'Рельеф', to: 'https://relief.mestnostrecords.com', external: true, class: 'sister-link' }
+    const mestnostMenu = [
+      { label: 'Главная', to: '/' },
+      { label: 'Местность', mobileLabel: 'О местности', to: '/about', class: 'cocomat-font' },
+      { label: 'Релизы', to: '/releases' },
+      { label: 'Артисты', to: '/artists' },
+      { label: 'События', to: '/events' },
+      { label: 'Мерч', to: '/merch' },
+    ]
+    const reliefMenu = [
+      { label: 'Главная', to: reliefPath('') },
+      { label: 'Рельеф', mobileLabel: 'О рельефе', to: reliefPath('/about'), class: 'cocomat-font' },
+      { label: 'Релизы', to: reliefPath('/releases') },
+      { label: 'Артисты', to: reliefPath('/artists') },
+      { label: 'Местность', to: mestnostUrl, external: mestnostUrl.startsWith('http'), class: 'sister-link' },
+    ]
+    const menu = computed(() => (isReliefRoute(route.path) ? reliefMenu : mestnostMenu))
+    return { menu }
+  },
   data() {
     return {
       menuShow: false,
@@ -210,6 +220,43 @@ export default {
 .mobile-link.cocomat-font {
   font-family: Cocomat, sans-serif;
 }
+
+/* Link to the sister label (Relief on Mestnost, Mestnost on Relief) */
+.mobile-link.sister-link {
+  margin-top: 0.5rem;
+}
+
+/* White Relief theme */
+.relief-theme .hamburger-icon {
+  color: #000;
+}
+
+.relief-theme .mobile-overlay {
+  background: rgba(238, 237, 232, 0.7);
+}
+
+.relief-theme .mobile-menu {
+  background: #eeede8;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.12);
+}
+
+.relief-theme .mobile-nav-item {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.relief-theme .mobile-link {
+  color: #000;
+}
+
+.relief-theme #nav a {
+  color: #111;
+}
+
+.relief-theme #nav a.router-link-exact-active,
+.relief-theme .mobile-link.router-link-exact-active {
+  color: #7d8f87;
+}
+
 
 /* Fade transition for overlay */
 .fade-enter-active,
