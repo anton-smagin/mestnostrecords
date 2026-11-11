@@ -35,7 +35,7 @@
     </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
-        <div class="description mb-5">
+        <div class="description mb-5" lang="ru">
           <template v-for="(block, i) in release.description" :key="i">
             <img
               v-if="block.photo"
@@ -89,8 +89,14 @@ useSeoMeta({
 }
 
 /* Cocomat Bold has a broken Cyrillic "о", so the name stays regular weight */
+.relief-release h5 {
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 1.3;
+}
+
 .release-name {
-  letter-spacing: 0.2em;
+  letter-spacing: 0.06em;
 }
 
 .release-name a {
@@ -109,13 +115,8 @@ useSeoMeta({
 
 .description {
   margin: 0 15%;
-  letter-spacing: 0.1em;
-  line-height: 1.5em;
-  font-family: MomsRelief, monospace;
+  font-family: var(--relief-font);
   text-align: justify;
-  @media only screen and (max-width: 768px) {
-    letter-spacing: 0.08em;
-  }
 }
 
 .social {

@@ -2,10 +2,18 @@
   <div class="about">
     <div class="row">
       <div class="col-md-12 mt-3">
-        <h1>РЕЛЬЕФ</h1>
+        <h1 class="about-logo-wrap">
+          <img
+            src="/static/relief/relief_logo.webp"
+            alt="РЕЛЬЕФ"
+            class="about-logo"
+            width="816"
+            height="159"
+          />
+        </h1>
       </div>
       <div class="col-md-12">
-        <div class="description">
+        <div class="description" lang="ru">
           <p class="mb-3">
             Лейбл «Местность» за время своего существования успел собрать крепкое сообщество, где канонический IDM легко уживается с монастырским эмбиентом и генетическим язычеством нашей музыкальной природы. Основатели лейбла Антон Смагин aka Ne Tvoy Drug и Костя Колычев aka Kokokei решили, что дозрели. Пришло время узаконить буйство этой самой природы и дать жизнь звучанию куда более угловатому и неформатному.
           </p>
@@ -38,17 +46,24 @@ h1 {
   color: #111;
 }
 
+.about-logo-wrap {
+  margin: 2rem 0 1rem;
+}
+
+.about-logo {
+  width: 60%;
+  max-width: 420px;
+  height: auto;
+}
+
 .description {
   margin: 3% 10%;
   color: #111;
-  letter-spacing: 0.2em;
-  line-height: 2em;
   text-align: justify;
-  font-family: MomsRelief, monospace;
+  font-family: var(--relief-font);
   @media only screen and (max-width: 768px) {
     margin: 4% 10%;
     font-size: 1em;
-    letter-spacing: 0.1em;
   }
 }
 

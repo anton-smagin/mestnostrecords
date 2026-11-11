@@ -127,7 +127,7 @@ useSeoMeta({
 .relief-sub {
   margin-top: 1.5rem;
   color: #111;
-  font-family: MomsRelief, monospace;
+  font-family: var(--relief-font);
   font-size: 0.8rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
