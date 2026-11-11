@@ -37,9 +37,11 @@ useSeoMeta({
 <style scoped>
 .description {
   color: #111;
-  font-family: MomsRelief, monospace !important;
-  font-size: 0.8em;
-  font-weight: bold;
+  font-family: var(--relief-font) !important;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 1.3;
   cursor: pointer;
 }
 

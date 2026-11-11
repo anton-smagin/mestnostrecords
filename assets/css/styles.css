@@ -125,8 +125,63 @@ html {
   font-display: swap;
 }
 
+
+
+@font-face {
+  font-family: 'HSESans';
+  src: url('~/assets/fonts/hse-sans/HSESans-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HSESans';
+  src: url('~/assets/fonts/hse-sans/HSESans-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HSESans';
+  src: url('~/assets/fonts/hse-sans/HSESans-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HSESans';
+  src: url('~/assets/fonts/hse-sans/HSESans-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Relief text font: switch between HSESans and MomsRelief here */
+:root {
+  --relief-font: HSESans, sans-serif;
+}
+
 .relief-theme,
 .relief-theme * {
+  font-family: var(--relief-font) !important;
+}
+
+/* Relief body text set like a newspaper column: tight lines, narrow
+   spaces, hyphenation so justified lines don't open big gaps */
+.relief-theme div.description {
+  line-height: 1.3;
+  letter-spacing: 0;
+  word-spacing: -0.05em;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* Relief menu (desktop and mobile) keeps the typewriter font */
+.relief-theme #nav,
+.relief-theme #nav * {
   font-family: MomsRelief, monospace !important;
 }
 
