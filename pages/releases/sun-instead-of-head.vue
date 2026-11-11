@@ -28,15 +28,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/max_ananyev_face.webp"
-          alt="Max Ananyev"
-          style="max-width: 70%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5">
       <div class="col-md-6 offset-md-2 bandcamp-player">
         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1975533998/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
@@ -46,6 +37,7 @@
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/max_ananyev_face.webp" alt="Max Ananyev" format="webp" :quality="85" loading="lazy" />
           <p>
             Альбом Sun Instead of Head – это личное посвящение автора лету, поэтому символично, что альбом выходит в день летнего солнцестояния.
             «Лето – это день природного цикла, время активности для всего живого, ведь солнце щедро раздаёт энергию.

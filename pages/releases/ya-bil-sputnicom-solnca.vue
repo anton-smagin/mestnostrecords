@@ -28,15 +28,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/yella_gin_face.webp"
-          alt="yella gin"
-          style="max-width: 50%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5">
       <div class="col-md-6 offset-md-2 bandcamp-player">
         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3356118069/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
@@ -46,6 +37,7 @@
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/yella_gin_face.webp" alt="yella gin" format="webp" :quality="85" loading="lazy" />
           <p>
             Альбом «Я Был Спутником Солнца» написан Александром Yella Gin под впечатлением от просмотра одноименного советского фильма, вышедшего после запуска первого искусственного спутника Земли. Для автора космос – ключевая тема, он объясняет его через события простой человеческой жизни, которые вяжут бесконечный шарф вселенной. ”Я поливаю корни, всего что взросло” - эта цитата из Уолта Уитмена определила суть моего альбома: все, что с нами происходит в жизни – не случайно, из песчинок наших переживаний складывается матрица вселенной», – говорит Александр.
           </p>

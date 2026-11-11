@@ -34,18 +34,10 @@
         </iframe>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/ilya_orange_face.webp"
-          alt="ilya orange"
-          style="max-width: 50%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/ilya_orange_face.webp" alt="ilya orange" format="webp" :quality="85" loading="lazy" />
           <p>
             Продюсер, саунд-дизайнер, автор проектов Наукоград и Legobyte Илья Оранж выпускает альбом «Quietud» для того, чтобы мы носили с собой лето в мыслях, делах, планах. Он записывал эти треки на даче из подручных средств, лепил из антикварных сэмплов с кассет и пиратских компакт-дисков, а главное - был в тот момент совершенно свободен. От этой свободы альбом получился легким, таким, когда включаешь первый трек - и тут уже восьмой, но это так классно.
           </p>

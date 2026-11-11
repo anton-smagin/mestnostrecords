@@ -26,20 +26,13 @@
         </div>
       </div>
       <div class="row mb-5 mt-5">
-        <div class="col-md-12 mb-5 align-self-center text-center">
-          <NuxtImg
-            src="/static/anderdog_face_the_way_of_the_dog.webp"
-            alt="anderdog"
-            style="max-width: 50%; height: auto;"
-            class="mx-auto d-block"
-           format="webp" :quality="85" loading="lazy" />
-        </div>
         <div class="col-md-12">
           <div class="col-md-6 offset-md-2 bandcamp-player">
             <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=605230901/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
             </iframe>
           </div>
           <div class="description text-white mb-5 mt-5">
+          <NuxtImg class="description-photo" src="/static/anderdog_face_the_way_of_the_dog.webp" alt="anderdog" format="webp" :quality="85" loading="lazy" />
             <p>Музыкант из Электростали Денис Рыжов aka Аnderdog знаменует 2025 год уже второй работой. Зимой вышел его совместный релиз с Dessin Bizarre, а сейчас готов сольник под названием THE WAY OF THE DOG - это четвертый альбом музыканта на лейбле «Местность» и десять свежайших треков в формате кассеты. Для ценителей аналогового звучания также выйдет релиз на виниле от лейбла SEALT.</p>
             <p>The Way of the Dog - отсылка к культовым фильмам прошлого века об искусстве кунг-фу, поэтому в звуковых ландшафтах альбома нельзя не заметить гонконгского акцента. В последовательности треков заложено типичное для истории воина повествование: жил-был один Пёс из Шаолиня, от первой встречи с учителем (The Way of the Dog) до схватки с заклятым врагом (Tiger Style), от отчаяния главного героя до уверенности в том, что все будет хорошо, и настанет время для улыбки.</p>
             <p>Путь Пса по Андердогу - это непрерывный контраст силы и гибкости, напористого джангла с чистыми небесами финалов. Автор не изменяет своему кредо: по-прежнему пренебрегает симметрией, отчего каждый его трек непредсказуем, скрещивает ломаный бит с нежными инструментальными монологами и ловко оборачивает острые углы IDM-звучания в лирическую упаковку. Почему бы и нет? Как говорил великий мастер Ли: мягкость нельзя сломить.</p>

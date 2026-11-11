@@ -28,15 +28,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/kisser_face.webp"
-          alt="Kisser"
-          style="max-width: 50%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5">
       <div class="col-md-6 offset-md-2 bandcamp-player">
         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1036482917/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
@@ -46,6 +37,7 @@
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/kisser_face.webp" alt="Kisser" format="webp" :quality="85" loading="lazy" />
           <p>
             Паша Kisser поселился на Домодедовской спустя 27 лет жизни на Цветном бульваре. Он принял этот район в состоянии меланхолии и отрешенности, и пейзажи с одинокими собаками, таинственными лесочками и спящими окнами многоэтажек вписались в его мировосприятие идеально. «Переезд на Домодедовскую был довольно травматичным опытом, но через несколько лет я полюбил этот район за его неприкрытую грусть, здесь можно чувствовать себя отчаянно одиноким без всякого стыда и вдохновляться непривычными образами», - рассказывает Павел.
           </p>

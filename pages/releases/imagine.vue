@@ -28,15 +28,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/anderdog_dessin_bizarre_face.webp"
-          alt="Anderdog and Dessin Bizarre"
-          style="max-width: 70%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5">
       <div class="col-md-6 offset-md-2 bandcamp-player">
         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1716834191/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless></iframe>
@@ -45,6 +36,7 @@
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/anderdog_dessin_bizarre_face.webp" alt="Anderdog and Dessin Bizarre" format="webp" :quality="85" loading="lazy" />
           <p>
             Денис Рыжов, он же Anderdog, музыкант из Электростали, записал альбом в коллаборации с Иваном Красновым aka Dessin Bizarre. К созданию релиза Imagine авторов подтолкнуло особое отношение к времени и многообразию зафиксированных в нем звуковых ревербераций. Все дело в том, что Краснов пишет интеллектуальный эмбиент, где обосновался как композитор, исследователь и энтузиаст модульной электроники. Использование модулей для записи альбома позволило раскрыть весь спектр частот и модуляций, сделать ювелирную точность контроля над временем той средой, в которой глубоко и без спешки могут разворачиваться музыкальные события.
           </p>

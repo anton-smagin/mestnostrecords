@@ -34,18 +34,10 @@
         </iframe>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/dj_headsick_face.webp"
-          alt="dj headsick"
-          style="max-width: 70%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/dj_headsick_face.webp" alt="dj headsick" format="webp" :quality="85" loading="lazy" />
           <p>
             Dj HeadSick – это музыкант Коля Долгов, участник проектов Пайта и Проделки Больной Головы. Его новый альбом New Life – отформатированный и спрессованный кубик огромного количества переживаний, воспоминаний, боли и смирения. Но это красиво, потому что только поэты умеют просто ставить картинку на паузу и созерцать прожитый момент, каким бы он ни был. «Совсем не важно, по каким причинам что-то в жизни меняется – важно уметь находить в себе силы принимать любой исход, и хороший, и плохой» — говорит Коля.
           </p>

@@ -28,15 +28,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/ne_tvoy_drug_face_2.webp"
-          alt="Ne Tvoy Drug"
-          style="max-width: 70%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5">
       <div class="col-md-6 offset-md-2 bandcamp-player">
         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=4182457386/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
@@ -46,6 +37,7 @@
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/ne_tvoy_drug_face_2.webp" alt="Ne Tvoy Drug" format="webp" :quality="85" loading="lazy" />
           <p>
             Альбом «Ветер» Антон Ne Tvoy Drug писал не дома. Это было впервые.
             Под рукой не оказалось привычной студии, только наушники, два

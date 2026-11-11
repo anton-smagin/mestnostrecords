@@ -26,15 +26,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/rasputin_face_relikt_1.webp"
-          alt="Andrey Rasputin"
-          style="max-width: 70%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="col-md-6 offset-md-2 bandcamp-player">
@@ -42,6 +33,7 @@
           </iframe>
         </div>
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/rasputin_face_relikt_1.webp" alt="Andrey Rasputin" format="webp" :quality="85" loading="lazy" />
           <p>
             Кибернетика, позитронный двигатель, аннигиляция и космическая дача в паре парсеков от Марса. Взгляд на космос из ХХ века — коллекционная диковина, 
             сплавленная из научной фантастики и инженерных прорывов. Новый альбом «Реликт-1» от Андрея Распутина посвящен этому 
