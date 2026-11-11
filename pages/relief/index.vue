@@ -1,21 +1,29 @@
 <template>
   <div class="relief-home">
     <div class="container-fluid h80">
-      <div class="d-flex flex-column align-items-center justify-content-center h80">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center h80"
+      >
         <h1 class="relief-logo-wrap">
-          <img
-            src="/static/relief/relief_disc.webp"
-            alt=""
-            aria-hidden="true"
-            class="relief-disc"
-          />
-          <img
-            src="/static/relief/relief_logo.webp"
-            alt="Рельеф"
-            class="relief-logo"
-            width="816"
-            height="159"
-          />
+          <NuxtLink
+            :to="reliefPath('/about')"
+            class="relief-logo-link"
+            aria-label="О Рельефе"
+          >
+            <img
+              src="/static/relief/relief_disc.webp"
+              alt=""
+              aria-hidden="true"
+              class="relief-disc"
+            />
+            <img
+              src="/static/relief/relief_logo.webp"
+              alt="Рельеф"
+              class="relief-logo"
+              width="816"
+              height="159"
+            />
+          </NuxtLink>
         </h1>
         <p class="relief-sub">другая сторона Местности</p>
       </div>
@@ -44,6 +52,7 @@
 </template>
 
 <script setup>
+const { reliefPath } = useRelief()
 const title = 'Рельеф — другая сторона Местности'
 const description =
   'Рельеф — другая сторона «Местности»: нойз, конкрит, лефтфилд и направления, которые еще не получили названия.'
@@ -58,6 +67,16 @@ useSeoMeta({
 </script>
 
 <style scoped>
+/* layout stays on the h1; the link only adds the click and the hand cursor */
+.relief-logo-link {
+  display: contents;
+  cursor: pointer;
+}
+
+.relief-logo-link img {
+  cursor: pointer;
+}
+
 .relief-logo-wrap {
   position: relative;
   width: min(560px, 80vw);
@@ -108,7 +127,7 @@ useSeoMeta({
 .relief-sub {
   margin-top: 1.5rem;
   color: #111;
-  font-family: NotoSans, sans-serif;
+  font-family: MomsRelief, monospace;
   font-size: 0.8rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;

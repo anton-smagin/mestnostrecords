@@ -37,7 +37,7 @@ useSeoMeta({
 <style scoped>
 .description {
   color: #111;
-  font-family: NotoSans, sans-serif !important;
+  font-family: MomsRelief, monospace !important;
   font-size: 0.8em;
   font-weight: bold;
   cursor: pointer;

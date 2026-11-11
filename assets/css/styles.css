@@ -113,3 +113,60 @@ html {
     padding: 0 15%;
   }
 }
+
+/* Relief: Mom's Typewriter with 0, 1 and Cyrillic from JMH Typewriter (scripts/build-relief-font.py) */
+@font-face {
+  font-family: 'MomsRelief';
+  src:
+    url('~/assets/fonts/MomsRelief.woff2') format('woff2'),
+    url('~/assets/fonts/MomsRelief.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.relief-theme,
+.relief-theme * {
+  font-family: MomsRelief, monospace !important;
+}
+
+/* Mobile text gutters, shared by Mestnost and Relief: every text block
+   (div.description on release, event and about pages) uses the same side
+   margins and left alignment on narrow screens. Captions (p.description) keep theirs. */
+:root {
+  --mobile-text-gutter: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  div.description {
+    margin-left: var(--mobile-text-gutter) !important;
+    margin-right: var(--mobile-text-gutter) !important;
+    text-align: left !important;
+  }
+}
+
+/* Photos inside a text block (both sites). Phones: full width between
+   paragraphs. Wide screens: newspaper style, photo on the left and the
+   text wrapping around it. */
+.description-photo {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin: 2em auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .description-photo {
+    float: left;
+    width: 50%;
+    max-width: none;
+    margin: 0.4em 2em 1em 0;
+  }
+
+  div.description::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}

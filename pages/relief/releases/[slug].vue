@@ -11,7 +11,10 @@
       <div class="col-12 col-md-6 align-self-center">
         <div class="mt-5">
           <h5 class="release-name">
-            <NuxtLink :to="reliefPath(`/artists/${release.artistSlug}`)">{{ release.artistName }}</NuxtLink>
+            <template v-for="(a, i) in releaseArtists" :key="a.slug">
+              <span v-if="i">, </span>
+              <NuxtLink :to="reliefPath(`/artists/${a.slug}`)">{{ a.name }}</NuxtLink>
+            </template>
           </h5>
           <h5>{{ release.releaseName }}</h5>
           <p class="number">Relief {{ release.number }}</p>
@@ -30,17 +33,21 @@
         </div>
       </div>
     </div>
-    <div v-if="artist" class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtLink :to="reliefPath(`/artists/${artist.slug}`)">
-          <img :src="artist.photo" :alt="artist.name" class="artist-photo" loading="lazy" />
-        </NuxtLink>
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description mb-5">
-          <p v-for="(paragraph, i) in release.description" :key="i">{{ paragraph }}</p>
+          <template v-for="(block, i) in release.description" :key="i">
+            <img
+              v-if="block.photo"
+              :src="`${block.photo}.webp`"
+              :srcset="`${block.photo}_600.webp 600w, ${block.photo}.webp 1200w`"
+              sizes="(max-width: 768px) 90vw, 70vw"
+              :alt="block.alt"
+              class="description-photo"
+              loading="lazy"
+            />
+            <p v-else>{{ block }}</p>
+          </template>
         </div>
       </div>
     </div>
@@ -56,7 +63,10 @@ if (!release) {
   throw createError({ statusCode: 404, statusMessage: 'Release not found' })
 }
 
-const artist = reliefArtists.find(a => a.slug === release.artistSlug)
+
+const releaseArtists = (release.artistSlugs || [release.artistSlug])
+  .map(slug => reliefArtists.find(a => a.slug === slug))
+  .filter(Boolean)
 
 const title = `${release.artistName} — ${release.releaseName}`
 useSeoMeta({
@@ -79,11 +89,6 @@ useSeoMeta({
 }
 
 /* Cocomat Bold has a broken Cyrillic "о", so the name stays regular weight */
-.artist-photo {
-  max-width: 50%;
-  height: auto;
-}
-
 .release-name {
   letter-spacing: 0.2em;
 }
@@ -106,7 +111,7 @@ useSeoMeta({
   margin: 0 15%;
   letter-spacing: 0.1em;
   line-height: 1.5em;
-  font-family: NotoSans, sans-serif;
+  font-family: MomsRelief, monospace;
   text-align: justify;
   @media only screen and (max-width: 768px) {
     letter-spacing: 0.08em;

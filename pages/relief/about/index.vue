@@ -44,7 +44,7 @@ h1 {
   letter-spacing: 0.2em;
   line-height: 2em;
   text-align: justify;
-  font-family: NotoSans, sans-serif;
+  font-family: MomsRelief, monospace;
   @media only screen and (max-width: 768px) {
     margin: 4% 10%;
     font-size: 1em;

@@ -42,7 +42,7 @@ if (!artist) {
   throw createError({ statusCode: 404, statusMessage: 'Artist not found' })
 }
 
-const releases = reliefReleases.filter(r => r.artistSlug === artist.slug)
+const releases = reliefReleases.filter(r => (r.artistSlugs || [r.artistSlug]).includes(artist.slug))
 
 useSeoMeta({
   title: `${artist.name} — Relief`,
@@ -79,7 +79,7 @@ useSeoMeta({
 
 .release-title {
   color: #111;
-  font-family: NotoSans, sans-serif;
+  font-family: MomsRelief, monospace;
   font-size: 0.8em;
   font-weight: bold;
 }
