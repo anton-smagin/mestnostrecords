@@ -26,15 +26,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/vvvedenskaya_face.webp"
-          alt="vvvedenskaya"
-          style="max-width: 70%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="col-md-6 offset-md-2 bandcamp-player">
@@ -46,6 +37,7 @@
           </iframe>
         </div>
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/vvvedenskaya_face.webp" alt="vvvedenskaya" format="webp" :quality="85" loading="lazy" />
           <p>
             Название attempts означает попытки по созданию музыкальных форм.
             Даже усилия, поскольку релиз давался трудно. Я считаю его в каком-то

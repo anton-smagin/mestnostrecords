@@ -26,18 +26,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/morakh_face.webp"
-          alt="morakh"
-          style="max-width: 70%; height: auto;"
-          loading="lazy"
-          format="webp"
-          :quality="85"
-        />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="col-md-6 offset-md-2 bandcamp-player">
@@ -50,6 +38,7 @@
           </iframe>
         </div>
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/morakh_face.webp" alt="morakh" loading="lazy" format="webp" :quality="85" />
           <p>
             На «Местности» возникла новая геолокация – город Подольск и его
             житель Валера Morakh. Автор создает партитуры своих треков из

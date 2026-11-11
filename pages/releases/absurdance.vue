@@ -28,15 +28,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/absurdance_photo_1.webp"
-          alt="Morphtables"
-          style="max-width: 50%; height: auto;"
-          format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-6 offset-md-2 bandcamp-player">
         <iframe
@@ -50,6 +41,7 @@
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/absurdance_photo_1.webp" alt="Morphtables" format="webp" :quality="85" loading="lazy" />
           <p>
             Альбом Absurdance от музыканта из Тюмени Morphtables — это буйная нинтендо-вечеринка, куда можно придти в жабо, сесть за детский синтезатор Casio и сыграть симфонию Шостаковича.
           </p>

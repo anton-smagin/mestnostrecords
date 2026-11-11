@@ -26,20 +26,13 @@
         </div>
       </div>
       <div class="row mb-5 mt-5">
-        <div class="col-md-12 mb-5 align-self-center text-center">
-          <NuxtImg
-            src="/static/kikok_face.webp"
-            alt="kikok"
-            style="max-width: 50%; height: auto;"
-            class="mx-auto d-block"
-           format="webp" :quality="85" loading="lazy" />
-        </div>
         <div class="col-md-12">
           <div class="col-md-6 offset-md-2 bandcamp-player">
             <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2730815774/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
             </iframe>
           </div>
           <div class="description text-white mb-5 mt-5">
+          <NuxtImg class="description-photo" src="/static/kikok_face.webp" alt="kikok" format="webp" :quality="85" loading="lazy" />
             <p>Представляем нового артиста нашего лейбла.<br>📍местность: Пермь</p>
             <p>KIKOK – сольный проект Паши Федосеева (ex-Gnoomes), под этим именем он создает изобретательную и мелодичную электронику, вдохновленную лучшими образцами как IDM-музыки, так и shoegaze и kraut сцен.</p>
             <p>Был резидентом лейбла Magnetron Music (NL), основателем которого является Fatima Yamaha.</p>

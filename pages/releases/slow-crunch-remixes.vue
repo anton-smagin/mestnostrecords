@@ -28,23 +28,12 @@
     </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-6 mb-3">
-            <NuxtImg
-              src="/static/kikok_face.webp"
-              alt="KIKOK"
-              style="display: block; width: 100%; height: auto;"
-              loading="lazy"
-              format="webp"
-              :quality="85"
-            />
-          </div>
-        </div>
         <div class="col-md-6 offset-md-2 bandcamp-player">
           <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1108843615/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
           </iframe>
         </div>
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/kikok_face.webp" alt="KIKOK" loading="lazy" format="webp" :quality="85" />
           <p>
             KIKOK — Slow Crunch remixes (MES033, 2025)
           </p>

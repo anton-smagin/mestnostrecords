@@ -28,15 +28,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/morakh_face_2.webp"
-          alt="Morakh"
-          style="max-width: 70%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5">
       <div class="col-md-6 offset-md-2 bandcamp-player">
         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3234059979/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
@@ -46,6 +37,7 @@
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/morakh_face_2.webp" alt="Morakh" format="webp" :quality="85" loading="lazy" />
           <p>
             Валера Morakh из Подольска выпускает на лейбле «Местность» второй альбом Helix – первый назывался Limes. Этот релиз, как для автора, так и для слушателей, является путешествием по точкам новых и очень сильных эмоциональных переживаний.
           </p>

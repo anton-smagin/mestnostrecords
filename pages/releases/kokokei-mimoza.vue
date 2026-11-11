@@ -26,15 +26,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/kokokei_face.webp"
-          alt="kokokei"
-          style="max-width: 70%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
         <div class="col-md-6 offset-md-2 bandcamp-player">
           <iframe
@@ -49,6 +40,7 @@
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/kokokei_face.webp" alt="kokokei" format="webp" :quality="85" loading="lazy" />
           <p>
             Автор релиза «Мимоза» Костя Кококей является сооснователем лейбла
             «Местность» – уникального издательства. «Местность» пропускает

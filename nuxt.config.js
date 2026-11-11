@@ -18,6 +18,24 @@ function generateReleaseRedirects() {
   return rules
 }
 
+// RELIEF_SITE=1 builds relief.mestnostrecords.com: only the Relief pages, served
+// from the root (pages/relief/about → /about). Without it, Relief pages stay
+// under /relief and are left out of production builds until Relief is public.
+const reliefSite = process.env.RELIEF_SITE === '1'
+
+function setupReliefPages(pages, isDev) {
+  const isRelief = page => page.path === '/relief' || page.path.startsWith('/relief/')
+  let kept = pages
+  if (reliefSite) {
+    kept = pages
+      .filter(isRelief)
+      .map(page => ({ ...page, path: page.path.replace(/^\/relief/, '') || '/' }))
+  } else if (!isDev) {
+    kept = pages.filter(page => !isRelief(page))
+  }
+  pages.splice(0, pages.length, ...kept)
+}
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // Enable SSR for proper meta tag rendering during static generation
@@ -97,7 +115,13 @@ export default defineNuxtConfig({
   build: {},
 
   // CamelCase → kebab-case redirects generated from release page files
-  routeRules: generateReleaseRedirects(),
+  routeRules: reliefSite ? {} : generateReleaseRedirects(),
+
+  hooks: {
+    'pages:extend'(pages) {
+      setupReliefPages(pages, process.env.NODE_ENV !== 'production')
+    },
+  },
 
   // Nitro configuration for static generation
   nitro: {
@@ -112,6 +136,7 @@ export default defineNuxtConfig({
     public: {
       yandexMetrikaId: '73630327',
       siteUrl: 'https://mestnostrecords.com',
+      reliefSite,
     },
   },
 })

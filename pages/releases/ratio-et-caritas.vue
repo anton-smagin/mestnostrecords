@@ -26,18 +26,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/dubree_face.webp"
-          alt="Dubree"
-          style="max-width: 70%; height: auto;"
-          loading="lazy"
-          format="webp"
-          :quality="85"
-        />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="col-md-6 offset-md-2 bandcamp-player">
@@ -45,6 +33,7 @@
           </iframe>
         </div>
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/dubree_face.webp" alt="Dubree" loading="lazy" format="webp" :quality="85" />
           <p>
             Виталий Dubree — артист из Черноголовки, города-наукограда в Московской области, где живут самые разные ученые. А что они делают в свободное время? Конечно же — грезят о звездах. Виталий жил среди этих грез, с детства был влюблен в космос, смотрел и пересматривал фильмы о путешествиях на другие планеты, зачитывался научной фантастикой. Однажды вместе с черноголовским астрономом, который установил на улице десяток телескопов и предложил жителям заглянуть в космос, Виталий устроил перформанс — вынес лэптоп, колонки и включил эмбиент. В этот вечер звезды стали ближе, а Вселенная поселилась в его творчество навсегда.
           </p>

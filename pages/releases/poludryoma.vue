@@ -28,15 +28,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/vseslav_face.webp"
-          alt="Vseslav"
-          style="max-width: 30%; height: auto;"
-          format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-6 offset-md-2 bandcamp-player">
         <iframe
@@ -50,6 +41,7 @@
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/vseslav_face.webp" alt="Vseslav" format="webp" :quality="85" loading="lazy" />
           <p>
             Не пора ли притормозить? Жизнь человека в мире стала очень торопливой, при этом счастливее мы не стали. Все бегут, боятся куда-то опоздать, кого-то не встретить и чем-то не обладать, получается — не мы владеем делами, а дела нами.
           </p>

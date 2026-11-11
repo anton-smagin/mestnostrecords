@@ -26,21 +26,13 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/rasputin_face_relikt_0.webp"
-          alt="Andrey Rasputin"
-          style="max-width: 70%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="col-md-6 offset-md-2 mb-5 bandcamp-player">
           <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1542960507/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>RELIKT-0 by Andrey Rasputin</iframe>
         </div>
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/rasputin_face_relikt_0.webp" alt="Andrey Rasputin" format="webp" :quality="85" loading="lazy" />
           <p>
             «RELIKT-0» состоит из 6 ремиксов от артистов и друзей лейбла на треки с альбома Andrey Rasputin — «RELIKT-1», плюс бонус — интерпретация самим Андреем той самой «Lora Palmer's Theme» из Твин Пикс, доступная только на Bandcamp.
           </p>

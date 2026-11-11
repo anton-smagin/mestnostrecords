@@ -28,15 +28,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/anderdog_face_dog_eat.webp"
-          alt="anderdog"
-          style="max-width: 50%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5">
       <div class="col-md-6 offset-md-2 bandcamp-player">
         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3552478308/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
@@ -45,21 +36,8 @@
     </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
-        <div class="col-12 text-center mb-5">
-          <NuxtImg
-            src="/static/dog_eat_dog_cassette_2.webp"
-            alt="Anderdog Dog Eat Dog cassette"
-            style="max-width: 70%; height: auto; display: block; margin: 0 auto;"
-            format="webp"
-            :quality="85"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="row mb-5 mt-5">
-      <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/anderdog_face_dog_eat.webp" alt="anderdog" format="webp" :quality="85" loading="lazy" />
           <p>
             "Dog Eat Dog" — четвертый релиз от резидента “Местности” — Андердога.
           </p>
@@ -74,6 +52,7 @@
           <p>
             Наконец, это символическая история о том, как собака, подобно уроборосу, замерла в необъятном пространстве, где есть только один маршрут — бесконечный цикл жизни и смерти.
           </p>
+          <NuxtImg class="description-photo" src="/static/dog_eat_dog_cassette_2.webp" alt="Anderdog Dog Eat Dog cassette" format="webp" :quality="85" loading="lazy" />
           <p class="mt-5">
             "Dog Eat Dog" is the fourth release from the "Mestnost" resident - Underdog.
           </p>

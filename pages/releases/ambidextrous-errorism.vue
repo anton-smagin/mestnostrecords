@@ -26,15 +26,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/ambidextrous_face.webp"
-          alt="ambidextrous"
-          style="max-width: 70%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="col-md-6 offset-md-2 bandcamp-player">
@@ -46,6 +37,7 @@
           </iframe>
         </div>
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/ambidextrous_face.webp" alt="ambidextrous" format="webp" :quality="85" loading="lazy" />
           <p>
             Errorism – второй альбом музыканта Ника Завриева aka Ambidextrous,
             вышедший в 2001 году в формате CD на лейбле Shaped Harmonics.

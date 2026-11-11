@@ -28,15 +28,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/tih_i_radosten_face.webp"
-          alt="tih i radosten"
-          style="max-width: 50%; height: auto;"
-          format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-6 offset-md-2 bandcamp-player">
         <iframe
@@ -50,6 +41,7 @@
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/tih_i_radosten_face.webp" alt="tih i radosten" format="webp" :quality="85" loading="lazy" />
           <p>
             tih i radosten — свежий альбом Миши Климова, электронного музыканта из Москвы, мультиинструменталиста и участника около 15 групп. Однако, самое важное для него — пение в хоре. Именно амплуа хориста привело его к идее релиза, который по сути стал целым проектом.
           </p>

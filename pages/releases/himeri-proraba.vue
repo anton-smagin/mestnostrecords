@@ -28,17 +28,6 @@
         </div>
       </div>
     </div>
-    <div class="row mb-5">
-      <div class="col-12 text-center">
-        <NuxtImg
-          src="/static/dj_slon_face.webp"
-          alt="DJ Slon"
-          style="max-width: 70%; height: auto; display: block; margin: 0 auto;"
-          format="webp"
-          :quality="85"
-        />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-6 offset-md-2 bandcamp-player">
         <iframe
@@ -52,6 +41,7 @@
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/dj_slon_face.webp" alt="DJ Slon" format="webp" :quality="85" />
           <p>
             Никнейм новоприбывшего на «Местность» артиста под стать его величине и влиянию. Петербуржец Олег Азелицкий aka DJ Slon — пионер электронной сцены, один из первых российских диск-жокеев, крутивший пластинки в андеграунде северной столицы в начале 90-х — кстати сказать, именно он организовал там легендарный питерский сквот на Обводном.
           </p>

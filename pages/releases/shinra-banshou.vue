@@ -26,15 +26,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 mb-5">
-        <NuxtImg
-          src="/static/hajime_kojiro_face.webp"
-          alt="hajime kojiro"
-          style="max-width: 70%; height: auto;"
-         format="webp" :quality="85" loading="lazy" />
-      </div>
-    </div>
     <div class="row mb-5 mt-5">
         <div class="col-md-6 offset-md-2 bandcamp-player">
                   <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1903821004/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
@@ -44,6 +35,7 @@
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description text-white mb-5">
+          <NuxtImg class="description-photo" src="/static/hajime_kojiro_face.webp" alt="hajime kojiro" format="webp" :quality="85" loading="lazy" />
           <p>
             У Хаджиме Коджиро случай не из легких. Прожив 18 лет в живописной префектуре Хёго, и после в Токио еще 13 лет,
             он пришел к выводу: пересадка местности жизненно необходима, поскольку в теле скромного японского самурая обнаружилась рваная рубаха русского гения.
