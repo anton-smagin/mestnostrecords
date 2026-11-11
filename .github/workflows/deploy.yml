@@ -54,6 +54,9 @@ jobs:
       - run: npx nuxt build --preset github_pages
         env:
           RELIEF_SITE: "1"
+      # The build copies public/CNAME (mestnostrecords.com); the cname input
+      # below does not replace an existing file, so overwrite it first.
+      - run: echo relief.mestnostrecords.com > .output/public/CNAME
       - name: Deploy to relief-site
         uses: peaceiris/actions-gh-pages@v4
         with:
