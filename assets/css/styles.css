@@ -225,3 +225,12 @@ html {
     clear: both;
   }
 }
+
+/* A photo marked `wide` takes the full width of the text block. */
+.description-photo--wide {
+  clear: both;
+  float: none;
+  width: 100%;
+  max-width: none;
+  margin: 2em 0;
+}

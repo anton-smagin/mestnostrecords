@@ -43,7 +43,7 @@
               :srcset="`${block.photo}_600.webp 600w, ${block.photo}.webp 1200w`"
               sizes="(max-width: 768px) 90vw, 70vw"
               :alt="block.alt"
-              class="description-photo"
+              :class="['description-photo', { 'description-photo--wide': block.wide }]"
               loading="lazy"
             />
             <p v-else>{{ block }}</p>
