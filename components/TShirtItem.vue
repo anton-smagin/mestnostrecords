@@ -196,6 +196,42 @@ export default {
   border-color: #666;
 }
 
+/* Relief: dark type and buttons on the paper background */
+.relief-theme .tshirt-card {
+  background-color: transparent;
+}
+
+.relief-theme .tshirt-card:hover {
+  box-shadow: none;
+}
+
+.relief-theme .tshirt-title,
+.relief-theme .tshirt-price {
+  color: #111 !important;
+  font-weight: normal;
+}
+
+.relief-theme .description-line {
+  color: #555;
+}
+
+.relief-theme .order-btn {
+  color: #111;
+  border-color: #111;
+}
+
+.relief-theme .order-btn:hover {
+  background-color: #111;
+  color: #eeede8;
+}
+
+.relief-theme .order-btn.out-of-stock,
+.relief-theme .order-btn.out-of-stock:hover {
+  background-color: transparent;
+  border-color: #999;
+  color: #999;
+}
+
 @media only screen and (max-width: 1000px) {
   .tshirt-image {
     width: 210px;

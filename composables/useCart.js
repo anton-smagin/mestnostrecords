@@ -28,20 +28,22 @@ function persist() {
 export function useCart() {
   const cassetteCount = computed(() => state.items.length)
 
-  const subtotal = computed(() => state.items.length * 1500)
+  const priceOf = item => item.price || 1500
 
+  const subtotal = computed(() => state.items.reduce((sum, item) => sum + priceOf(item), 0))
+
+  // 3 cassettes for 3000 ₽: only items at the regular 1500 ₽ count toward it
   const total = computed(() => {
-    const count = state.items.length
-    const bundlesOf3 = Math.floor(count / 3)
-    const remainder = count % 3
-    return bundlesOf3 * 3000 + remainder * 1500
+    const regular = state.items.filter(item => priceOf(item) === 1500).length
+    const bundlesOf3 = Math.floor(regular / 3)
+    return subtotal.value - bundlesOf3 * (3 * 1500 - 3000)
   })
 
   const discount = computed(() => subtotal.value - total.value)
 
-  function addItem({ id, title, artist, cassetteId }) {
+  function addItem({ id, title, artist, cassetteId, price = 1500 }) {
     if (state.items.some(item => item.cassetteId === cassetteId)) return
-    state.items.push({ id, title, artist, cassetteId, price: 1500 })
+    state.items.push({ id, title, artist, cassetteId, price })
     persist()
   }
 

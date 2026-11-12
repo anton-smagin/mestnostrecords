@@ -71,6 +71,10 @@ export default {
       type: String,
       required: true
     },
+    imageUrl: {
+      type: String,
+      default: ''
+    },
     price: {
       type: String,
       default: '1500 ₽'
@@ -105,10 +109,10 @@ export default {
   },
   methods: {
     getImageUrl() {
-      return `/static/${this.cassetteId}_cassette_2.webp`
+      return this.imageUrl || `/static/${this.cassetteId}_cassette_2.webp`
     },
     handleImageError(event) {
-      if (!this.imageError) {
+      if (!this.imageError && !this.imageUrl) {
         this.imageError = true;
         event.target.src = `/static/${this.cassetteId}_cassette_1.webp`;
       } else {
@@ -116,7 +120,12 @@ export default {
       }
     },
     goToAlbum() {
-      this.$router.push(this.albumLink)
+      // Releases of the other label live on its own site
+      if (/^https?:\/\//.test(this.albumLink)) {
+        window.location.href = this.albumLink
+      } else {
+        this.$router.push(this.albumLink)
+      }
     },
     openOrderModal() {
       if (!this.outOfStock) {
@@ -134,7 +143,8 @@ export default {
           id: this.cassetteId,
           title: this.title,
           artist: this.artist,
-          cassetteId: this.cassetteId
+          cassetteId: this.cassetteId,
+          price: this.numericPrice
         })
       }
     }
@@ -272,6 +282,53 @@ export default {
   background-color: transparent;
   color: #666;
   border-color: #666;
+}
+
+/* Relief: dark type and buttons on the paper background */
+.relief-theme .merch-card {
+  background-color: transparent;
+}
+
+.relief-theme .merch-card:hover {
+  box-shadow: none;
+}
+
+.relief-theme .merch-title,
+.relief-theme .merch-artist,
+.relief-theme .merch-price {
+  color: #111 !important;
+  font-weight: normal;
+}
+
+.relief-theme .cart-btn {
+  border-color: #111;
+  background-color: #111;
+  color: #eeede8;
+}
+
+.relief-theme .cart-btn:hover {
+  background-color: #7d8f87;
+  border-color: #7d8f87;
+}
+
+.relief-theme .cart-btn.in-cart,
+.relief-theme .order-btn {
+  background-color: transparent;
+  color: #111;
+  border-color: #111;
+}
+
+.relief-theme .cart-btn.in-cart:hover,
+.relief-theme .order-btn:hover {
+  background-color: #111;
+  color: #eeede8;
+}
+
+.relief-theme .order-btn.out-of-stock,
+.relief-theme .order-btn.out-of-stock:hover {
+  background-color: transparent;
+  border-color: #999;
+  color: #999;
 }
 
 @media only screen and (max-width: 1000px) {

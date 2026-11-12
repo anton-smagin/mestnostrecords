@@ -158,7 +158,7 @@ export default {
   methods: {
     buildCartSummary() {
       const lines = this.items.map(item => `${item.artist} — ${item.title} (${item.price} ₽)`)
-      let summary = `Хочу заказать кассеты:\n${lines.join('\n')}`
+      let summary = `Хочу заказать:\n${lines.join('\n')}`
       summary += `\n\nИтого: ${this.total} ₽`
       if (this.discount > 0) {
         summary += ` (скидка ${this.discount} ₽)`
@@ -187,7 +187,7 @@ export default {
       this.loading = true
 
       try {
-        let message = `Заказ из корзины (${this.items.length} кассет)\n\n`
+        let message = `Заказ из корзины (${this.items.length} поз.)\n\n`
         message += this.items.map(item => `- ${item.artist} — ${item.title}`).join('\n')
         message += `\n\nСумма: ${this.subtotal} ₽`
         if (this.discount > 0) {
