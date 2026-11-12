@@ -211,7 +211,9 @@ html {
 }
 
 @media only screen and (min-width: 992px) {
-  div.description:has(> .description-photo) > * {
+  /* Every text block on a page with photos (e.g. the English text below the
+     Russian one), so both languages share the column. */
+  body:has(.description-photo) div.description > * {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
