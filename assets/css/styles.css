@@ -200,9 +200,8 @@ html {
   }
 }
 
-/* Photos inside a text block (both sites). Phones: full width between
-   paragraphs. Wide screens: newspaper style, photo on the left and the
-   text wrapping around it. */
+/* Photos inside a text block (both sites): centered between paragraphs.
+   Wide screens: the text runs in a column as wide as the photos. */
 .description-photo {
   display: block;
   width: 100%;
@@ -212,29 +211,13 @@ html {
 }
 
 @media only screen and (min-width: 992px) {
-  .description-photo {
-    float: left;
-    width: 50%;
-    max-width: none;
-    margin: 0.4em 2em 1em 0;
-  }
-
-  div.description::after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-
-  /* Many photos, little text: photos centered between paragraphs, and the
-     text in a column as wide as the photos. */
-  .description--centered > * {
+  div.description:has(> .description-photo) > * {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .description--centered .description-photo {
-    float: none;
-    margin: 2em auto;
+  .description-photo {
+    max-width: none;
   }
 }

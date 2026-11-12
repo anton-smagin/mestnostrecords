@@ -9,8 +9,6 @@
 // Add store/streaming links to `links` ({ name, icon, link }) when it is out.
 // `description` is a list of paragraphs; an entry { photo, alt } puts a photo
 // between paragraphs (photo is a base path: <photo>.webp and <photo>_600.webp).
-// `centeredPhotos: true` puts photos centered between paragraphs instead of
-// beside the text (good when there are many photos and little text).
 // `gallery` is a list of photos (same base paths) shown in a row at the end,
 // like the cassette photos on Mestnost releases.
 // `credits` is a list of lines shown in italics after the description.
@@ -23,7 +21,6 @@ const reliefReleases = [
     artistSlugs: ['alexei-borisov', 'anton-mobin'],
     releaseName: 'XX22',
     image: '/static/relief/xx22_cover.webp',
-    centeredPhotos: true,
     links: [
       {
         name: 'Yandex',
