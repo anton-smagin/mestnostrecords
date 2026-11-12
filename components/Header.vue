@@ -83,6 +83,7 @@ export default {
       { label: 'Рельеф', mobileLabel: 'О рельефе', to: reliefPath('/about'), class: 'cocomat-font' },
       { label: 'Релизы', to: reliefPath('/releases') },
       { label: 'Артисты', to: reliefPath('/artists') },
+      { label: 'Мерч', to: reliefPath('/merch') },
       { label: 'Местность', to: mestnostUrl, external: mestnostUrl.startsWith('http'), class: 'sister-link' },
     ]
     const menu = computed(() => (isReliefRoute(route.path) ? reliefMenu : mestnostMenu))
