@@ -68,9 +68,7 @@ export default {
     const route = useRoute()
     const { reliefPath, mestnostUrl, isReliefRoute } = useRelief()
 
-    // Mestnost and Relief share one menu layout. Relief links back to Mestnost;
-    // Mestnost will link to Relief once it is public:
-    // { label: 'Рельеф', to: 'https://relief.mestnostrecords.com', external: true, class: 'sister-link' }
+    // Mestnost and Relief share one menu layout; each links to the other label.
     const mestnostMenu = [
       { label: 'Главная', to: '/' },
       { label: 'Местность', mobileLabel: 'О местности', to: '/about', class: 'cocomat-font' },
@@ -78,6 +76,7 @@ export default {
       { label: 'Артисты', to: '/artists' },
       { label: 'События', to: '/events' },
       { label: 'Мерч', to: '/merch' },
+      { label: 'Рельеф', to: 'https://relief.mestnostrecords.com', external: true, class: 'sister-link' },
     ]
     const reliefMenu = [
       { label: 'Главная', to: reliefPath('') },
