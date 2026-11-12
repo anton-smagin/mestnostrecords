@@ -43,7 +43,7 @@
               :srcset="`${block.photo}_600.webp 600w, ${block.photo}.webp 1200w`"
               sizes="(max-width: 768px) 90vw, 70vw"
               :alt="block.alt"
-              :class="['description-photo', { 'description-photo--wide': block.wide }]"
+              class="description-photo"
               loading="lazy"
             />
             <p v-else>{{ block }}</p>
@@ -52,6 +52,18 @@
             <template v-for="line in release.credits" :key="line"><i>{{ line }}</i><br /></template>
           </p>
         </div>
+      </div>
+    </div>
+    <div v-if="release.gallery?.length" class="row mb-5">
+      <div v-for="photo in release.gallery" :key="photo" class="col-md-4 mt-5">
+        <img
+          :src="`${photo}.webp`"
+          :srcset="`${photo}_600.webp 600w, ${photo}.webp 1200w`"
+          sizes="(max-width: 768px) 90vw, 30vw"
+          :alt="`${release.releaseName} CD`"
+          class="gallery-photo"
+          loading="lazy"
+        />
       </div>
     </div>
   </div>
@@ -134,6 +146,13 @@ useSeoMeta({
   margin-left: 0.5em;
   vertical-align: middle;
   letter-spacing: 0.2em;
+}
+
+.gallery-photo {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .fill {

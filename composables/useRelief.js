@@ -8,8 +8,9 @@
 // Relief releases, newest first. Each gets a page at /relief/releases/<slug>.
 // Add store/streaming links to `links` ({ name, icon, link }) when it is out.
 // `description` is a list of paragraphs; an entry { photo, alt } puts a photo
-// between paragraphs (photo is a base path: <photo>.webp and <photo>_600.webp);
-// add `wide: true` to make it take the full width of the text.
+// between paragraphs (photo is a base path: <photo>.webp and <photo>_600.webp).
+// `gallery` is a list of photos (same base paths) shown in a row at the end,
+// like the cassette photos on Mestnost releases.
 // `credits` is a list of lines shown in italics after the description.
 const reliefReleases = [
   {
@@ -44,9 +45,11 @@ const reliefReleases = [
       '«В настоящий момент, к сожалению, мне не удается установить связь с Антоном, надеюсь он жив и здоров», — говорит Борисов. Да, все дело в том, что Антон Мобен взял и стал музыкантом-призраком. В момент наступления эпидемии ковида он уехал в деревню, чтобы сосредоточиться на разведении цветов, а в течение последующих двух лет прекратил всю активность в сети, заморозил блоги и релизы. Еще в 2010 году Антон изъявил желание ограничить онлайн-деятельность, в первую очередь это касалось его «поспешных» релизов.',
       { photo: '/static/relief/anton_mobin_face_relief', alt: 'Антон Мобен' },
       'Переход Мобена на сугубо физические носители поддержали десятки лейблов в разных странах, к счастью в сети все еще можно найти записи с его собственного лейбла Middle Eight Recordings и работы, сделанные с 2000 по 2010 годы в рамках работы с проектом H.A.K. Lo-Fi Record. С выходом ХХ22 мы получаем возможность познакомиться с одной из последних известных работ Мобена, будем надеяться, что он и сам ее услышит и подумает: не вернуться ли. Антон, привет!',
-      { photo: '/static/relief/xx22_cd_relief', alt: 'CD XX22', wide: true },
-      { photo: '/static/relief/xx22_cd_2_relief', alt: 'CD XX22', wide: true },
-      { photo: '/static/relief/xx22_cd_3_relief', alt: 'CD XX22', wide: true },
+    ],
+    gallery: [
+      '/static/relief/xx22_cd_relief',
+      '/static/relief/xx22_cd_2_relief',
+      '/static/relief/xx22_cd_3_relief',
     ],
     credits: [
       'Запись: Алексей Борисов, Anton Mobin',
