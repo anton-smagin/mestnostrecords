@@ -6,7 +6,8 @@
 // Every link between the two labels reads from here.
 
 // Relief releases, newest first. Each gets a page at /relief/releases/<slug>.
-// Add store/streaming links to `links` ({ name, icon, link }) when it is out.
+// Add store/streaming links to `links` ({ name, icon, link }) when it is out,
+// and `bandcampAlbumId` (from Bandcamp's embed code) for the player.
 // `description` is a list of paragraphs; an entry { photo, alt } puts a photo
 // between paragraphs (photo is a base path: <photo>.webp and <photo>_600.webp).
 // `gallery` is a list of photos (same base paths) shown in a row at the end,
@@ -21,7 +22,13 @@ const reliefReleases = [
     artistSlugs: ['alexei-borisov', 'anton-mobin'],
     releaseName: 'XX22',
     image: '/static/relief/xx22_cover.webp',
+    bandcampAlbumId: '1885081568',
     links: [
+      {
+        name: 'Bandcamp',
+        icon: 'bandcamp',
+        link: 'https://mestnost.bandcamp.com/album/relief-xx22',
+      },
       {
         name: 'Yandex',
         icon: 'yandex',

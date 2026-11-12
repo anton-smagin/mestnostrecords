@@ -33,6 +33,16 @@
         </div>
       </div>
     </div>
+    <div v-if="release.bandcampAlbumId" class="row mb-5 mt-5">
+      <div class="col-md-6 offset-md-2 bandcamp-player">
+        <iframe
+          style="border: 0; width: 100%; height: 120px"
+          :src="`https://bandcamp.com/EmbeddedPlayer/album=${release.bandcampAlbumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/`"
+          :title="`${release.artistName} — ${release.releaseName}`"
+          seamless
+        ></iframe>
+      </div>
+    </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
         <div class="description mb-5" lang="ru">
