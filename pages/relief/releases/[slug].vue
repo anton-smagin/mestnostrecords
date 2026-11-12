@@ -48,6 +48,9 @@
             />
             <p v-else>{{ block }}</p>
           </template>
+          <p v-if="release.credits?.length" class="credits">
+            <template v-for="line in release.credits" :key="line"><i>{{ line }}</i><br /></template>
+          </p>
         </div>
       </div>
     </div>
