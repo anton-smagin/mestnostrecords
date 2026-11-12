@@ -24,6 +24,11 @@ const reliefReleases = [
         icon: 'yandex',
         link: 'https://music.yandex.com/album/44612572',
       },
+      {
+        name: 'Vk',
+        icon: 'vk',
+        link: 'https://vk.ru/music/playlist/-2000765895_29765895_213c1321792669ac53',
+      },
     ],
     description: [
       { photo: '/static/relief/borisov_face_relief', alt: 'Алексей Борисов' },
