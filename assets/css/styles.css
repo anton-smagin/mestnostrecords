@@ -224,4 +224,11 @@ html {
     display: block;
     clear: both;
   }
+
+  /* Many photos, little text: photos centered between paragraphs. */
+  .description--centered .description-photo {
+    float: none;
+    width: 70%;
+    margin: 2em auto;
+  }
 }

@@ -35,7 +35,7 @@
     </div>
     <div class="row mb-5 mt-5">
       <div class="col-md-12">
-        <div class="description mb-5" lang="ru">
+        <div :class="['description mb-5', { 'description--centered': release.centeredPhotos }]" lang="ru">
           <template v-for="(block, i) in release.description" :key="i">
             <img
               v-if="block.photo"
