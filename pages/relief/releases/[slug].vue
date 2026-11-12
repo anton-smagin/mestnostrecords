@@ -17,7 +17,6 @@
             </template>
           </h5>
           <h5>{{ release.releaseName }}</h5>
-          <p class="number">Relief {{ release.number }}</p>
           <div>
             <div
               v-for="link in release.links"
@@ -97,7 +96,7 @@ const title = `${release.artistName} — ${release.releaseName}`
 useSeoMeta({
   title,
   ogTitle: title,
-  description: `${release.releaseName} — ${release.artistName}, Relief ${release.number}`,
+  description: `${release.releaseName} — ${release.artistName}`,
   ogImage: `https://mestnostrecords.com${release.image}`,
 })
 </script>
@@ -130,12 +129,6 @@ useSeoMeta({
 
 .release-name a:hover {
   color: #7d8f87;
-}
-
-.number {
-  margin-top: 1rem;
-  font-size: 0.8em;
-  opacity: 0.55;
 }
 
 .description {
