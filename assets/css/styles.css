@@ -231,4 +231,12 @@ html {
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* The Bandcamp player in the same column as the text (100% here is the
+     row, which is the page width plus 24px of gutters). */
+  .row > .bandcamp-player {
+    width: calc(0.49 * (100% - 24px) + 24px);
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
