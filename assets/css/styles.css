@@ -225,10 +225,16 @@ html {
     clear: both;
   }
 
-  /* Many photos, little text: photos centered between paragraphs. */
+  /* Many photos, little text: photos centered between paragraphs, and the
+     text in a column as wide as the photos. */
+  .description--centered > * {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .description--centered .description-photo {
     float: none;
-    width: 70%;
     margin: 2em auto;
   }
 }
