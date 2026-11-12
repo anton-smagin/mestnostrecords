@@ -30,6 +30,11 @@ const reliefReleases = [
         link: 'https://mestnost.bandcamp.com/album/relief-xx22',
       },
       {
+        name: 'Spotify',
+        icon: 'spotify',
+        link: 'https://open.spotify.com/album/6CPayKL9vywOjDr8UXwGQ2',
+      },
+      {
         name: 'Yandex',
         icon: 'yandex',
         link: 'https://music.yandex.com/album/44612572',
