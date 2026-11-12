@@ -38,6 +38,10 @@ function setupReliefPages(pages, isDev) {
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  // Separate build dir so the Relief dev server (RELIEF_SITE=1) can run next to
+  // the main one without overwriting its .nuxt
+  buildDir: reliefSite ? '.nuxt-relief' : '.nuxt',
+
   // Enable SSR for proper meta tag rendering during static generation
   ssr: true,
 
