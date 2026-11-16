@@ -86,6 +86,27 @@ const reliefArtists = [
   },
 ]
 
+// Relief events, newest first. Each gets a page at /relief/events/<slug>.
+// `description` is a list of paragraphs; each paragraph is a list of lines.
+// `place` is the venue, shown with a location pin after the description.
+const reliefEvents = [
+  {
+    slug: '20-11-26-avtomoyka',
+    name: 'Автомойка 20-11-26',
+    title: '20 ноября | Автомойка',
+    image: '/static/20-11-26-avtomoyka.webp',
+    description: [
+      ['В пятницу на Автомойке состоится презентация «Рельефа» - нового подлейбла «Местности». Поводом станет совместный релиз XX22 Алексея Борисова и Anton Mobin.'],
+      ['В программе вечера:'],
+      ['Алексей Борисов представит лайв, построенный на импровизации и фрагментах нового альбома.'],
+      ['H.Ruine выступит с лайвом на модульных синтезаторах.', 'Ломаные ритмы и экспериментальная танцевальная электроника.'],
+      ['Саша Куринский подготовил специальный DJ-сет, посвящённый каталогу Nurse With Wound.'],
+      ['Начало в 20:00. Вход свободный.'],
+    ],
+    place: ['Автомойка by Veladora', 'Москва, Старосадский переулок, 3, стр. 2'],
+  },
+]
+
 export function useRelief() {
   const reliefSite = Boolean(useRuntimeConfig().public.reliefSite)
 
@@ -96,5 +117,5 @@ export function useRelief() {
   const isExternal = false
   const mestnostUrl = reliefSite ? 'https://mestnostrecords.com' : '/'
 
-  return { reliefSite, reliefUrl, isExternal, reliefPath, isReliefRoute, mestnostUrl, reliefReleases, reliefArtists }
+  return { reliefSite, reliefUrl, isExternal, reliefPath, isReliefRoute, mestnostUrl, reliefReleases, reliefArtists, reliefEvents }
 }
