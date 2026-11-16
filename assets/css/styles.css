@@ -179,12 +179,6 @@ html {
   -webkit-hyphens: auto;
 }
 
-/* Relief menu (desktop and mobile) keeps the typewriter font */
-.relief-theme #nav,
-.relief-theme #nav * {
-  font-family: MomsRelief, monospace !important;
-}
-
 /* Mobile text gutters, shared by Mestnost and Relief: every text block
    (div.description on release, event and about pages) uses the same side
    margins and left alignment on narrow screens. Captions (p.description) keep theirs. */
