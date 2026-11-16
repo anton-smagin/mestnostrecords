@@ -69,7 +69,6 @@ export default defineNuxtConfig({
         // Twitter Card defaults
         { name: 'twitter:card', content: 'summary_large_image' },
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
     baseURL: '/', // Set the base URL for the application
   },

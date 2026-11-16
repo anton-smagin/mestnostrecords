@@ -14,6 +14,16 @@ const isRelief = computed(() => isReliefRoute(route.path))
 
 useHead({
   htmlAttrs: { class: computed(() => (isRelief.value ? 'relief-html' : '')) },
+  // Tab icon: Relief pages get the Ф from the Relief logo
+  link: computed(() =>
+    isRelief.value
+      ? [
+          { rel: 'icon', type: 'image/x-icon', href: '/static/relief/favicon.ico' },
+          { rel: 'icon', type: 'image/png', sizes: '64x64', href: '/static/relief/favicon-64.png' },
+          { rel: 'apple-touch-icon', href: '/static/relief/apple-touch-icon.png' },
+        ]
+      : [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+  ),
 })
 </script>
 
